@@ -10,6 +10,9 @@ import /vendor/etc/init/hw/init.sensor_1_0.rc
 import /vendor/etc/init/hw/init.zram.rc
 import /vendor/etc/init/hw/init.modem.rc
 
+on early-init
+    write /sys/module/drm/parameters/vblankoffdelay -1
+
 on init
     mkdir /mnt/vendor/persist 0771 system system
 

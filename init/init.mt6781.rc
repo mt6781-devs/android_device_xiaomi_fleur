@@ -7,6 +7,10 @@ import /vendor/etc/init/hw/init.mt6781.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
 
+on early-init
+    # Avoid delay for vblank disable from DRM
+    write /sys/module/drm/parameters/vblankoffdelay -1
+
 on early-boot
     # set RLIMIT_MEMLOCK to 64KB
     setrlimit 8 65536 65536

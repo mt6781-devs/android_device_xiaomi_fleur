@@ -112,6 +112,7 @@ ro.hardware.kmsetkey=beanpod
 
 # LMK
 ro.lmk.kill_heaviest_task=true
+ro.lmk.downgrade_pressure=60
 ro.lmk.medium=800
 ro.lmk.kill_timeout_ms=50
 ro.lmk.stall_limit_critical=40

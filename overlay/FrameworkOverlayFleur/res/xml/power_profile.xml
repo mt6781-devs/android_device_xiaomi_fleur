@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device xmlns:android="http://schemas.android.com/apk/res/android" name="Android">
-    <item name="none">0</item>
     <item name="screen.on.display0">126</item>
     <item name="screen.full.display0">80</item>
     <item name="bluetooth.active">22.32</item>

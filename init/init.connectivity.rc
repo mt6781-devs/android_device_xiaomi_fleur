@@ -17,7 +17,7 @@ on post-fs-data
     chmod 0660 /dev/gps_emi
 
     # WiFi
-    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi 0771 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 

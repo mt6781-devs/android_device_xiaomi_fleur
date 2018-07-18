@@ -188,6 +188,9 @@ PRODUCT_PACKAGES += \
     FrameworkOverlayFleur \
     SettingsOverlayFleur
 
+PRODUCT_PACKAGES += \
+    LineageDialerFleur
+
 # Power-off Alarm
 PRODUCT_PACKAGES += \
     PowerOffAlarm

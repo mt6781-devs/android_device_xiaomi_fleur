@@ -203,3 +203,8 @@ ro.hardware.wechat=beanpod
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
+
+# ZRAM writeback
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24

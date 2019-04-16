@@ -39,7 +39,7 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
 ro.mtk_cam_stereo_camera_support=1
 
 # Display
-ro.vendor.composer_version=2.1
+ro.vendor.composer_version=2.3
 ro.vendor.mtk_aal_support=0
 ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_aod_support=0

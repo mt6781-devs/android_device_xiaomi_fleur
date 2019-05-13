@@ -8,6 +8,10 @@ DEVICE_PATH := device/xiaomi/fleur
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

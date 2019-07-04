@@ -115,6 +115,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6781
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2024-12-01
+
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 

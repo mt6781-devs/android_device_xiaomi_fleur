@@ -19,6 +19,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
 # Virtual A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
 PRODUCT_PACKAGES += \
     otapreopt_script \
     update_engine \

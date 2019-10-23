@@ -84,6 +84,7 @@ ro.vendor.pq.mtk_blulight_def_support=0
 
 # Media
 media.c2.dmabuf.padding=512
+media.stagefright.thumbnail.prefer_hw_codecs=true
 debug.mediatek.disp_decompress=1
 debug.stagefright.c2inputsurface=-1
 persist.vendor.md_c2k_cap_dep_check=0

@@ -7,6 +7,7 @@
 
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
+/data/vendor/goodix(/.*)? u:object_r:fingerprint_data_file:s0
 
 # IR
 /dev/spidev3.0 u:object_r:spidev_device:s0

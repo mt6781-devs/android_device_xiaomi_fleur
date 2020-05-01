@@ -272,7 +272,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     LineageApertureOverlayFleur \
-    LineageDialerFleur
+    LineageDialerFleur \
+    LineageSDKOverlayFleur
 
 # Power-off Alarm
 PRODUCT_PACKAGES += \

@@ -24,6 +24,9 @@ on init
     # Sched tuning
     write /proc/sys/kernel/sched_migration_cost_ns 250000
     write /proc/sys/kernel/sched_pelt_multiplier 2
+    write /proc/sys/kernel/sched_latency_ns 5000000
+    write /proc/sys/kernel/sched_min_granularity_ns 500000
+    write /proc/sys/kernel/sched_wakeup_granularity_ns 2500000
 
     # GPU Permissions
     chown system system /sys/kernel/gpu/gpu_max_clock

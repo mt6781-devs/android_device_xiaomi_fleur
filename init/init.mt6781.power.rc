@@ -14,7 +14,7 @@ on init
     write /proc/sys/vm/dirty_writeback_centisecs 300
     write /proc/sys/vm/dirty_background_ratio 7
     write /proc/sys/vm/dirty_ratio 15
-    write /proc/sys/vm/dirty_expire_centisecs 2000
+    write /proc/sys/vm/dirty_expire_centisecs 3000
 
     # Boot time tuning
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "performance"

@@ -799,7 +799,7 @@ on boot
     chown system system /sys/bus/platform/devices/aw8622/test_cnt
 
 # Log levels
-    write /proc/sys/kernel/printk "7 4 1 7"
+    write /proc/sys/kernel/printk "3 4 1 7"
 
 on property:vold.decrypt=trigger_reset_main
     setprop sys.boot_completed 0

@@ -108,6 +108,7 @@ ro.hardware.kmsetkey=beanpod
 
 # Media
 debug.mediatek.disp_decompress=1
+debug.stagefright.c2inputsurface=-1
 persist.vendor.md_c2k_cap_dep_check=0
 media.c2.dmabuf.padding=512
 ro.vendor.jpeg_decode_sw_opt=1

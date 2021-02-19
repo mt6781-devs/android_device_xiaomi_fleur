@@ -127,7 +127,6 @@ on property:sys.boot_completed=1
     write /sys/kernel/ged/hal/loading_base_dvfs_step 4
 
     # fs tuning
-    write /sys/block/sda/queue/iostats 1
     write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sda/queue/nr_requests 128
 

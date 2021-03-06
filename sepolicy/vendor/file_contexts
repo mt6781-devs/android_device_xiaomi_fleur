@@ -14,6 +14,10 @@
 # IR
 /dev/spidev3.0 u:object_r:spidev_device:s0
 
+# Mi Thermald
+/vendor/bin/mi_thermald u:object_r:mi_thermald_exec:s0
+/data/vendor/thermal(/.*)? u:object_r:thermal_data_file:s0
+
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr u:object_r:hal_power_default_exec:s0
 

@@ -83,6 +83,7 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_blulight_def_support=0
 
 # Media
+media.c2.dmabuf.padding=512
 debug.mediatek.disp_decompress=1
 persist.vendor.md_c2k_cap_dep_check=0
 ro.vendor.jpeg_decode_sw_opt=1

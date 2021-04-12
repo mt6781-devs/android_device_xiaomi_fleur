@@ -67,7 +67,8 @@ BOARD_KERNEL_CMDLINE := \
     cgroup.memory=nokmem \
     sysctl.kernel.sched_pelt_multiplier=4 \
     androidboot.serialconsole=0 \
-    cgroup_disable=memory
+    cgroup_disable=memory \
+    log_buf_len=1024K
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := fleur

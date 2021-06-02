@@ -2,5 +2,8 @@
 type vendor_camera_data_file, data_file_type, file_type;
 type camera_persist_file, file_type;
 
+# Touchpanel
+type sysfs_touchpanel, fs_type, sysfs_type;
+
 # Ultrasound
 type sound_device, dev_type;

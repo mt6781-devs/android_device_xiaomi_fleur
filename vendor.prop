@@ -96,6 +96,9 @@ ro.vendor.pq.mtk_backlight_smooth_support=0
 ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_blulight_def_support=0
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+
 # Media
 media.c2.dmabuf.padding=512
 media.stagefright.thumbnail.prefer_hw_codecs=true

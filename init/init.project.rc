@@ -78,4 +78,7 @@ on boot
     chmod 0644 /dev/goodix_fp
     chown system system /dev/goodix_fp
 
+    # DT2W
+    chown system system /sys/touchpanel/double_tap
+
     stop console

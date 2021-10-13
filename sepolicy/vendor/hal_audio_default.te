@@ -1,1 +1,2 @@
 allow hal_audio_default persist_data_file:dir search;
+set_prop(hal_audio_default, vendor_mtk_audio_prop)

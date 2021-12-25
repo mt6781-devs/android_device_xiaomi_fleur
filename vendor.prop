@@ -252,6 +252,7 @@ debug.sf.early.app.duration=30150000
 debug.sf.earlyGl.sf.duration=30100000
 debug.sf.earlyGl.app.duration=23850000
 debug.sf.hwc.min.duration=23000000
+ro.config.avoid_gfx_accel=true
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true

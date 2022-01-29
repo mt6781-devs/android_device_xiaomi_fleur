@@ -145,6 +145,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "RestrictedCpuset",
+      "Path": "/dev/cpuset/restricted/cpus",
+      "Values": [
+        "0-3",
+        "0-7"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUSchedMode",
       "Path": "/sys/devices/platform/13000000.mali/js_ctx_scheduling_mode",
       "Values": [
@@ -317,6 +326,12 @@
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
       "Value": "9999999"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "RestrictedCpuset",
+      "Duration": 0,
+      "Value": "0-3"
     }
   ]
 }

@@ -84,6 +84,9 @@ persist.sys.fuse.passthrough.enable=true
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+
 # IMS
 persist.vendor.mtk_dynamic_ims_switch=1
 persist.vendor.mtk_wfc_support=1

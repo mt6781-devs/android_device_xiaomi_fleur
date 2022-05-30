@@ -180,6 +180,9 @@ external_storage.casefold.enabled=1
 external_storage.projid.enabled=1
 external_storage.sdcardfs.enabled=0
 
+# Surface Flinger
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
 # Trusted Execution Environment (TEE)
 ro.hardware.wechat=beanpod
 ro.vendor.mtk_microtrust_tee_support=1

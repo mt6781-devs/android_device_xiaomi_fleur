@@ -14,6 +14,7 @@ ro.config.vc_call_vol_default=4
 ro.config.vc_call_vol_steps=12
 
 # Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3300
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.avrcp.target.enabled=true
 bluetooth.profile.bas.client.enabled=true

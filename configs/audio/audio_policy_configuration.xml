@@ -274,8 +274,8 @@
         <!-- BT Audio HAL -->
         <xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
-        <!-- Usb Audio HAL -->
-        <xi:include href="usb_audio_policy_configuration.xml"/>
+        <!-- Usb v2 Audio HAL -->
+        <xi:include href="usbv2_audio_policy_configuration.xml"/>
 
         <!-- Remote Submix Audio HAL -->
         <xi:include href="r_submix_audio_policy_configuration.xml"/>

@@ -197,11 +197,13 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayFleur \
     WifiOverlay
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
-
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor

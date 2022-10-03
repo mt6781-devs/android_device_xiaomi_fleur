@@ -8,6 +8,7 @@ vendor/lib/hw/sound_trigger.primary.default.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
+vendor/lib/libalsautils.so:vendor/lib64/libalsautils-stock.so;FIX_SONAME
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libaudiocomponentenginec.so
 vendor/lib/libaudiocompensationfilterc.so

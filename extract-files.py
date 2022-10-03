@@ -43,6 +43,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v32.so'),
     ('vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so', 'vendor/bin/hw/android.hardware.gnss-service.mediatek'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
+     'vendor/lib/hw/audio.primary.mt6781.so': blob_fixup()
+        .replace_needed('libalsautils.so', 'libalsautils-stock.so'),
     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so': blob_fixup()

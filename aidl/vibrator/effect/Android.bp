@@ -15,16 +15,3 @@ cc_library_shared {
     export_include_dirs: ["."]
 }
 
-cc_library_shared {
-    name: "libxiaomivibratoreffectoffload",
-    vendor: true,
-    cflags: Common_CFlags,
-    srcs: [
-        "VibratorPatterns.cpp"
-    ],
-    shared_libs: [
-        "libcutils",
-        "libutils",
-    ],
-    export_include_dirs: ["."]
-}

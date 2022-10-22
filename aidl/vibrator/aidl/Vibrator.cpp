@@ -475,11 +475,7 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std
 
     ALOGD("Vibrator perform effect %d", effect);
 
-#ifdef TARGET_SUPPORTS_OFFLOAD
-    if (effect < Effect::CLICK ||  effect > Effect::RINGTONE_15)
-#else
     if (effect < Effect::CLICK ||  effect > Effect::HEAVY_CLICK)
-#endif
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 
     if (es != EffectStrength::LIGHT && es != EffectStrength::MEDIUM && es != EffectStrength::STRONG)
@@ -506,14 +502,8 @@ ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* _aidl_retu
     if (ledVib.mDetected)
         return ndk::ScopedAStatus::ok();
 
-#ifdef TARGET_SUPPORTS_OFFLOAD
-    *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::THUD,
-                     Effect::POP, Effect::HEAVY_CLICK, Effect::RINGTONE_12,
-                     Effect::RINGTONE_13, Effect::RINGTONE_14, Effect::RINGTONE_15};
-#else
     *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::THUD,
                      Effect::POP, Effect::HEAVY_CLICK};
-#endif
     return ndk::ScopedAStatus::ok();
 }
 

@@ -159,6 +159,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# IFAA
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \

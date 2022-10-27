@@ -1313,6 +1313,13 @@ vendor/lib64/librgbwlightsensor.so
 vendor/lib64/libsensor_custom.so
 vendor/lib64/sensors.touch.detect.so
 
+# Soter
+vendor/app/SoterService/SoterService.apk
+vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
+vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
+vendor/lib64/wechat.beanpod.so
+vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
+
 # Trusted Execution Environment (TEE)
 vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/init_thh
@@ -1331,7 +1338,6 @@ vendor/lib64/libteei_daemon_vfs.so
 vendor/lib64/libthha.so;DISABLE_CHECKELF
 vendor/lib64/libthhclient.so
 vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
-vendor/lib64/wechat.beanpod.so
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
 vendor/thh/ta/020f0000000000000000000000000000.ta
 vendor/thh/ta/05120000000000000000000000000000.ta

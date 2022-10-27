@@ -5,6 +5,9 @@ on init
     write /dev/cpuset/system-background/cpus 0-5
     write /dev/cpuset/top-app/cpus 0-7
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 on property:sys.boot_completed=1
     # PowerHAL Hint Processing
     setprop vendor.powerhal.init 1

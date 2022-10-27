@@ -49,6 +49,9 @@ on init
     # Disable printk logging
     write /proc/sys/kernel/printk_devkmsg off
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 ## Utilization Clamping
     # Tuning
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0

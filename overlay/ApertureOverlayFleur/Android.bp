@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2023 LineageOS
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "ApertureOverlayFleur",
+    sdk_version: "current",
+    product_specific: true,
+    resource_dirs: ["res"]
+}

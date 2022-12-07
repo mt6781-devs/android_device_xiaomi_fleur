@@ -1,5 +1,8 @@
 # Batterysecret
 /(vendor|system/vendor)/bin/batterysecret u:object_r:batterysecret_exec:s0
 
+# IR
+/dev/spidev3.0 u:object_r:spidev_device:s0
+
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr u:object_r:hal_power_default_exec:s0

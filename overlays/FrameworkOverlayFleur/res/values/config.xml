@@ -224,7 +224,8 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">8.54597E-4</item>
+    <integer name="config_screenBrightnessDoze">30</integer>
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.1</item>
 
     <!-- The default refresh rate for a given device. Change this value to set a higher default
          refresh rate. If the hardware composer on the device supports display modes with a higher

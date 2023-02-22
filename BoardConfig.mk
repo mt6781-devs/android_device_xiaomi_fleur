@@ -65,7 +65,8 @@ BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64N2 \
     androidboot.selinux=permissive \
     cgroup.memory=nokmem \
-    sysctl.kernel.sched_pelt_multiplier=4
+    sysctl.kernel.sched_pelt_multiplier=4 \
+    androidboot.serialconsole=0
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := fleur

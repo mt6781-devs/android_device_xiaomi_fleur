@@ -282,4 +282,8 @@
     <!-- If true, the doze component is not started until after the screen has been
          turned off and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOff">true</bool>
+
+    <!-- If true, the screen can be rotated via the accelerometer in all 4
+         rotations as the default behavior. -->
+    <bool name="config_allowAllRotations">true</bool>
 </resources>

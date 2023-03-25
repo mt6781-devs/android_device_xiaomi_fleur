@@ -119,6 +119,7 @@ ro.hardware.gatekeeper=beanpod
 ro.vendor.mtk_log_hide_gps=1
 
 # HWUI
+ro.hwui.render_ahead=20
 debug.hwui.use_hint_manager=true
 
 # Keymaster

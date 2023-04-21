@@ -14,7 +14,6 @@ allow hal_fingerprint_default self:netlink_kobject_uevent_socket { bind create r
 allow hal_fingerprint_default input_device:chr_file rw_file_perms;
 allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 
-get_prop(hal_fingerprint_default, vendor_fp_prop)
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 
 add_hwservice(hal_fingerprint_default, hal_fingerprint_hwservice_xiaomi)

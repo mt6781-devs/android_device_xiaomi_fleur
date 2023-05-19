@@ -417,8 +417,7 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.mediatek \
-    android.hardware.usb.gadget-service.mediatek
+    android.hardware.usb@1.2-service-mediatekv2
 
 # Vibrator
 PRODUCT_PACKAGES += \

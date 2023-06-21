@@ -13,6 +13,10 @@ import /vendor/etc/init/hw/init.modem.rc
 on early-init
     write /sys/module/drm/parameters/vblankoffdelay -1
 
+on early-boot
+    # set RLIMIT_MEMLOCK to 64KB
+    setrlimit 8 65536 65536
+
 on init
     mkdir /mnt/vendor/persist 0771 system system
 
@@ -245,11 +249,6 @@ on post-fs-data
     chmod 0444 /dev/m4u
     chmod 0640 /proc/m4u
     chown system media /proc/m4u
-
-    #set mlock to 64MB for netd
-    setrlimit 8 67108864 67108864
-
-    setrlimit 8 -1 -1
 
     # CMDQ
     chmod 0640 /dev/mtk_cmdq

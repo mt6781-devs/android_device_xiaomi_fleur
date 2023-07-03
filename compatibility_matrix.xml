@@ -19,8 +19,4 @@
         <name>android.hidl.token</name>
         <version>1.0</version>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>android.system.wifi.keystore</name>
-        <version>1.0</version>
-    </hal>
 </compatibility-matrix>

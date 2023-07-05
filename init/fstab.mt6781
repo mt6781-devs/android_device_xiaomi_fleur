@@ -4,10 +4,10 @@
 # <src>                           <mnt_point>          <type> <mnt_flags and options>         <fs_mgr_flags>
 
 # Dynamic Partitions
-system                            /system              ext4    ro                             wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey,readahead_size_kb=128
-system_ext                        /system_ext          ext4    ro                             wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey,readahead_size_kb=128
-product                           /product             ext4    ro                             wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
-vendor                            /vendor              erofs   ro                             wait,slotselect,avb,logical,first_stage_mount
+system                            /system              ext4    noatime,ro                     wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey,readahead_size_kb=128
+system_ext                        /system_ext          ext4    noatime,ro                     wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey,readahead_size_kb=128
+product                           /product             ext4    noatime,ro                     wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
+vendor                            /vendor              erofs   noatime,ro                     wait,slotselect,avb,logical,first_stage_mount
 
 # Data
 /dev/block/by-name/metadata       /metadata            ext4    noatime,nosuid,nodev,discard   wait,check,formattable,first_stage_mount,metadata_csum,readahead_size_kb=128

@@ -1,0 +1,3 @@
+rw_dir_file(charger_vendor, sysfs_batteryinfo)
+rw_dir_file(charger_vendor, sysfs_power_supply)
+rw_dir_file(charger_vendor, sysfs_leds)

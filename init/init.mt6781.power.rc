@@ -12,7 +12,7 @@ on init
 
     # VM Tweaks
     write /proc/sys/vm/dirty_writeback_centisecs 3000
-    write /proc/sys/vm/dirty_background_ratio 7
+    write /proc/sys/vm/dirty_background_ratio 10
     write /proc/sys/vm/dirty_ratio 15
     write /proc/sys/vm/dirty_expire_centisecs 3000
 
@@ -43,6 +43,8 @@ on init
     write /sys/block/sda/queue/iosched/slice_idle 0
 
     write /dev/sys/fs/by-name/userdata/iostat_enable 0
+    write /dev/sys/fs/by-name/userdata/cp_interval 6000
+    write /dev/sys/fs/by-name/userdata/gc_urgent_sleep_time 200
 
     # Disable printk logging
     write /proc/sys/kernel/printk_devkmsg off

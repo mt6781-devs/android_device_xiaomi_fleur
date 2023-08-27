@@ -67,7 +67,8 @@ BOARD_KERNEL_CMDLINE := \
     sysctl.kernel.sched_pelt_multiplier=4 \
     androidboot.serialconsole=0 \
     cgroup_disable=memory \
-    log_buf_len=1024K
+    log_buf_len=1024K \
+    vm.dirty_background_ratio=10
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := fleur

@@ -73,6 +73,9 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             sed -i 's/mediatek/mediatek-64b/' "$2"
             ;;
+	vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
 	vendor/etc/camera/camerabooster.json)
             sed -i 's/"sea"/"fleur"/' "$2"
             ;;

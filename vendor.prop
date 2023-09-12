@@ -100,6 +100,7 @@ ro.vendor.pq.mtk_blulight_def_support=0
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=50
 ro.lmk.filecache_min_kb=153600
+ro.lmk.swap_free_low_percentage=100
 
 # Media
 media.c2.dmabuf.padding=512

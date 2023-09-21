@@ -27,4 +27,7 @@
      For devices with sensors on the back of the device, this corresponds to the location on the
      screen directly in front of the sensor. -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1025px</dimen>
+
+    <!-- Location on the screen of the center of the fingerprint sensor. -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
 </resources>

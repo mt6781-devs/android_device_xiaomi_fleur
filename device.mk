@@ -46,6 +46,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/xiaomi
 
+# VINTF
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 

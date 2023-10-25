@@ -63,7 +63,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64N2 \
-    androidboot.selinux=permissive
+    androidboot.selinux=permissive \
+    cgroup.memory=nokmem
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := fleur

@@ -1,3 +1,6 @@
+on early-init
+    write /proc/sys/kernel/sched_pelt_multiplier 1
+
 on init
     # Setup final cpuset
     write /dev/cpuset/foreground/cpus 0-6

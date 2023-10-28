@@ -121,6 +121,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi

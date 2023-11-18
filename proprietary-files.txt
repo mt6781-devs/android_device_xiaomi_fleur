@@ -1071,6 +1071,10 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
 
+# Power
+vendor/lib64/vendor.mediatek.hardware.power@1.1.so
+vendor/lib64/vendor.mediatek.hardware.power@2.0.so
+
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
 vendor/bin/mnld

@@ -119,3 +119,4 @@ service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.
     group graphics drmrpc
     capabilities SYS_NICE
     onrestart restart surfaceflinger
+    task_profiles ProcessCapacityHigh HighPerformance

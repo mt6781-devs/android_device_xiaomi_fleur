@@ -15,6 +15,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Linker config
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(DEVICE_PATH)/configs/linker.config.json
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 

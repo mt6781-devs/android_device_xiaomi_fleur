@@ -230,3 +230,6 @@ ro.vendor.mtk_svp_on_mtee_support=1
 # WiFi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
+
+# Zygote
+zygote.critical_window.minute=10

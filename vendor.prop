@@ -56,3 +56,4 @@ ro.opengles.version=196610
 debug.sf.enable_hwc_vds=0
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
+ro.surface_flinger.enable_frame_rate_override=false

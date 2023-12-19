@@ -59,8 +59,13 @@ function blob_fixup {
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
             ;;
+        vendor/bin/mnld|\
+        vendor/lib64/libaalservice.so)
+            "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
+            ;;
         vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so|\
         vendor/lib64/libmtkcam_stdutils.so)

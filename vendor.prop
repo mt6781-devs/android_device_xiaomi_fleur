@@ -133,6 +133,7 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 debug.mediatek.disp_decompress=1
 debug.stagefright.c2inputsurface=-1
 persist.vendor.md_c2k_cap_dep_check=0
+persist.log.tag.MDP=S
 ro.vendor.jpeg_decode_sw_opt=1
 ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.mtk_sec_video_path_support=1

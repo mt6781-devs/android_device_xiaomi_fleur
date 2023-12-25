@@ -81,6 +81,9 @@ persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_modules=fpc,goodix
 persist.vendor.fingerprint.sensor_location=1080|915|145|local:4627039422300187648
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 

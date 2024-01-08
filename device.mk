@@ -31,6 +31,10 @@ PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Sku properties
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/sku/,$(TARGET_COPY_OUT_ODM)/etc)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \

@@ -1,0 +1,2 @@
+ro.product.property_source_order=odm,product,vendor,system_ext,system
+import /odm/etc/build_${ro.boot.product.vendor.sku}.prop

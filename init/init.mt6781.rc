@@ -11,7 +11,6 @@ on init
     # M375 Add for sensor calibration command in 20230101 start
     mkdir /mnt/vendor/persist 0771 system system
 
-    mkdir /mnt/cd-rom 0000 system system
     symlink /dev/block /dev/block/bootdevice
     mkdir /mnt/vendor/rescue 0771 system system
 
@@ -67,9 +66,6 @@ on charger
 on fs
     # mount fstab
     mount_all --early
-
-on fs
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
 
 on late-fs
     wait_for_prop hwservicemanager.ready "true"

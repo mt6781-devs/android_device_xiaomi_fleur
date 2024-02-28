@@ -116,6 +116,8 @@ TARGET_COPY_OUT_ODM := odm
 
 BOARD_USES_METADATA_PARTITION := true
 
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6781
 

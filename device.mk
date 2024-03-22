@@ -26,6 +26,10 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 PRODUCT_PACKAGES += \
+    com.android.hardware.boot \
+    android.hardware.boot-service.default_recovery
+
+PRODUCT_PACKAGES += \
     otapreopt_script \
     update_engine \
     update_engine_client \

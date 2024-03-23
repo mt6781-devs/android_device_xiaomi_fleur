@@ -189,6 +189,10 @@ PRODUCT_PACKAGES += \
     FrameworkOverlayFleur \
     SettingsOverlayFleur
 
+# Power-off Alarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr

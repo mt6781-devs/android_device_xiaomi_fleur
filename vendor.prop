@@ -92,6 +92,8 @@ ro.hardware.gatekeeper=beanpod
 ro.vendor.mtk_log_hide_gps=1
 
 # HWUI
+debug.hwui.target_cpu_time_percent=30
+debug.hwui.use_hint_manager=true
 debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
 

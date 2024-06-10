@@ -87,6 +87,9 @@ ro.hardware.gatekeeper=beanpod
 # GNSS
 ro.vendor.mtk_log_hide_gps=1
 
+# HWUI
+debug.renderengine.backend=skiaglthreaded
+
 # IMS
 persist.vendor.ims_support=1
 persist.vendor.mtk_dynamic_ims_switch=1

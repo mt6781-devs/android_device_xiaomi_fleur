@@ -8,9 +8,6 @@ import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
 
 on init
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-
     # M375 Add for sensor calibration command in 20230101 start
     mkdir /mnt/vendor/persist 0771 system system
 
@@ -85,9 +82,6 @@ on late-fs
     restorecon_recursive /mnt/vendor/persist
 
 on post-fs
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
-
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
 

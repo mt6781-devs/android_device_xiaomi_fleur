@@ -243,8 +243,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworkOverlayFleur \
+    TetheringOverlayFleur \
     SettingsOverlayFleur \
-    SystemUIOverlayFleur
+    SystemUIOverlayFleur \
+    WifiOverlayFleur
 
 PRODUCT_PACKAGES += \
     LineageDialerFleur

@@ -33,6 +33,7 @@ ro.vendor.bluetooth.wipower=false
 
 # Camera
 camera.disable_zsl_mode=1
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
 vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.cz.enable=1
 vendor.mtk.camera.app.fd.video=1

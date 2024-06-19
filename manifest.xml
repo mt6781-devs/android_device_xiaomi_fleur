@@ -1,4 +1,4 @@
-<manifest version="9.0" type="device" target-level="5">
+<manifest version="9.0" type="device" target-level="6">
     <hal format="aidl">
         <name>vendor.mediatek.hardware.mmagent</name>
         <fqname>IMMAgent/default</fqname>

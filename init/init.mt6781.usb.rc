@@ -51,6 +51,7 @@ on early-boot
 
     # ncm function
     mkdir /config/usb_gadget/g1/functions/ncm.gs9
+    write /config/usb_gadget/g1/functions/ncm.gs9/os_desc/interface.ncm/compatible_id "WINNCM"
 
     # chown file/folder permission
     chown system system /config/usb_gadget/

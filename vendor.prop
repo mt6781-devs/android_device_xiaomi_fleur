@@ -181,6 +181,7 @@ telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1
 
 # Surface Flinger
+debug.sf.auto_latch_unsignaled=1
 debug.sf.enable_hwc_vds=0
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1

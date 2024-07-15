@@ -133,6 +133,9 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn.option=D,E,F,Z
 ro.vendor.mtk_nn_quant_preferred=1
 
+# OEM Unlock
+ro.oem_unlock_supported=1
+
 # Picture Quality
 debug.mediatek.appgamepq_compress=1
 ro.vendor.mtk_pq_support=2

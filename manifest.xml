@@ -15,6 +15,11 @@
         <fqname>@4.0::IAllocator/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IComposer/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
         <transport arch="64">passthrough</transport>
         <fqname>@4.0::IMapper/default</fqname>

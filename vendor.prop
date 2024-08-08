@@ -39,6 +39,7 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
 ro.mtk_cam_stereo_camera_support=1
 
 # Display
+ro.vendor.composer_version=2.1
 ro.vendor.mtk_aal_support=0
 ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_aod_support=0
@@ -46,6 +47,7 @@ ro.vendor.mml.mtk_mml_support=0
 ro.vendor.smvr.p2batch.vga=16
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.fhd=4
+ro.hardware.hwcomposer=mtk_common
 ro.hardware.vulkan=mali
 ro.hardware.egl=meow
 ro.opengles.version=196610

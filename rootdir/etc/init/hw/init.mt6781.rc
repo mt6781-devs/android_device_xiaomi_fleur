@@ -46,6 +46,10 @@ on init
     write /dev/cpuset/system-background/cpus 0-5
     write /dev/cpuset/top-app/cpus 0-7
 
+    # report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 on late-init
 # enable rcu_expedited
     write /sys/kernel/rcu_expedited 1

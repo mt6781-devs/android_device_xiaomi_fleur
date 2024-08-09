@@ -18,16 +18,12 @@ on early-init
     chmod 0755 /sys/kernel/debug
 
 on init
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-
     # if primary storage is physical, set ro.vold.primary_physical to 1
     # setprop ro.vold.primary_physical 1
 
     # M375 Add for sensor calibration command in 20230101 start
     mkdir /mnt/vendor/persist 0771 system system
 
-    mkdir /mnt/cd-rom 0000 system system
     symlink /dev/block /dev/block/bootdevice
     mkdir /mnt/vendor/rescue 0771 system system
 
@@ -105,9 +101,6 @@ on fs
     mount_all --early
     write /sys/kernel/tracing/trace_marker "E"
 
-on fs
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-
 on late-fs
     wait_for_prop hwservicemanager.ready "true"
 
@@ -121,9 +114,6 @@ on late-fs
 # M375  Add for sensor calibration command in 20230101 end
 
 on post-fs
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
-
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
 

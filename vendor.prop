@@ -197,6 +197,7 @@ external_storage.sdcardfs.enabled=0
 
 # Surface Flinger
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=false
 debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.treat_170m_as_sRGB=1

@@ -15,3 +15,4 @@ genfscon sysfs /devices/platform/1a000000.camisp/wakeup u:object_r:sysfs_wakeup:
 genfscon sysfs /devices/platform/battery/power_supply/bms/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/mt_charger/power_supply/main/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:testing-mode/wakeup u:object_r:sysfs_wakeup:s0

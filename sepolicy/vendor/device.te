@@ -1,0 +1,2 @@
+type hardwareinfo_device, dev_type;
+type spidev_device, dev_type;

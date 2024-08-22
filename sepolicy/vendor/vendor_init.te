@@ -1,1 +1,3 @@
 rw_dir_file(vendor_init, sysfs_leds)
+set_prop(vendor_init, vendor_mtk_audiohal_prop)
+set_prop(vendor_init, vendor_mtk_audio_prop)

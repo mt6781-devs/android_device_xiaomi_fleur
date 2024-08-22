@@ -21,6 +21,9 @@ genfscon sysfs /devices/platform/battery/power_supply/* u:object_r:sysfs_battery
 genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify(/.*)? u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0066/power_supply/bq2597x-standalone u:object_r:sysfs_batteryinfo:s0
 
+# Vibrator
+genfscon sysfs /devices/platform/aw8622 u:object_r:sysfs_vibrator:s0
+
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/wakeup u:object_r:sysfs_wakeup:s0

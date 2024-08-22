@@ -1,0 +1,4 @@
+# Graphics nodes
+type vendor_sysfs_graphics, sysfs_type, fs_type;
+
+allow hal_graphics_composer_default vendor_sysfs_graphics:file rw_file_perms;

@@ -1,6 +1,9 @@
 # Camera
 persist.vendor.camera.                   u:object_r:vendor_camera_prop:s0
 vendor.camera.                           u:object_r:vendor_camera_prop:s0
+vendor.debug.                            u:object_r:vendor_camera_prop:s0
+vendor.mtkcam.                           u:object_r:vendor_camera_prop:s0
+ro.vendor.mtkcam.                        u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 persist.vendor.sys.fp.                   u:object_r:vendor_fingerprint_persist_prop:s0

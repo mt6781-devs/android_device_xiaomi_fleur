@@ -5,6 +5,9 @@
 
 DEVICE_PATH := device/xiaomi/fleur
 
+# Enable 64-bit for non-zygote.
+ZYGOTE_FORCE_64 := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod

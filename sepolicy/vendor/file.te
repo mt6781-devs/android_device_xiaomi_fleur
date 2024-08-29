@@ -5,3 +5,6 @@ type camera_persist_file, file_type;
 # Fingerprint
 type vendor_fingerprint_data_file, data_file_type, file_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
+
+# Latency
+type latency_device, dev_type;

@@ -1,19 +1,16 @@
 # MTK platform .rc configure
 
 import /vendor/etc/init/hw/init.connectivity.rc
+import /vendor/etc/init/hw/init.mt6781.power.rc
 import /vendor/etc/init/hw/init.mt6781.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
 import /vendor/etc/init/hw/init.stnfc.rc
-import /vendor/etc/init/hw/init.cgroup.rc
 import /vendor/etc/init/hw/init.zram.rc
 
 import /vendor/etc/init/hw/init.modem.rc
 
 on early-init
-    # boot perf. tune
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "0 0 0 0"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 1
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
@@ -35,13 +32,6 @@ on init
     write /proc/sys/net/core/wmem_max 8388608
     write /proc/sys/net/core/rmem_max 8388608
 
-# update cpus for cpuset cgroup
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-5
-    write /dev/cpuset/system-background/cpus 0-5
-    write /dev/cpuset/top-app/cpus 0-7
-
     # report max frequency to unity tasks.
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
@@ -53,9 +43,6 @@ on late-init
 # mount different fs start
 
 on charger
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
-
     chmod 0660 /dev/spm
     chown system system /dev/spm
     start spm_script
@@ -646,10 +633,6 @@ on post-fs-data
 
     chmod 0664 /sys/bus/platform/drivers/emi_ctrl/concurrency_scenario
     chown media media /sys/bus/platform/drivers/emi_ctrl/concurrency_scenario
-
-    # mtk_sched
-    chmod 0660 /dev/mtk_sched
-    chown system media /dev/mtk_sched
 
     # BT SCO CVSD, for MT6572 and MT6582 CVSD codec on AP
     chmod 0660 /dev/ebc

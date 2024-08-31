@@ -206,7 +206,24 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# Rootdir
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3.vendor
+
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6781.rc
 
@@ -221,11 +238,11 @@ PRODUCT_PACKAGES += \
 
 # Root Dir
 PRODUCT_PACKAGES += \
-    init.cgroup.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6781.rc \
+    init.mt6781.power.rc \
     init.mt6781.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
@@ -242,7 +259,10 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/google/interfaces \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/mediatek/libmtkperf_client
 
 # USB
 PRODUCT_PACKAGES += \

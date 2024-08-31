@@ -348,6 +348,13 @@ vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so
 vendor/lib64/libwvkeyboxext.so
 
+# Fingerprint
+vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+
 # Fuelgauge
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram

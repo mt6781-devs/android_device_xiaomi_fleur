@@ -177,6 +177,20 @@ vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
 vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin
 vendor/firmware/BT_FW.cfg
 
+# Bluetooth (A2DP)
+vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
+vendor/lib/libbluetooth_audio_session_mediatek.so
+vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
+vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
+vendor/lib64/libbluetooth_audio_session_mediatek.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
+
+# Connectivity
+vendor/bin/wmt_loader
+vendor/bin/wmt_launcher
+
 # Connectivity - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
 vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
 vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
@@ -442,3 +456,16 @@ vendor/firmware/aw8622_mid_f0_cali_cfg.bin
 vendor/firmware/aw8622_mid_f0_need_setup_M_cfg.bin
 vendor/firmware/aw8622_mid_f0_need_setup_Q_cfg.bin
 vendor/firmware/aw8622_mid_f0_need_setup_Z_cfg.bin
+
+# WLAN
+vendor/bin/hw/tetheroffloadservice
+vendor/bin/netdagent
+vendor/bin/wlan_assistant
+vendor/etc/init/tetheroffloadservice.rc
+vendor/etc/init/netdagent.rc
+vendor/etc/init/wlan_assistant.rc
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/libwpfa.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so

@@ -12,3 +12,11 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
+
+# WiFi
+ro.wifi.channels=
+wifi.direct.interface=p2p0
+wifi.interface=wlan0
+wifi.tethering.interface=ap0
+ro.mediatek.wlan.p2p=1
+ro.mediatek.wlan.wsc=1

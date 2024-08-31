@@ -139,5 +139,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3-service-mediatekv2
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)

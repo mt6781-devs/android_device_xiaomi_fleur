@@ -234,18 +234,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.6.vendor
+
+PRODUCT_PACKAGES += \
+    libruy.vendor:64
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6781.rc
-
-# Sensors
-PRODUCT_PACKAGES += \
-    libsensorndkbridge \
-    android.hardware.sensors@1.0.vendor \
-    android.hardware.sensors@2.1.vendor \
-    android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor \
-    android.hardware.sensors@2.1-service.multihal.fleur
 
 # Root Dir
 PRODUCT_PACKAGES += \
@@ -263,6 +262,15 @@ PRODUCT_PACKAGES += \
     fstab.mt6781 \
     fstab.zram \
     ueventd.mt6781.rc
+
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.1.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.hardware.sensors@2.1-service.multihal.fleur
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31

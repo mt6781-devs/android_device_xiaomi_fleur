@@ -110,6 +110,10 @@ ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# Sensors
+ro.vendor.mtk.sensor.support=yes
+ro.vendor.init.sensor.rc=init.sensor_1_0.rc
+
 # Trusted Execution Environment (TEE)
 ro.hardware.wechat=beanpod
 ro.vendor.mtk_microtrust_tee_support=1

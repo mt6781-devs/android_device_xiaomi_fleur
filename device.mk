@@ -46,6 +46,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -100,7 +105,8 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/mediatek
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)

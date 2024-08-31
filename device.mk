@@ -271,9 +271,18 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
+    hardware/google/pixel \
     hardware/google/interfaces \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek/libmtkperf_client
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.mediatek
+
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # USB
 PRODUCT_PACKAGES += \

@@ -442,6 +442,40 @@ vendor/lib64/libsensor_custom.so
 vendor/lib64/librgbwlightsensor.so
 vendor/lib64/sensors.touch.detect.so
 
+# Thermal
+vendor/bin/thermal
+vendor/bin/thermal_manager
+vendor/bin/thermalloadalgod
+vendor/bin/mi_thermald
+vendor/etc/init/init.thermal.rc
+vendor/etc/init/init.thermal_manager.rc
+vendor/etc/init/init.thermalloadalgod.rc
+vendor/etc/init/init.mi_thermald.rc
+vendor/lib/libmtcloader.so
+vendor/lib/libthermalalgo.so
+
+# Thermal (Configs)
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermald-devices.conf
+vendor/etc/thermal-hp-mgame.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-hp-normal.conf
+vendor/etc/thermal-videochat.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/.tp/thermal.conf
+vendor/etc/.tp/thermal.off.conf
+vendor/etc/.tp/.ht120.mtc
+vendor/etc/.tp/.thermal_policy_08
+vendor/etc/fstb.cfg
+
 # Trusted Execution Environment (TEE)
 vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/init_thh

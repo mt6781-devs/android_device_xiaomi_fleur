@@ -157,6 +157,26 @@ vendor/lib64/libaedv.so
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 
+# Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
+vendor/bin/autobt
+vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
+vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
+vendor/lib/libbluetooth_mtk.so
+vendor/lib/libbluetoothem_mtk.so
+vendor/lib/libbluetooth_mtk_pure.so
+vendor/lib/libbt-vendor.so
+vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbluetoothem_mtk.so
+vendor/lib64/libbluetooth_mtk_pure.so
+vendor/lib64/libbt-vendor.so
+
+# Bluetooth - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin
+vendor/firmware/BT_FW.cfg
+
 # Connectivity - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
 vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
 vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin

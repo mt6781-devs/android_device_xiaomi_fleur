@@ -12,6 +12,14 @@ ro.config.media_vol_default=10
 ro.config.vc_call_vol_deault=4
 ro.config.vc_call_vol_steps=12
 
+# Bluetooth
+vendor.bluetooth.ldac.abr=true
+ro.vendor.bt.platform=connac1x
+ro.vendor.bluetooth.wipower=false
+ro.vendor.mtk.bt_sap_enable=true
+persist.bluetooth.a2dp_offload.disabled=true
+persist.bluetooth.a2dp_offload.cap=sbc-aac
+
 # Display
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=0

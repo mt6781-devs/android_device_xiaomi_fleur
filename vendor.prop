@@ -1,3 +1,17 @@
+# Audio
+aaudio.mmap_policy=0
+aaudio.mmap_exclusive_policy=0
+vendor.audio.powerhal.power.dl=true
+ro.vendor.audio.vocal.support=true
+ro.vendor.audio.us.proximity=true
+ro.vendor.audio.us.proximity_waitfornegative_feature=true
+ro.audio.monitorRotation=true
+vendor.audio.spkcal.copy.inhal=true
+vendor.audiohal.telephonytx.type=2
+ro.config.media_vol_default=10
+ro.config.vc_call_vol_deault=4
+ro.config.vc_call_vol_steps=12
+
 # Display
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=0

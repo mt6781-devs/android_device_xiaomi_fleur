@@ -157,6 +157,10 @@ vendor/lib64/libaedv.so
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 
+# Connectivity - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service

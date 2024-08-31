@@ -46,6 +46,10 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.recovery.mt6781.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 

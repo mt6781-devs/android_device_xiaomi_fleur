@@ -153,6 +153,12 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib/libfgauge_gm30.so
 
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
+vendor/bin/bp_kmsetkey_ca
+vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
+vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon

@@ -98,12 +98,19 @@ TARGET_BOARD_PLATFORM := mt6781
 BOARD_HAS_MTK_HARDWARE := true
 BOARD_VENDOR := xiaomi
 
+# Properties
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
+
+# VINTF
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

@@ -1,5 +1,9 @@
 # Unpinned blobs from sea-user 12 SP1A.210812.016 V816.0.8.0.UHZMIXM release-keys
 
+# BatterySecret
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service

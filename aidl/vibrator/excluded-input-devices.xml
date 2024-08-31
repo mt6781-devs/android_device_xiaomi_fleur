@@ -28,4 +28,6 @@
 <devices>
     <device name="qti-haptics"/>
     <device name="qcom-hv-haptics"/>
+    <device name="awinic_haptic"/>
+    <device name="aw8622_haptic"/>
 </devices>

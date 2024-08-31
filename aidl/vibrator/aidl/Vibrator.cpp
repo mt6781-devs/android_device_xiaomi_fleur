@@ -104,8 +104,8 @@ InputFFDevice::InputFFDevice()
             continue;
         }
 
-        if (strcmp(name, "awinic_haptic")) {
-            ALOGD("not an awinic haptics device\n");
+        if (strcmp(name, "awinic_haptic") && strcmp(name, "aw8622_haptic")) {
+            ALOGD("not a compatible haptics device\n");
             close(fd);
             continue;
         }

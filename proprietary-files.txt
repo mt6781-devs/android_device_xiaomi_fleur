@@ -1,5 +1,9 @@
 # Unpinned blobs from sea-user 12 SP1A.210812.016 V816.0.8.0.UHZMIXM release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # BatterySecret
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc

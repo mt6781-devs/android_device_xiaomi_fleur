@@ -219,6 +219,23 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.hardware.sensors@2.1-service.multihal.fleur
 
+# Root Dir
+PRODUCT_PACKAGES += \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6781.rc \
+    init.mt6781.usb.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    init.stnfc.rc \
+    init.zram.rc \
+    init_connectivity.rc \
+    fstab.mt6781 \
+    fstab.zram \
+    ueventd.mt6781.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 

@@ -58,3 +58,9 @@ ro.hardware.hwcomposer=mtk_common
 ro.hardware.vulkan=mali
 ro.hardware.egl=meow
 ro.opengles.version=196610
+
+# Trusted Execution Environment (TEE)
+ro.hardware.wechat=beanpod
+ro.vendor.mtk_microtrust_tee_support=1
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_svp_on_mtee_support=1

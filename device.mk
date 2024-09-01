@@ -173,6 +173,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-ims-extension-plugin
 
 PRODUCT_PACKAGES += \
+    libshim_sink \
     libui_shim
 
 PRODUCT_COPY_FILES += \

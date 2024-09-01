@@ -121,6 +121,9 @@ ro.opengles.version=196610
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
+# GNSS
+ro.vendor.mtk_log_hide_gps=1
+
 # Keymaster
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.kmsetkey=beanpod

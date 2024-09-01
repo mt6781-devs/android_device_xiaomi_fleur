@@ -250,6 +250,15 @@ PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
 
 # Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayFleur \
+    SystemUIOverlayFleur \
+    TetheringOverlayFleur \
+    WifiResOverlayFleur
+
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions

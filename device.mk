@@ -162,6 +162,9 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     android.hidl.allocator@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    libui_shim
+
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster4_1support.vendor:64 \

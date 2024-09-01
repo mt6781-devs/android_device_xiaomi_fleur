@@ -38,6 +38,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := fleur,fleurp,miel,mielp
+
 # Boot Image (Offsets)
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048

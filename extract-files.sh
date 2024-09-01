@@ -70,6 +70,9 @@ function blob_fixup {
 	vendor/etc/init/init.mi_thermald.rc)
             sed -i '/seclabel/d' "$2"
 	    ;;
+	vendor/etc/camera/camerabooster.json)
+            sed -i 's/"sea"/"fleur"/' "$2"
+            ;;
         vendor/lib64/libwifi-hal-mtk.so)
             "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
             ;;

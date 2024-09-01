@@ -2,9 +2,9 @@
 <device xmlns:android="http://schemas.android.com/apk/res/android" name="Android">
     <item name="none">0
     </item>
-    <item name="screen.on">126
+    <item name="screen.on.display0">126
     </item>
-    <item name="screen.full">80
+    <item name="screen.full.display0">80
     </item>
     <item name="bluetooth.active">22.32
     </item>

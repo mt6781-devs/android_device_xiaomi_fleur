@@ -118,6 +118,17 @@ ro.hardware.vulkan=mali
 ro.hardware.egl=meow
 ro.opengles.version=196610
 
+# DRM
+drm.service.enabled=true
+ro.netflix.bsp_rev=MTK6781-34066-1
+ro.vendor.mtk_widevine_drm_l1_support=1
+
+# Fingerprint
+ro.hardware.fp.sideCap=true
+
+# FRP
+ro.frp.pst=/dev/block/by-name/frp
+
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
@@ -127,6 +138,12 @@ ro.vendor.mtk_log_hide_gps=1
 # Keymaster
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.kmsetkey=beanpod
+
+# LMK
+ro.lmk.kill_timeout_ms=100
+ro.lmk.psi_complete_stall_ms=700
+ro.lmk.swap_free_low_percentage=20
+persist.sys.lmk.camera_minfree_6g_levels=18432:0,23040:100,27648:200,85000:250,127500:800,161280:950
 
 # Media
 debug.mediatek.disp_decompress=1
@@ -143,6 +160,14 @@ ro.vendor.mtk_nn_support=1
 ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn.option=D,E,F,Z
 ro.vendor.mtk_nn_quant_preferred=1
+
+# Platform
+ro.vendor.mediatek.platform=MT6781
+ro.soc.manufacturer=Mediatek
+ro.soc.model=MT6781
+ro.vendor.fm.platform=mt6631_6635
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp2-cs1
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.50_xiaomi.s0mp1.k6781v1.64.k419_P4
 
 # Radio
 persist.vendor.md_c2k_cap_dep_check=0
@@ -205,6 +230,15 @@ ro.vendor.mtk_data_config=1
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 ro.vendor.init.sensor.rc=init.sensor_1_0.rc
+
+# Storage
+external_storage.casefold.enabled=1
+external_storage.projid.enabled=1
+external_storage.sdcardfs.enabled=0
+ro.vendor.mtk_dmc_support=1
+ro.vendor.mtk_emmc_support=1
+ro.vendor.mtk_f2fs_enable=1
+ro.vendor.mtk_ufs_support=1
 
 # Trusted Execution Environment (TEE)
 ro.hardware.wechat=beanpod

@@ -963,6 +963,46 @@ vendor/bin/wmt_launcher
 vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
 vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
 
+# Display and touch - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+vendor/firmware/Conf_MultipleTest.ini
+vendor/firmware/focaltech_ts_fw_samsung.bin
+vendor/firmware/fs1815.fsm
+vendor/firmware/gt9896s_cfg_6781v01_1080x2280.bin
+vendor/firmware/gt9896s_cfg_6781v01_1080x2300.bin
+vendor/firmware/gt9896s_cfg_6789v01.bin
+vendor/firmware/gt9896s_cfg_6833v01.bin
+vendor/firmware/gt9896s_cfg_6853v01.bin
+vendor/firmware/gt9896s_cfg_6855v01.bin
+vendor/firmware/gt9896s_cfg_6873v01.bin
+vendor/firmware/gt9896s_cfg_6877v01_1080x2280.bin
+vendor/firmware/gt9896s_cfg_6877v01_1080x2300.bin
+vendor/firmware/gt9896s_cfg_6879v01.bin
+vendor/firmware/gt9896s_cfg_6893v01.bin
+vendor/firmware/gt9896s_cfg_6893v02.bin
+vendor/firmware/gt9896s_cfg_6893v03.bin
+vendor/firmware/gt9896s_cfg_6893v04.bin
+vendor/firmware/gt9896s_cfg_6893v05.bin
+vendor/firmware/gt9896s_cfg_6895v01.bin
+vendor/firmware/gt9896s_cfg_6983v01.bin
+vendor/firmware/gt9896s_firmware_6781v01_1080x2280.bin
+vendor/firmware/gt9896s_firmware_6781v01_1080x2300.bin
+vendor/firmware/gt9896s_firmware_6789v01.bin
+vendor/firmware/gt9896s_firmware_6833v01.bin
+vendor/firmware/gt9896s_firmware_6853v01.bin
+vendor/firmware/gt9896s_firmware_6855v01.bin
+vendor/firmware/gt9896s_firmware_6873v00.bin
+vendor/firmware/gt9896s_firmware_6877v01_1080x2280.bin
+vendor/firmware/gt9896s_firmware_6877v01_1080x2300.bin
+vendor/firmware/gt9896s_firmware_6879v01.bin
+vendor/firmware/gt9896s_firmware_6893v01.bin
+vendor/firmware/gt9896s_firmware_6893v02.bin
+vendor/firmware/gt9896s_firmware_6893v03.bin
+vendor/firmware/gt9896s_firmware_6893v04.bin
+vendor/firmware/gt9896s_firmware_6893v05.bin
+vendor/firmware/gt9896s_firmware_6895v01.bin
+vendor/firmware/gt9896s_firmware_6983v01.bin
+vendor/firmware/remoteproc_scp
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
@@ -1203,6 +1243,25 @@ vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libformatter.so
 
+# MMS
+vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
+vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
+vendor/lib/vendor.mediatek.hardware.mms@1.0.so
+vendor/lib/vendor.mediatek.hardware.mms@1.1.so
+vendor/lib/vendor.mediatek.hardware.mms@1.2.so
+vendor/lib/vendor.mediatek.hardware.mms@1.3.so
+vendor/lib/vendor.mediatek.hardware.mms@1.4.so
+vendor/lib/vendor.mediatek.hardware.mms@1.5.so
+vendor/lib/vendor.mediatek.hardware.mms@1.6.so
+vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
+vendor/lib64/vendor.mediatek.hardware.mms@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mms@1.1.so
+vendor/lib64/vendor.mediatek.hardware.mms@1.2.so
+vendor/lib64/vendor.mediatek.hardware.mms@1.3.so
+vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
+vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
+vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
+
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
@@ -1229,6 +1288,9 @@ vendor/lib64/nwk_opt_imp.so
 vendor/lib64/libmt.so
 vendor/lib64/libmvpu_config_data.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
+
+# NFC
+vendor/firmware/st21nfc_fw7.bin
 
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
@@ -1579,3 +1641,12 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libwpfa.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# WLAN - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin
+vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
+vendor/firmware/WMT_SOC.cfg

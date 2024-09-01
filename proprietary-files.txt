@@ -403,6 +403,33 @@ vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libformatter.so
 
+# Neural Networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml
+vendor/etc/armnn_app.config
+vendor/lib64/APUWareUtilsServer.so
+vendor/lib64/libapusys.so
+vendor/lib64/libapu_mdw.so
+vendor/lib64/libapusys_edma.so
+vendor/lib64/libarmnn.so
+vendor/lib64/libarmnn_ndk.mtk.vndk.so
+vendor/lib64/libasn1c_core.so
+vendor/lib64/libasn1c_mapi.so
+vendor/lib64/libasn1c_mdmi.so
+vendor/lib64/libcmdl.so
+vendor/lib64/libcmdl_ndk.mtk.vndk.so
+vendor/lib64/libneuroeara.so
+vendor/lib64/libneuropilot_hal_utils.so
+vendor/lib64/libneuron_adapter.so
+vendor/lib64/libneuron_platform.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libnwk_opt_halwrap_vendor.so
+vendor/lib64/nwk_opt_imp.so
+vendor/lib64/libmt.so
+vendor/lib64/libmvpu_config_data.so
+vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon

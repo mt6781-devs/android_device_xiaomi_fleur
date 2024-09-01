@@ -110,6 +110,12 @@ ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# Neural Networks
+ro.vendor.mtk_nn_support=1
+ro.vendor.mtk_nn_baseline_support=1
+ro.vendor.mtk_nn.option=D,E,F,Z
+ro.vendor.mtk_nn_quant_preferred=1
+
 # Radio
 persist.vendor.md_c2k_cap_dep_check=0
 persist.vendor.radio.smart.data.switch=1

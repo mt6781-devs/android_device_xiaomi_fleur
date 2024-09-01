@@ -202,6 +202,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_fleurp/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_fleurp/android.hardware.se.omapi.uicc.xml
 
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor \
+    libtextclassifier_hash.vendor
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

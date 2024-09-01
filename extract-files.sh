@@ -75,6 +75,10 @@ function blob_fixup {
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.gnss-service.mediatek |\
+        vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
+            "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
+            ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;

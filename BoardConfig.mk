@@ -72,6 +72,11 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
+# NFC
+ODM_MANIFEST_SKUS += fleur fleurp
+ODM_MANIFEST_FLEUR_FILES += $(DEVICE_PATH)/configs/manifest_fleur.xml
+ODM_MANIFEST_FLEURP_FILES += $(DEVICE_PATH)/configs/manifest_fleurp.xml
+
 # Partitions (Dynamic)
 BOARD_SUPER_PARTITION_GROUPS := mediatek_dynamic_partitions
 BOARD_MEDIATEK_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor

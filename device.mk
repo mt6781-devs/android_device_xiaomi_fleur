@@ -119,6 +119,9 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libutilscallstack.vendor
 
+PRODUCT_PACKAGES += \
+    libutils-v32
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey

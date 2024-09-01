@@ -15,11 +15,6 @@
         <fqname>@1.1::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.bluetooth.audio</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <fqname>@2.6::ICameraProvider/internal/0</fqname>
@@ -161,6 +156,11 @@
         <fqname>@1.6::IMms/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.mmagent</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IMMAgent/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.mtkradioex</name>
         <transport>hwbinder</transport>
         <fqname>@3.0::IMtkRadioEx/imsSlot1</fqname>
@@ -182,6 +182,11 @@
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch1</fqname>
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch2</fqname>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.netdagent</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::INetdagent/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.nvram</name>
         <transport>hwbinder</transport>
@@ -198,3 +203,4 @@
         <fqname>@1.0::IVideoTelephony/default</fqname>
     </hal>
 </manifest>
+

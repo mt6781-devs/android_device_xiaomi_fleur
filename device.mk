@@ -341,7 +341,8 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    init.recovery.mt6781.rc
+    init.recovery.mt6781.rc \
+    fstab.mt6781.ramdisk
 
 # Root Dir
 PRODUCT_PACKAGES += \

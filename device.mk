@@ -133,7 +133,8 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # FastbootD
 PRODUCT_PACKAGES += \
-    fastbootd
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock
 
 # Fingerprint
 PRODUCT_PACKAGES += \

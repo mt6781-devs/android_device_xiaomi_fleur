@@ -378,4 +378,12 @@
         <instance>default</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hardware.vsimapp</name>
+    <version>1.0</version>
+    <interface>
+        <name>IVSIMService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 </compatibility-matrix>

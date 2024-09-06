@@ -86,6 +86,18 @@ function blob_fixup {
         vendor/lib64/vendor.mediatek.hardware.power@2.0.so)
             "${PATCHELF}" --add-needed "libshim_power.so" "${2}"
             ;;
+        vendor/lib64/libmnl.so)
+            "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+            ;;
+        vendor/lib*/libteei_daemon_vfs.so|\
+        vendor/lib64/libSQLiteModule_VER_ALL.so|\
+        vendor/lib64/lib3a.flash.so|\
+        vendor/lib64/lib3a.ae.stat.so|\
+        vendor/lib64/lib3a.sensors.color.so|\
+        vendor/lib64/lib3a.sensors.flicker.so|\
+        vendor/lib64/libaaa_ltm.so)
+            "${PATCHELF}" --add-needed "liblog.so" "${2}"
+            ;;
     esac
 }
 

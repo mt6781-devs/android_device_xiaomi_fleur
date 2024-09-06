@@ -41,6 +41,19 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so': blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
+    'vendor/lib64/libmnl.so': blob_fixup()
+        .add_needed('libcutils.so'),
+    (
+        'vendor/lib/libteei_daemon_vfs.so',
+        'vendor/lib64/libteei_daemon_vfs.so',
+        'vendor/lib64/libSQLiteModule_VER_ALL.so',
+        'vendor/lib64/lib3a.flash.so',
+        'vendor/lib64/lib3a.ae.stat.so',
+        'vendor/lib64/lib3a.sensors.color.so',
+        'vendor/lib64/lib3a.sensors.flicker.so',
+        'vendor/lib64/libaaa_ltm.so',
+    ): blob_fixup()
+        .add_needed('liblog.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

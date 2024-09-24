@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss-V1-ndk.vendor
 
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libexpat.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \

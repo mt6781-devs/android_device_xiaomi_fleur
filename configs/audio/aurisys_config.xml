@@ -9,13 +9,15 @@
         <!-- for aurisys_scene playback normal -->
         <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_PLAYBACK_NORMAL">
             <downlink_library_name_list digital_gain_lib_name="">
-                <library name="mtk_bessound"/>
+                <!-- longcheer zpc add for mtk_bessound -->
+		<library name="mtk_bessound"/>
             </downlink_library_name_list>
         </aurisys_scenario>
         <!-- for aurisys_scene playback fast -->
         <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_PLAYBACK_LOW_LATENCY">
             <downlink_library_name_list digital_gain_lib_name="">
-                <library name="mtk_bessound"/>
+                <!-- longcheer zpc add for mtk_bessound -->
+		<library name="mtk_bessound"/>
             </downlink_library_name_list>
         </aurisys_scenario>
         <!-- for aurisys_scene low latency record -->
@@ -127,7 +129,6 @@
                 </component>
             </components>
         </library>
-        <!-- Audio-add END HTH-111539 -->
         <!--
          * =====================================================================
          *   MediaTek IIR

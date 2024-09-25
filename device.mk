@@ -124,6 +124,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libutils-v32
 
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+TARGET_SCREEN_DENSITY := 440
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey

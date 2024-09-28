@@ -931,6 +931,10 @@ on property:persist.vendor.mediatek.fg.log.enable=1
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
 
+# Restart C2 service after boot completed
+on property:sys.boot_completed=1
+    restart android-hardware-media-c2-hal-1-2
+
 # add for btmac
 on property:persist.ro.ril.oem.btmac=*
     setprop ro.ril.oem.btmac ${persist.ro.ril.oem.btmac}

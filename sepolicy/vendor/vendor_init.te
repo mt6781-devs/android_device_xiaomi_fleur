@@ -1,4 +1,5 @@
 rw_dir_file(vendor_init, sysfs_leds)
+rw_dir_file(vendor_init, sysfs_ged)
 set_prop(vendor_init, vendor_mtk_audiohal_prop)
 set_prop(vendor_init, vendor_mtk_audio_prop)
 set_prop(vendor_init, vendor_camera_prop)

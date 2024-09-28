@@ -366,7 +366,6 @@ PRODUCT_PACKAGES += \
 
 # Root Dir
 PRODUCT_PACKAGES += \
-    init.connectivity.common.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6781.rc \
@@ -376,7 +375,6 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     init.stnfc.rc \
     init.zram.rc \
-    init_connectivity.rc \
     fstab.mt6781 \
     fstab.zram \
     ueventd.mt6781.rc
@@ -424,7 +422,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator.service.mt6781
+    android.hardware.vibrator-service.fleur
 
 # Wi-Fi
 PRODUCT_PACKAGES += \

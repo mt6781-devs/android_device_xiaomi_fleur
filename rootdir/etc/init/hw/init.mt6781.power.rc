@@ -1,5 +1,5 @@
 on init
-    # Create energy-aware scheduler tuning nodes
+ # Create energy-aware scheduler tuning nodes
     mkdir /dev/stune/foreground
     mkdir /dev/stune/background
     mkdir /dev/stune/top-app
@@ -38,14 +38,13 @@ on init
     chown system system /dev/stune/io/tasks
     chmod 0666 /dev/stune/io/tasks
 
-on property:sys.boot_completed=1
     # update cpus for cpuset cgroup
     write /dev/cpuset/foreground/cpus 0-2,4-7
     write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-2
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
-    
+
 on enable-low-power
     write /sys/devices/system/cpu/eas/enable 2
     write /proc/cpufreq/cpufreq_sched_disable 0
@@ -57,6 +56,7 @@ on enable-low-power
     write /dev/stune/top-app/schedtune.prefer_idle 0
     write /dev/stune/rt/schedtune.prefer_idle 0
     write /proc/sys/kernel/sched_migration_cost_ns 200000
+    write /proc/sys/kernel/sched_boost 1
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1

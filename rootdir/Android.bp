@@ -5,15 +5,15 @@
 //
 
 prebuilt_etc {
-    name: "init.mt6781.power.rc",
-    src: "etc/init/hw/init.mt6781.power.rc",
+    name: "init.zram.rc",
+    src: "etc/init/hw/init.zram.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.connectivity.common.rc",
-    src: "etc/init/hw/init.connectivity.common.rc",
+    name: "init.mt6781.power.rc",
+    src: "etc/init/hw/init.mt6781.power.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -63,20 +63,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.stnfc.rc",
     src: "etc/init/hw/init.stnfc.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.zram.rc",
-    src: "etc/init/hw/init.zram.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init_connectivity.rc",
-    src: "etc/init/hw/init_connectivity.rc",
     sub_dir: "init/hw",
     vendor: true,
 }

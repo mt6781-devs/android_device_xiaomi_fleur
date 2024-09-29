@@ -17,8 +17,6 @@ vendor.bluetooth.ldac.abr=true
 ro.vendor.bt.platform=connac1x
 ro.vendor.bluetooth.wipower=false
 ro.vendor.mtk.bt_sap_enable=true
-persist.bluetooth.a2dp_offload.disabled=true
-persist.bluetooth.a2dp_offload.cap=sbc-aac
 
 # Camera
 camera.disable_zsl_mode=1

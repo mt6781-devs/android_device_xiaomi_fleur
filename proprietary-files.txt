@@ -1,4 +1,4 @@
-# Unpinned blobs from sea-user 12 SP1A.210812.016 V816.0.8.0.UHZMIXM release-keys
+# All blobs that aren't noted or pinned are from sea V816.0.9.0.UHZMIXM
 
 # AEE
 vendor/lib/libaedv.so
@@ -1206,12 +1206,36 @@ vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 # Media
 vendor/bin/vpud
 vendor/etc/init/vpud.rc
+vendor/etc/mpe.conf
+vendor/lib/AVCSecureVdecCA.so
+vendor/lib/VP9SecureVdecCA.so
+vendor/lib/HEVCSecureVdecCA.so
+vendor/lib/libh264dec_customize.so
+vendor/lib/libh264dec_sa.ca7.so
+vendor/lib/libh264dec_sd.ca7.so
+vendor/lib/libh264dec_se.ca7.so
+vendor/lib/libh264enc_sa.ca7.so
+vendor/lib/libvp8dec_sa.ca7.so
+vendor/lib/libvp8enc_sa.ca7.so
+vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/libpkm.so
+vendor/lib/liboemcrypto.so
+vendor/lib/libheichal.so
+vendor/lib/libHEVCdec_sa.ca7.android.so
+vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libvcodecdrv.so
-vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_oal.so;NOSYMBOLS
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
+vendor/lib/libmsbc_mtk.so
+vendor/lib64/libheichal.so
+vendor/lib64/libmp3dec_mtk.so
+vendor/lib64/libvpu5.so
+vendor/lib64/libm4u.so
+vendor/lib64/libwapi.so
 
 # Media (OMX)
 vendor/lib/libMtkOmxCore.so
@@ -1325,9 +1349,6 @@ vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.wfca.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/mtkrild.rc
-vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.vsimapp.xml
-vendor/lib/libcarrierconfig.so
 vendor/lib/libhydra.so
 vendor/lib/libmtkcutils.so
 vendor/lib/libmtkproperty.so
@@ -1344,7 +1365,6 @@ vendor/lib/libsimlock.so
 vendor/lib/libsimmelock.so
 vendor/lib/libfsmsmartpaparse.so
 vendor/lib/libscltm.so
-vendor/lib/vendor.xiaomi.hardware.vsimapp@1.0.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
@@ -1382,7 +1402,6 @@ vendor/lib64/libtrm.so
 vendor/lib64/libverno.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libvia-ril.so
-vendor/lib64/vendor.xiaomi.hardware.vsimapp@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
@@ -1460,12 +1479,6 @@ system_ext/etc/init/init.vtservice.rc
 -system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar
 -system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar
 -system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar
-system_ext/lib/libmtk_vt_wrapper.so
-system_ext/lib/libmtkperf_client.so
-system_ext/lib/libvcodec_cap.so
-system_ext/lib/libvcodec_capenc.so
-system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/libcomutils.so
 system_ext/lib64/libimsma.so
 system_ext/lib64/libimsma_rtp.so

@@ -898,26 +898,6 @@ vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 
 # Camera (Configs) - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
-vendor/etc/102_SummerDay.png
-vendor/etc/103_Fantasy.png
-vendor/etc/104_Meet.png
-vendor/etc/105_WindSing.png
-vendor/etc/106_Lost.png
-vendor/etc/107_Central.png
-vendor/etc/108_NorthernEurope.png
-vendor/etc/109_Rome.png
-vendor/etc/110_BlackGold.png
-vendor/etc/111_GreenOrange.png
-vendor/etc/112_Cyberpunk.png
-vendor/etc/113_BlackIce.png
-vendor/etc/121_BBP.png
-vendor/etc/122_Mystery.png
-vendor/etc/123_Lime.png
-vendor/etc/124_Summer.png
-vendor/etc/125_Tango.png
-vendor/etc/126_Fantasy.png
-vendor/etc/127_Slumber.png
-vendor/etc/128_Carmen.png
 vendor/etc/camera/com.xiaomi.dcal.wd.1.golden
 vendor/etc/camera/com.xiaomi.dcal.wd.2.golden
 vendor/etc/camera/com.xiaomi.dcal.wd.3.golden

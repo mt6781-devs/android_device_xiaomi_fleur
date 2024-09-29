@@ -9,7 +9,7 @@ ro.audio.monitorRotation=true
 vendor.audio.spkcal.copy.inhal=true
 vendor.audiohal.telephonytx.type=2
 ro.config.media_vol_default=10
-ro.config.vc_call_vol_deault=4
+ro.config.vc_call_vol_default=4
 ro.config.vc_call_vol_steps=12
 
 # Bluetooth
@@ -58,6 +58,7 @@ persist.vendor.connsys.fm_chipid=mt6631_6635
 # Display
 debug.sf.disable_client_composition_cache=1
 debug.sf.predict_hwc_composition_strategy=0
+debug.sf.enable_transaction_tracing=false
 debug.sf.enable_hwc_vds=0
 debug.sf.treat_170m_as_sRGB=1
 ro.vendor.mtk_pq_support=2

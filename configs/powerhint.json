@@ -183,6 +183,14 @@
       "ResetOnInit": true
     },
     {
+      "Name": "DoubleTapToWake",
+      "Path": "/sys/touchpanel/double_tap",
+      "Values": [
+        "1",
+        "0"
+      ],
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -303,6 +311,12 @@
       "Node": "GPUSchedMode",
       "Duration": 0,
       "Value": "1"
-    }
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DoubleTapToWake",
+      "Duration": 0,
+      "Value": "1"
+     }
   ]
 }

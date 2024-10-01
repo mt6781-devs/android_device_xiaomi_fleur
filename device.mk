@@ -94,11 +94,11 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider@2.6.vendor
+    android.hardware.camera.device@3.6.vendor:64 \
+    android.hardware.camera.provider@2.6.vendor:64
 
 PRODUCT_PACKAGES += \
-    libcamera_metadata.vendor \
+    libcamera_metadata.vendor:64 \
     libexif.vendor \
     libpng.vendor
 
@@ -133,7 +133,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm@1.4.vendor:64
 
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
@@ -151,22 +151,22 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
-    com.fingerprints.extension@1.0.vendor
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor:64 \
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor:64 \
+    com.fingerprints.extension@1.0.vendor:64
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V1-ndk.vendor
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@1.1.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss-V1-ndk.vendor:64
 
 PRODUCT_PACKAGES += \
     libcurl.vendor \
@@ -223,10 +223,10 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.1.vendor \
-    libcodec2_hidl@1.2.vendor \
+    libcodec2_hidl@1.1.vendor:32 \
+    libcodec2_hidl@1.2.vendor:32 \
     libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor
+    libcodec2_soft_common.vendor:32
 
 PRODUCT_PACKAGES += \
     libstagefright_foundation-v33
@@ -262,8 +262,8 @@ PRODUCT_COPY_FILES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3.vendor \
-    libtextclassifier_hash.vendor
+    android.hardware.neuralnetworks@1.3.vendor:64 \
+    libtextclassifier_hash.vendor:64
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -381,13 +381,13 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
-    android.hardware.sensors@1.0.vendor \
-    android.hardware.sensors@2.1.vendor \
-    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors@1.0.vendor:64 \
+    android.hardware.sensors@2.1.vendor:64 \
+    android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
-    libshim_sensors
+    libshim_sensors:64
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -429,11 +429,11 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service
 
 PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor
+    android.hardware.tetheroffload.config@1.0.vendor:64 \
+    android.hardware.tetheroffload.control@1.1.vendor:64
 
 PRODUCT_PACKAGES += \
-    libnetutils.vendor
+    libnetutils.vendor:64
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)

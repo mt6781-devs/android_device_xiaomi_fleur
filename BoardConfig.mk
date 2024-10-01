@@ -44,6 +44,9 @@ ZYGOTE_FORCE_64 := true
 # Include 64-bit mediaserver to support 64-bit only devices
 TARGET_DYNAMIC_64_32_MEDIASERVER := true
 
+# Include 64-bit drmserver to support 64-bit only devices
+TARGET_DYNAMIC_64_32_DRMSERVER := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := fleur,fleurp,miel,mielp
 

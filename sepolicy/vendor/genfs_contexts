@@ -35,6 +35,9 @@ genfscon sysfs /devices/platform/13000000.mali/js_scheduling_period u:object_r:s
 # Vibrator
 genfscon sysfs /devices/platform/aw8622 u:object_r:sysfs_vibrator:s0
 
+# Touchpanel
+genfscon sysfs /touchpanel u:object_r:sysfs_touchpanel:s0
+
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/wakeup u:object_r:sysfs_wakeup:s0

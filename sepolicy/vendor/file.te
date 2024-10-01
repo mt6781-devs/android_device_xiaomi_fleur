@@ -8,3 +8,6 @@ type sysfs_fingerprint, fs_type, sysfs_type;
 
 # Latency
 type latency_device, dev_type;
+
+# Touchpanel
+type sysfs_touchpanel, sysfs_type, fs_type;

@@ -205,6 +205,7 @@ vendor/lib64/libchromanr.so
 vendor/lib64/libeffecthal.base.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libOpenCL.so
+vendor/lib64/libheichal.so
 vendor/lib64/libimgsensorca.so
 vendor/lib64/libispcameraca.so
 vendor/lib64/libipsec_ims_shr.so
@@ -1210,8 +1211,10 @@ vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
+vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libmsbc_mtk.so
-vendor/lib64/libheichal.so
+vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libvpu5.so
 vendor/lib64/libm4u.so

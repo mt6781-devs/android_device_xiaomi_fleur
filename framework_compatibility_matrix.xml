@@ -1,201 +1,8 @@
-<compatibility-matrix version="2.0" type="framework">
-<hal format="hidl" optional="true">
-    <name>android.hardware.radio</name>
-    <version>1.0-6</version>
+<compatibility-matrix version="4.0" type="framework">
+<hal format="aidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
     <interface>
-        <name>IRadio</name>
-        <instance>em1</instance>
-        <instance>em2</instance>
-        <instance>imsAospSlot1</instance>
-        <instance>imsAospSlot2</instance>
-        <instance>se1</instance>
-        <instance>se2</instance>
-        <instance>slot1</instance>
-        <instance>slot2</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>com.fingerprints.extension</name>
-    <version>1.0</version>
-    <interface>
-        <name>IFingerprintEngineering</name>
-        <instance>default</instance>
-    </interface>
-    <interface>
-        <name>IFingerprintNavigation</name>
-        <instance>default</instance>
-    </interface>
-    <interface>
-        <name>IFingerprintSensorTest</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-    <version>2.0-1</version>
-    <interface>
-        <name>IGoodixFingerprintDaemon</name>
-        <instance>default</instance>
-    </interface>
-    <interface>
-        <name>IGoodixFingerprintDaemonExt</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.apuware.utils</name>
-    <version>2.0</version>
-    <interface>
-        <name>IApuwareUtils</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.bluetooth.audio</name>
-    <version>2.0-2</version>
-    <interface>
-        <name>IBluetoothAudioProvidersFactory</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.camera.atms</name>
-    <version>1.0</version>
-    <interface>
-        <name>IATMs</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.camera.bgservice</name>
-    <version>1.0-1</version>
-    <interface>
-        <name>IBGService</name>
-        <instance>internal/0</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.camera.isphal</name>
-    <version>1.0</version>
-    <interface>
-        <name>IISPModule</name>
-        <instance>internal/0</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.camera.postproc</name>
-    <version>1.0</version>
-    <interface>
-        <name>IPostDevice</name>
-        <instance>internal/0</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.composer_ext</name>
-    <version>1.0</version>
-    <interface>
-        <name>IComposerExt</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.mms</name>
-    <version>1.0-6</version>
-    <interface>
-        <name>IMms</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.mtkpower</name>
-    <version>1.0-2</version>
-    <interface>
-        <name>IMtkPerf</name>
-        <instance>default</instance>
-    </interface>
-    <interface>
-        <name>IMtkPower</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.mtkradioex</name>
-    <version>3.0</version>
-    <interface>
-        <name>IMtkRadioEx</name>
-        <instance>imsSlot1</instance>
-        <instance>imsSlot2</instance>
-        <instance>mtkAssist1</instance>
-        <instance>mtkAssist2</instance>
-        <instance>mtkCap1</instance>
-        <instance>mtkCap2</instance>
-        <instance>mtkEm1</instance>
-        <instance>mtkEm2</instance>
-        <instance>mtkRcs1</instance>
-        <instance>mtkRcs2</instance>
-        <instance>mtkRsu1</instance>
-        <instance>mtkRsu2</instance>
-        <instance>mtkSe1</instance>
-        <instance>mtkSe2</instance>
-        <instance>mtkSlot1</instance>
-        <instance>mtkSlot2</instance>
-        <instance>mtkSmartRatSwitch1</instance>
-        <instance>mtkSmartRatSwitch2</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.netdagent</name>
-    <version>1.0</version>
-    <interface>
-        <name>INetdagent</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.nvram</name>
-    <version>1.0-1</version>
-    <interface>
-        <name>INvram</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.pq</name>
-    <version>2.0-15</version>
-    <interface>
-        <name>IPictureQuality</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.videotelephony</name>
-    <version>1.0</version>
-    <interface>
-        <name>IVideoTelephony</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.audio.effect</name>
-    <version>7.0</version>
-    <interface>
-        <name>IEffectsFactory</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.audio</name>
-    <version>7.0</version>
-    <interface>
-        <name>IDevicesFactory</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.biometrics.fingerprint</name>
-    <version>2.0-3</version>
-    <interface>
-        <name>IBiometricsFingerprint</name>
+        <name>IBluetoothAudioProviderFactory</name>
         <instance>default</instance>
     </interface>
 </hal>
@@ -221,69 +28,6 @@
     </interface>
 </hal>
 <hal format="aidl" optional="true">
-    <name>android.hardware.light</name>
-    <interface>
-        <name>ILights</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.memtrack</name>
-    <interface>
-        <name>IMemtrack</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.power</name>
-    <interface>
-        <name>IPower</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.radio.config</name>
-    <version>1.0-3</version>
-    <interface>
-        <name>IRadioConfig</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.tetheroffload.control</name>
-    <version>1.0-1</version>
-    <interface>
-        <name>IOffloadControl</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.wifi</name>
-    <interface>
-        <name>IWifi</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.drm</name>
-    <version>1.0-4</version>
-    <interface>
-        <name>ICryptoFactory</name>
-        <instance>widevine</instance>
-    </interface>
-    <interface>
-        <name>IDrmFactory</name>
-        <instance>widevine</instance>
-    </interface>
-</hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.gnss</name>
-    <interface>
-        <name>IGnss</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="aidl" optional="true">
     <name>android.hardware.health</name>
     <interface>
         <name>IHealth</name>
@@ -304,14 +48,6 @@
         <instance>default</instance>
     </interface>
 </hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.media.c2</name>
-    <version>1.0-2</version>
-    <interface>
-        <name>IComponentStore</name>
-        <instance>default</instance>
-    </interface>
-</hal>
 <hal format="aidl" optional="true">
     <name>android.hardware.nfc</name>
     <interface>
@@ -326,18 +62,17 @@
         <instance>default</instance>
     </interface>
 </hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.usb</name>
-    <version>1.0-3</version>
+<hal format="aidl" optional="true">
+    <name>android.hardware.sensors</name>
     <interface>
-        <name>IUsb</name>
+        <name>ISensors</name>
         <instance>default</instance>
     </interface>
 </hal>
 <hal format="aidl" optional="true">
-    <name>android.hardware.vibrator</name>
+    <name>android.hardware.thermal</name>
     <interface>
-        <name>IVibrator</name>
+        <name>IThermal</name>
         <instance>default</instance>
     </interface>
 </hal>
@@ -367,22 +102,6 @@
     <version>2.0</version>
     <interface>
         <name>IThhDevice</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.mediatek.hardware.mmagent</name>
-    <version>1.0-1</version>
-    <interface>
-        <name>IMMAgent</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.xiaomi.hardware.vsimapp</name>
-    <version>1.0</version>
-    <interface>
-        <name>IVSIMService</name>
         <instance>default</instance>
     </interface>
 </hal>

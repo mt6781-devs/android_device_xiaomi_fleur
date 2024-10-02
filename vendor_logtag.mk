@@ -12,6 +12,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.C2K_ATConfig=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.DCT=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.GraphicBuffer=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.hwcomposer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.LIBC2K_RIL=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.mipc_lib=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.SurfaceControl=$(VENDOR_LOG_LEVEL) \

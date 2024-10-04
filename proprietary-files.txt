@@ -1189,6 +1189,14 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
+# Modules (Init)
+vendor/bin/init.insmod.sh
+vendor/etc/init/init.bt_drv.rc
+vendor/etc/init/init.gps_drv.rc
+vendor/etc/init/init.wmt_drv.rc
+vendor/etc/init/init.wlan_drv.rc
+vendor/etc/init/init.fmradio_drv.rc
+
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc

@@ -93,6 +93,10 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 #BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
+BOARD_VENDOR_KERNEL_MODULES := \
+    $(foreach module,$(wildcard $(DEVICE_PATH)/prebuilt/modules/*.ko), \
+        $(module))
+
 # NFC
 ODM_MANIFEST_SKUS += fleur fleurp
 ODM_MANIFEST_FLEUR_FILES += $(DEVICE_PATH)/manifest_fleur.xml

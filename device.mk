@@ -223,13 +223,15 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.2.vendor
+    android.hardware.media.c2@1.2.vendor:64
 
 PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.1.vendor:32 \
-    libcodec2_hidl@1.2.vendor:32 \
-    libcodec2_soft_common.vendor:32 \
-    libsfplugin_ccodec_utils.vendor
+    libcodec2_hidl@1.2.vendor:64 \
+    libcodec2_soft_common.vendor:64 \
+
+PRODUCT_PACKAGES += \
+    libsfplugin_ccodec_utils.vendor \
+    libavservices_minijail.vendor
 
 PRODUCT_PACKAGES += \
     libstagefright_foundation-v33

@@ -280,6 +280,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayFleur \
     SettingsProviderFleur \
     SystemUIOverlayFleur \
+    TelephonyOverlayFleur \
     TetheringOverlayFleur \
     WifiResOverlayFleur
 

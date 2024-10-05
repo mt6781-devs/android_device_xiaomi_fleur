@@ -1162,20 +1162,20 @@ vendor/lib64/libm4u.so
 vendor/lib64/libwapi.so
 
 # Media (C2)
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 -vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
-vendor/lib/libcodec2_mtk_vdec.so
-vendor/lib/libcodec2_mtk_venc.so
-vendor/lib/libcodec2_mtk_c2store.so
-vendor/lib/libcodec2_soft_mtk_alacdec.so
-vendor/lib/libcodec2_soft_mtk_apedec.so
-vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
-vendor/lib/libcodec2_soft_mtk_mp3dec.so
-vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
-vendor/lib/libcodec2_vpp_qt_plugin.so
-vendor/lib/libcodec2_vpp_rs_plugin.so
-vendor/lib/libformatter.so
+vendor/lib64/libcodec2_mtk_vdec.so
+vendor/lib64/libcodec2_mtk_venc.so
+vendor/lib64/libcodec2_mtk_c2store.so
+vendor/lib64/libcodec2_soft_mtk_alacdec.so
+vendor/lib64/libcodec2_soft_mtk_apedec.so
+vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
+vendor/lib64/libcodec2_soft_mtk_mp3dec.so
+vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
+vendor/lib64/libcodec2_vpp_qt_plugin.so
+vendor/lib64/libcodec2_vpp_rs_plugin.so
+vendor/lib64/libformatter.so
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service

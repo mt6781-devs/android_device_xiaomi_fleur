@@ -119,6 +119,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_USES_METADATA_PARTITION := true
 
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_SUPER_PARTITION_SIZE := 9126805504

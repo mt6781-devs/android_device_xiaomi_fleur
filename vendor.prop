@@ -243,6 +243,7 @@ debug.sf.disable_client_composition_cache=1
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.enable_transaction_tracing=false
+debug.sf.enable_gl_backpressure=0
 debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 debug.sf.late.sf.duration=11500000
 debug.sf.late.app.duration=22500000

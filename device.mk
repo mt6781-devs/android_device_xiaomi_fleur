@@ -278,6 +278,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayFleur \
     SettingsOverlayFleur \
+    SettingsProviderFleur \
     SystemUIOverlayFleur \
     TetheringOverlayFleur \
     WifiResOverlayFleur

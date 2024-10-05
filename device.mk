@@ -221,6 +221,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
 
+# Logtag
+include $(LOCAL_PATH)/vendor_logtag.mk
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor:64

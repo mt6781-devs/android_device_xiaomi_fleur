@@ -987,7 +987,6 @@ vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6781.so
-vendor/lib64/hw/lights.mt6781.so
 vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so;NOCHECK
 vendor/lib64/mt6781/libdpframework.so:vendor/lib64/libdpframework.so
@@ -1051,6 +1050,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
 # Display (Configs)
 vendor/etc/screen_light.xml
 vendor/etc/dsi_panel_k7s_38_0c_0a_video_mi.xml
+vendor/etc/dsi_panel_k7s_38_0c_0b_video_mi.xml
 
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine

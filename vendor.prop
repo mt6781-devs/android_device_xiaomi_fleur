@@ -128,12 +128,6 @@ debug.hwui.use_hint_manager=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.kmsetkey=beanpod
 
-# LMK
-ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=700
-ro.lmk.swap_free_low_percentage=20
-persist.sys.lmk.camera_minfree_6g_levels=18432:0,23040:100,27648:200,85000:250,127500:800,161280:950
-
 # Media
 debug.mediatek.disp_decompress=1
 debug.stagefright.c2inputsurface=-1
@@ -225,6 +219,11 @@ ro.vendor.mtk_data_config=1
 
 # LMKD
 ro.lmk.kill_heaviest_task=true
+ro.lmk.psi_complete_stall_ms=150
+ro.lmk.swap_free_low_percentage=20
+ro.lmk.thrashing_limit=30
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.swap_util_max=90
 
 # Sensors
 ro.vendor.mtk.sensor.support=yes

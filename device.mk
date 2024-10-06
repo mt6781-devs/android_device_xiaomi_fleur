@@ -392,16 +392,15 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
-    android.hardware.sensors@1.0.vendor:64 \
-    android.hardware.sensors@2.1.vendor:64 \
     android.frameworks.sensorservice@1.0.vendor:64 \
+    android.hardware.sensors@2.0-subhal-impl-1.0.fleur:64 \
     android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
     libshim_sensors:64
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_ODM)/etc/sensors/hals.conf
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31

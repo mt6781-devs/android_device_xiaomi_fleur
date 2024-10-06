@@ -80,7 +80,6 @@ function blob_fixup {
             "$PATCHELF" --set-soname libwifi-hal-mtk.so "${2}"
             ;;
         vendor/bin/mnld|\
-        vendor/lib*/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
         vendor/lib*/libcam.utils.sensorprovider.so|\
         vendor/lib*/librgbwlightsensor.so|\
         vendor/lib*/libaalservice.so)

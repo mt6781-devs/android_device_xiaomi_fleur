@@ -37,7 +37,7 @@ on post-fs
     mount functionfs ptp /dev/usb-ffs/ptp rmode=0770,fmode=0660,uid=1024,gid=1024,no_disconnect=1
 
 on boot
-    setprop sys.usb.configfs 1
+    setprop sys.usb.configfs 2
     setprop vendor.usb.controller "musb-hdrc"
     write /sys/class/android_usb/android0/f_mtp/cpu_mask 0xF0
     write /sys/module/usb_f_mtp/parameters/mtp_rx_cont 1

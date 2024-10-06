@@ -256,13 +256,13 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1250,
-      "Value": "1923000"
+      "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1250,
-      "Value": "1800000"
+      "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",

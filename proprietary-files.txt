@@ -159,7 +159,7 @@ vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
 
-# Bluetooth - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+# Bluetooth - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
 vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin
 vendor/firmware/BT_FW.cfg
@@ -168,7 +168,7 @@ vendor/firmware/BT_FW.cfg
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
-# Camera - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+# Camera - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/bin/hw/camerahalserver
 vendor/bin/lib3a.ccu.dm;NODEPS
 vendor/bin/lib3a.ccu.pm;NODEPS
@@ -887,7 +887,7 @@ vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so
 vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 
-# Camera (Configs) - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+# Camera (Configs) - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/etc/camera/com.xiaomi.dcal.wd.1.golden
 vendor/etc/camera/com.xiaomi.dcal.wd.2.golden
 vendor/etc/camera/com.xiaomi.dcal.wd.3.golden
@@ -920,11 +920,11 @@ vendor/etc/camera/model/rt_model/preview_policy
 vendor/bin/wmt_loader
 vendor/bin/wmt_launcher
 
-# Connectivity - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+# Connectivity - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
 vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
 
-# Display and touch - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+# Display and touch - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/focaltech_ts_fw_samsung.bin
 vendor/firmware/fs1815.fsm
@@ -1415,7 +1415,7 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
-# Sensors - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+# Sensors - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/etc/elliptic_sensor.xml
 vendor/lib64/hw/sensors.mt6781.so
 vendor/lib64/hw/sensors.elliptic.so
@@ -1556,7 +1556,7 @@ vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libwpfa.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
-# WLAN - from fleur-user 13 SP1A.210812.016 V816.0.2.0.TKEMIXM release-keys
+# WLAN - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin
 vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin

@@ -17,7 +17,7 @@ static const variant_info_t fleur_info = {
     .device = "fleur",
     .marketname = "Redmi Note 11S",
     .model = "2201117SY",
-    .build_fingerprint = "Redmi/fleur_global/fleur:13/SP1A.210812.016/V816.0.2.0.TKEMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/fleur_global/fleur:13/SP1A.210812.016/V816.0.4.0.TKEMIXM:user/release-keys",
 };
 
 static const variant_info_t miel_info = {
@@ -28,7 +28,7 @@ static const variant_info_t miel_info = {
     .device = "miel",
     .marketname = "Redmi Note 11S",
     .model = "2201117SG",
-    .build_fingerprint = "Redmi/miel_global/miel:13/SP1A.210812.016/V816.0.2.0.TKEMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/miel_global/miel:13/SP1A.210812.016/V816.0.4.0.TKEMIXM:user/release-keys",
 };
 
 static const variant_info_t fleur_p_info = {
@@ -39,7 +39,7 @@ static const variant_info_t fleur_p_info = {
     .device = "fleur",
     .marketname = "POCO M4 Pro",
     .model = "2201117PG",
-    .build_fingerprint = "POCO/fleur_p_global/fleur:13/SP1A.210812.016/V816.0.2.0.TKEMIXM:user/release-keys",
+    .build_fingerprint = "POCO/fleur_p_global/fleur:13/SP1A.210812.016/V816.0.4.0.TKEMIXM:user/release-keys",
 };
 
 static const variant_info_t miel_p_info = {
@@ -50,7 +50,7 @@ static const variant_info_t miel_p_info = {
     .device = "miel",
     .marketname = "POCO M4 Pro",
     .model = "2201117PI",
-    .build_fingerprint = "POCO/miel_p_global/miel:13/SP1A.210812.016/V816.0.2.0.TKEMIXM:user/release-keys",
+    .build_fingerprint = "POCO/miel_p_global/miel:13/SP1A.210812.016/V816.0.4.0.TKEMIXM:user/release-keys",
 };
 
 static const std::vector<variant_info_t> variants = {

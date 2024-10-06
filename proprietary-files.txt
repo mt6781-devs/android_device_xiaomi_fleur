@@ -1,4 +1,4 @@
-# All blobs that aren't noted or pinned are from sea V816.0.9.0.UHZMIXM
+# All blobs that aren't noted or pinned are from sea V816.0.10.0.UHZMIXM
 
 # AEE
 vendor/lib/libaedv.so

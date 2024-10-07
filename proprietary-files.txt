@@ -26,6 +26,7 @@ vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libbwc.so
 vendor/lib/libcvsd_mtk.so
+vendor/lib/libfsmsmartpaparse.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtkshifter_vendor.so
@@ -1058,6 +1059,7 @@ vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
+vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so
@@ -1126,19 +1128,6 @@ vendor/etc/mpe.conf
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so
-vendor/lib/libh264dec_customize.so
-vendor/lib/libh264dec_sa.ca7.so
-vendor/lib/libh264dec_sd.ca7.so
-vendor/lib/libh264dec_se.ca7.so
-vendor/lib/libh264enc_sa.ca7.so
-vendor/lib/libvp8dec_sa.ca7.so
-vendor/lib/libvp8enc_sa.ca7.so
-vendor/lib/libvp9dec_sa.ca7.so
-vendor/lib/libpkm.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libheichal.so
-vendor/lib/libHEVCdec_sa.ca7.android.so
-vendor/lib/libhevce_sb.ca7.android.so
 vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodec_oal.so;NOSYMBOLS
@@ -1146,14 +1135,8 @@ vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
-vendor/lib/libmp4enc_sa.ca7.so
-vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libmsbc_mtk.so
-vendor/lib64/libadpcmdec_mtk.so
-vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libvpu5.so
-vendor/lib64/libm4u.so
-vendor/lib64/libwapi.so
 
 # Media (C2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
@@ -1202,9 +1185,6 @@ vendor/lib64/libapu_mdw.so
 vendor/lib64/libapusys_edma.so
 vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
-vendor/lib64/libasn1c_core.so
-vendor/lib64/libasn1c_mapi.so
-vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
 vendor/lib64/libneuroeara.so
@@ -1214,7 +1194,6 @@ vendor/lib64/libneuron_platform.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
 vendor/lib64/libnwk_opt_halwrap_vendor.so
 vendor/lib64/nwk_opt_imp.so
-vendor/lib64/libmt.so
 vendor/lib64/libmvpu_config_data.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 
@@ -1256,22 +1235,13 @@ vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.wfca.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/mtkrild.rc
-vendor/lib/libhydra.so
 vendor/lib/libmtkcutils.so
 vendor/lib/libmtkproperty.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtkrillog.so
 vendor/lib/libmmprofile.so
-vendor/lib/librpc.so
-vendor/lib/librcs_interface.so
 vendor/lib/libverno.so
 vendor/lib/libsysenv.so
-vendor/lib/libstrongswan.so
-vendor/lib/libsimaka.so
-vendor/lib/libsimlock.so
-vendor/lib/libsimmelock.so
-vendor/lib/libfsmsmartpaparse.so
-vendor/lib/libscltm.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
@@ -1302,9 +1272,6 @@ vendor/lib64/libscltm.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libstrongswan.so
 vendor/lib64/libsysenv.so
-vendor/lib64/libsimaka.so
-vendor/lib64/libsimlock.so
-vendor/lib64/libsimmelock.so
 vendor/lib64/libtrm.so
 vendor/lib64/libverno.so
 vendor/lib64/libviamipc-ril.so
@@ -1353,13 +1320,8 @@ vendor/etc/init/init.volte_imcb.rc
 vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_imsm_93.rc
 vendor/etc/init/init.volte_md_status.rc
-vendor/etc/smsdbvisitor.xml
-vendor/etc/ipsec/ipsec.conf
-vendor/etc/ipsec/ssl/openssl.cnf
-vendor/etc/ipsec/strongswan.conf
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/libvsim.so
-vendor/lib/libipsec_ims_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so

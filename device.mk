@@ -156,6 +156,11 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor:64 \
     com.fingerprints.extension@1.0.vendor:64
 
+# FMRadio
+PRODUCT_PACKAGES += \
+    libfmjni \
+    FMRadio
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \

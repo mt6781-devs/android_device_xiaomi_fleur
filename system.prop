@@ -17,9 +17,6 @@ bluetooth.profile.sap.server.enabled=true
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
-# HWUI
-debug.hwui.render_dirty_regions=false
-
 # IMS
 persist.dbg.ims_volte_enable=1 
 persist.dbg.volte_avail_ovr=1 

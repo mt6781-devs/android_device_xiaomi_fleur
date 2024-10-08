@@ -925,6 +925,9 @@ vendor/bin/wmt_launcher
 vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
 vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
 
+# ConsumerIR
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6781.so
+
 # Display and touch - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/focaltech_ts_fw_samsung.bin

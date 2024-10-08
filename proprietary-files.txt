@@ -26,6 +26,7 @@ vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libbwc.so
 vendor/lib/libcvsd_mtk.so
+vendor/lib/libfsmsmartpaparse.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtkshifter_vendor.so
@@ -1241,6 +1242,8 @@ vendor/lib/libmtkrillog.so
 vendor/lib/libmmprofile.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
+vendor/lib64/libssl-md.so
+vendor/lib64/libcurl-md.so
 vendor/lib64/libccci_util.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmnetlink_v104.so
@@ -1269,11 +1272,7 @@ vendor/lib64/libscltm.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libstrongswan.so
 vendor/lib64/libsysenv.so
-vendor/lib64/libsimaka.so
-vendor/lib64/libsimlock.so
-vendor/lib64/libsimmelock.so
 vendor/lib64/libtrm.so
-vendor/lib64/libverno.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
@@ -1304,42 +1303,7 @@ vendor/etc/apdb/APDB_MT6785_S01__W2248_ENUM
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
-vendor/bin/volte_ua
-vendor/bin/volte_imcb
-vendor/bin/volte_stack
-vendor/bin/volte_rcs_ua
-vendor/bin/volte_imsm_93
-vendor/bin/volte_md_status
-vendor/bin/volte_clientapi_ua
-vendor/bin/rcs_volte_stack
-vendor/etc/init/init.vtservice_hidl.rc
-vendor/etc/init/volte_rcs_ua.rc
-vendor/etc/init/volte_clientapi_ua.rc
-vendor/etc/init/init.volte_ua.rc
-vendor/etc/init/init.volte_imcb.rc
-vendor/etc/init/init.volte_stack.rc
-vendor/etc/init/init.volte_imsm_93.rc
-vendor/etc/init/init.volte_md_status.rc
-vendor/etc/smsdbvisitor.xml
-vendor/etc/ipsec/ipsec.conf
-vendor/etc/ipsec/ssl/openssl.cnf
-vendor/etc/ipsec/strongswan.conf
-vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib/libvsim.so
-vendor/lib/libipsec_ims_shr.so
-vendor/lib/libvt_custom.so
-vendor/lib/libvolte_core_shr.so
-vendor/lib/libvolte_xdmc_shr.so
-vendor/lib/librcs_volte_core.so
-vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
-vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/libvsim.so
-vendor/lib64/libhydra.so
-vendor/lib64/libssl-md.so
-vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libcurl-md.so
-vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Radio (MTK-IMS)

@@ -34,6 +34,9 @@ persist.vendor.wfc.sys_wfc_support=1
 # Surface Flinger
 ro.sf.blurs_are_expensive=1
 
+# Misc
+persist.wm.debug.predictive_back=true
+
 # WiFi
 ro.wifi.channels=
 wifi.direct.interface=p2p0

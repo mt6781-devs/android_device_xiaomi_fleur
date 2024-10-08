@@ -259,7 +259,7 @@ ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=4
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
-ro.surface_flinger.supports_background_blur=0
+ro.surface_flinger.supports_background_blur=1
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.use_color_management=true
@@ -269,7 +269,7 @@ ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.uclamp.min=130
 ro.surface_flinger.set_touch_timer_ms=500
 ro.surface_flinger.set_idle_timer_ms=3000
-persist.sys.sf.disable_blurs=1
+persist.sys.sf.disable_blurs=0
 
 # Trusted Execution Environment (TEE)
 ro.hardware.wechat=beanpod

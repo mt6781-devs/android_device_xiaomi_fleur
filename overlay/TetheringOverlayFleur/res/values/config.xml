@@ -18,6 +18,13 @@
 -->
 <resources>
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
+         NCM interfaces.  If the device doesn't want to support tethering over NCM this should
+         be empty. -->
+    <string-array translatable="false" name="config_tether_ncm_regexs">
+        <item>ncm\\d</item>
+    </string-array>
+
+    <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tethering over USB this should
          be empty.  An example would be "usb.*" -->
     <string-array translatable="false" name="config_tether_usb_regexs">
@@ -33,6 +40,10 @@
         <item>ap\\d</item>
         <item>ap_br_ap\\d</item>
     </string-array>
+
+    <!-- Which USB function should be enabled when TETHERING_USB is requested. 0: RNDIS, 1: NCM.
+         -->
+    <integer name="config_tether_usb_functions">1</integer>
 
     <!-- Dhcp range (min, max) to use for tethering purposes -->
     <string-array translatable="false" name="config_tether_dhcp_range">

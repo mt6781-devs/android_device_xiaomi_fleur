@@ -255,37 +255,37 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 1250,
+      "Duration": 2500,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 1250,
+      "Duration": 2500,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "TAUclampMin",
-      "Duration": 1250,
+      "Duration": 2500,
       "Value": "10"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "FGUclampMin",
-      "Duration": 1250,
+      "Duration": 2500,
       "Value": "10"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampMin",
-      "Duration": 1250,
+      "Duration": 2500,
       "Value": "75"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "DRAMOppMin",
-      "Duration": 1250,
+      "Duration": 2500,
       "Value": "1"
     },
     {

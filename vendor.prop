@@ -154,8 +154,8 @@ ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp2-cs1
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.50_xiaomi.s0mp1.k6781v1.64.k419_P4
 
 # Power
-vendor.powerhal.interaction.min=40
-vendor.powerhal.interaction.max=100
+vendor.powerhal.interaction.min=50
+vendor.powerhal.interaction.max=150
 vendor.powerhal.interaction.offset=0
 
 # Radio

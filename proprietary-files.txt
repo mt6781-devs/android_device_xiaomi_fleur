@@ -1348,6 +1348,7 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 # Radio (MTK-IMS)
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
+-system_ext/priv-app/ImsService/ImsService.apk
 -system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar
 -system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar
 -system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar
@@ -1373,9 +1374,6 @@ system_ext/lib64/libvsim-adaptor-client.so
 system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-
-# Radio (IMS-App) - from plato-user 14 UP1A.230620.001 V14.0.7.0.ULQMIXM release-keys (patched)
--system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk
 
 # Power
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so

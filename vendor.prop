@@ -44,8 +44,6 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
 ro.mtk_cam_stereo_camera_support=1
 
 # Connectivity
-ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
-ro.vendor.connsys.dedicated.log=1
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi

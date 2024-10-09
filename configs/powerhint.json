@@ -268,19 +268,19 @@
       "PowerHint": "LAUNCH",
       "Node": "TAUclampMin",
       "Duration": 2500,
-      "Value": "10"
+      "Value": "25"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "FGUclampMin",
       "Duration": 2500,
-      "Value": "10"
+      "Value": "25"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampMin",
       "Duration": 2500,
-      "Value": "75"
+      "Value": "25"
     },
     {
       "PowerHint": "LAUNCH",

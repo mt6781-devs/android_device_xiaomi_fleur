@@ -1323,8 +1323,13 @@ vendor/etc/init/init.volte_imcb.rc
 vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_imsm_93.rc
 vendor/etc/init/init.volte_md_status.rc
+vendor/etc/smsdbvisitor.xml
+vendor/etc/ipsec/ipsec.conf
+vendor/etc/ipsec/ssl/openssl.cnf
+vendor/etc/ipsec/strongswan.conf
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/libvsim.so
+vendor/lib/libipsec_ims_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so

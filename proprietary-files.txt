@@ -1338,7 +1338,7 @@ system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# Radio (IMS-App) - from plato-user 14 UP1A.230620.001 V14.0.7.0.ULQMIXM release-keys (patched)
+# Radio (IMS-App) - from ruby-user 14 UP1A.231005.007 V816.0.4.0.UMOMIXM release-keys (patched)
 -system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk
 
 # Power

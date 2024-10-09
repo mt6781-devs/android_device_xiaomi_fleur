@@ -982,7 +982,7 @@ vendor/lib/libdip_postproc.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/libladder.so
-vendor/lib64/egl/libGLES_mali.so
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/hw/vulkan.mt6781.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so

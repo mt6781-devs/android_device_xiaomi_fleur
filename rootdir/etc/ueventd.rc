@@ -169,3 +169,6 @@
 
 #ir
 /dev/spidev3.0                                   0660   system	    system
+
+# Raw HID devices
+/dev/hidraw*                                     0660   system      system

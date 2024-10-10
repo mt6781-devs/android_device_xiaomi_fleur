@@ -14,5 +14,8 @@ ro.vendor.oem.meid                       u:object_r:vendor_mtk_radio_prop:s0
 # Fingerprint
 persist.vendor.sys.fp.                   u:object_r:vendor_fingerprint_persist_prop:s0
 
+# Sensors
+vendor.dynamic_sensor.                   u:object_r:vendor_dynamic_sensor_prop:s0
+
 # Thermal
 vendor.sys.thermal.                      u:object_r:vendor_thermal_engine_prop:s0

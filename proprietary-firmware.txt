@@ -1,0 +1,12 @@
+# Firmware from V816.0.4.0.TKEMIXM (fastboot)
+audio_dsp.img;AB
+gz.img;AB
+lk.img;AB
+logo.bin:logo.img;AB
+md1img.img;AB
+pi_img.img;AB
+preloader_fleur.bin:preloader.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB

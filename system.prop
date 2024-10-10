@@ -35,7 +35,7 @@ persist.vendor.wfc.sys_wfc_support=1
 ro.sf.blurs_are_expensive=1
 
 # Misc
-persist.wm.debug.predictive_back=true
+persist.wm.debug.predictive_back=1
 
 # WiFi
 ro.wifi.channels=

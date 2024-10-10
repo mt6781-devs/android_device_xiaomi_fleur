@@ -98,7 +98,7 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             "${PATCHELF}" --set-soname "${2}" "${2}"
             ;;
-        vendor/lib64/hw/fingerprint.fpc.default.so)\
+        vendor/lib64/hw/fingerprint.fpc.default.so)
 	    xxd -p "${2}" | sed "s/1f2afd7bc2a8c0035fd600000000ff8301d1fd7b02a9fd830091f85f03a9/1f2afd7bc2a8c0035fd600000000c0035fd6fd7b02a9fd830091f85f03a9/g" | xxd -r -p > "${2}".patched
             mv "${2}".patched "${2}"
             ;;

@@ -1,5 +1,6 @@
 # Extcon
-genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.[0-1]/name u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.0/name u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.1/name u:object_r:sysfs_extcon:s0
 
 # Fingerprint
 genfscon sysfs /devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/clk_enable u:object_r:sysfs_fingerprint:s0

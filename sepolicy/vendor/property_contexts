@@ -4,7 +4,6 @@ vendor.camera.                           u:object_r:vendor_camera_prop:s0
 vendor.debug.                            u:object_r:vendor_camera_prop:s0
 vendor.mtkcam.                           u:object_r:vendor_camera_prop:s0
 ro.vendor.mtkcam.                        u:object_r:vendor_camera_prop:s0
-ro.mtk_cam_stereo_camera_support         u:object_r:vendor_camera_prop:s0
 
 # RIL
 ro.vendor.oem.sno                        u:object_r:vendor_mtk_radio_prop:s0

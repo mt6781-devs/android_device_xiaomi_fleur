@@ -41,7 +41,6 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
-ro.mtk_cam_stereo_camera_support=1
 
 # Connectivity
 ro.vendor.wifi.sap.concurrent.iface=ap1

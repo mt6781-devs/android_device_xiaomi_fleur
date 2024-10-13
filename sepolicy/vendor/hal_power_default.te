@@ -24,8 +24,13 @@ allow hal_power_default hal_graphics_composer_default:process setsched;
 # Set scheduling info for system_server (for adpf)
 allow hal_power_default system_server:process setsched;
 
+# Set scheduling info for platform_app/untrusted_app/priv_app
+allow hal_power_default platform_app:process setsched;
+allow hal_power_default untrusted_app:process setsched;
+allow hal_power_default priv_app:process setsched;
+
 # To get/set powerhal state property
 set_prop(hal_power_default, vendor_power_prop)
 
-# To access display idle state
-allow hal_power_default vendor_sysfs_graphics:file r_file_perms;
+# To access display idle state and modify GPU Frequencies
+allow hal_power_default vendor_sysfs_graphics:file rw_file_perms;

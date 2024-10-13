@@ -74,6 +74,9 @@ function blob_fixup {
         vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc)
             sed -i 's/sea/fleur/' "$2"
             ;;
+        vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
+            sed -i '/vts/Q' "$2"
+            ;;
 	vendor/etc/init/init.batterysecret.rc)
             sed -i '/seclabel/d' "$2"
 	    ;;

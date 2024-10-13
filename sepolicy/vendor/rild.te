@@ -1,0 +1,1 @@
+allow rild metadata_file:dir { search open read };

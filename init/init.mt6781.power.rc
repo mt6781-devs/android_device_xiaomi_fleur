@@ -7,8 +7,10 @@ on init
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/restricted/cpus 0-3
 
-    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5
-    setprop dalvik.vm.dex2oat-threads 6
+    setprop dalvik.vm.dex2oat-cpu-set 4,5,6,7
+    setprop dalvik.vm.dex2oat-threads 4
+    setprop dalvik.vm.image-dex2oat-cpu-set 4,5,6,7
+    setprop dalvik.vm.image-dex2oat-threads 4
 
     # VM Tweaks
     write /proc/sys/vm/dirty_writeback_centisecs 3000

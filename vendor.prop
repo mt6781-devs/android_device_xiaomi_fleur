@@ -155,6 +155,7 @@ ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.50_xiaomi.s0m
 vendor.powerhal.interaction.min=20
 vendor.powerhal.interaction.max=50
 vendor.powerhal.interaction.offset=0
+vendor.powerhal.disp.idle_support=false
 
 # Radio
 persist.vendor.md_c2k_cap_dep_check=0

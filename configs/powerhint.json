@@ -257,7 +257,7 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "FGUclampMin".
+      "Node": "FGUclampMin",
       "Duration": 0,
       "Value": "10"
     },
@@ -320,6 +320,30 @@
       "Node": "CCIFreqMode",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 30,
+      "Value": "1933000"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 30,
+      "Value": "2050000"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "1866000"
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1860000"
     },
     {
       "PowerHint": "GAME_LOADING",

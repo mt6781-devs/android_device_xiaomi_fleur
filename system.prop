@@ -31,9 +31,14 @@ persist.radio.apm_sim_not_pwdn=1
 persist.sys.mdlog_dumpback=2
 persist.vendor.vzw_device_type=0  
 persist.vendor.wfc.sys_wfc_support=1
+ro.telephony.sim.count=2
 
 # Surface Flinger
 ro.sf.blurs_are_expensive=1
+
+# HWUI
+ro.hwui.render_ahead=20
+ro.config.avoid_gfx_accel=true
 
 # Misc
 persist.wm.debug.predictive_back=1

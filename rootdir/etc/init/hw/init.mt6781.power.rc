@@ -31,11 +31,9 @@ on init
 
     # Configure governor settings for little cluster
     write /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 20000
 
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us 20000
 
     # Reset stune group setting for NNAPI HAL processes
     write /dev/stune/nnapi-hal/schedtune.boost 0

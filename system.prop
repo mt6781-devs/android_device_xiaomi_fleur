@@ -31,6 +31,7 @@ persist.radio.apm_sim_not_pwdn=1
 persist.sys.mdlog_dumpback=2
 persist.vendor.vzw_device_type=0  
 persist.vendor.wfc.sys_wfc_support=1
+persist.vendor.radio.apm_sim_not_pwdn=1
 ro.telephony.sim.count=2
 
 # Surface Flinger

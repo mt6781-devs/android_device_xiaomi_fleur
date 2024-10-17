@@ -362,7 +362,31 @@
       "Node": "DoubleTapToWake",
       "Duration": 0,
       "Value": "1"
-     }
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1933000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "2050000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "774000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "835000"
+    }
   ],
   "AdpfConfig": [
     {

@@ -563,4 +563,7 @@
 
    <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
+
+    <!-- media controls -->
+    <bool name="config_mediaControlsTurbulenceByDefault">false</bool>
 </resources>

@@ -16,3 +16,11 @@ cc_library_shared {
     ],
     vendor: true
 }
+
+cc_library_shared {
+    name: "libshim_power",
+    srcs: [
+        "libshim_power.c",
+    ],
+    vendor: true
+}

@@ -75,6 +75,10 @@ function blob_fixup {
         vendor/lib64/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
+        vendor/lib64/vendor.mediatek.hardware.power@1.1.so|\
+        vendor/lib64/vendor.mediatek.hardware.power@2.0.so)
+            "${PATCHELF}" --add-needed "libshim_power.so" "${2}"
+            ;;
     esac
 }
 

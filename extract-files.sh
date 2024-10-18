@@ -119,6 +119,10 @@ function blob_fixup {
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
+        vendor/lib64/vendor.mediatek.hardware.power@1.1.so|\
+        vendor/lib64/vendor.mediatek.hardware.power@2.0.so)
+            "${PATCHELF}" --add-needed "libshim_power.so" "${2}"
+            ;;
         vendor/lib*/libwvhidl.so|\
         vendor/lib*/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"

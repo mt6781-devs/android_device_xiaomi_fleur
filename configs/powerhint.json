@@ -282,20 +282,20 @@
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMaxFreq",
-      "Duration": 30,
+      "Duration": 0,
       "Value": "1933000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMaxFreq",
-      "Duration": 30,
+      "Duration": 0,
       "Value": "2050000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1075000"
+      "Value": "1175000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -305,33 +305,15 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "CCIFreqMode",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "FGUclampMin",
       "Duration": 0,
       "Value": "10"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPULittleClusterUpRateLimitUs",
-      "Duration": 0,
-      "Value": "2000"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBigClusterUpRateLimitUs",
-      "Duration": 0,
-      "Value": "2000"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPULittleClusterDownRateLimitUs",
-      "Duration": 0,
-      "Value": "500"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBigClusterDownRateLimitUs",
-      "Duration": 0,
-      "Value": "500"
     },
     {
       "PowerHint": "LAUNCH",

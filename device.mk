@@ -358,6 +358,9 @@ PRODUCT_PACKAGES += \
     libmtkperf_client
 
 PRODUCT_PACKAGES += \
+    rebalance_interrupts-vendor
+
+PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor
 
 PRODUCT_PACKAGES += \

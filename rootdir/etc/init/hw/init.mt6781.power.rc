@@ -29,12 +29,6 @@ on init
     chmod 0664 /dev/stune/top-app/tasks
     chmod 0664 /dev/stune/rt/tasks
 
-    # Configure governor settings for little cluster
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us 500
-
-    # Configure governor settings for big cluster
-    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us 500
-
     # Reset stune group setting for NNAPI HAL processes
     write /dev/stune/nnapi-hal/schedtune.boost 0
     write /dev/stune/nnapi-hal/schedtune.prefer_idle 0

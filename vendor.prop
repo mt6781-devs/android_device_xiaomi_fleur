@@ -119,6 +119,7 @@ ro.vendor.mtk_log_hide_gps=1
 
 # HWUI
 debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # Keymaster
 ro.crypto.volume.filenames_mode=aes-256-cts

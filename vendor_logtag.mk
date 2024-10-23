@@ -273,4 +273,5 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.VT=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.VoLTE=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.wlan_assistant=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.OpenGLRenderer=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.OpenGLRenderer=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.C2MtkBufferManager=$(VENDOR_LOG_LEVEL)

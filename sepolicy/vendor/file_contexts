@@ -19,6 +19,7 @@
 
 # IR
 /dev/spidev3.0                                                                                         u:object_r:spidev_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.ir-service\.xiaomi                                   u:object_r:hal_ir_default_exec:s0
 
 # Latency
 /dev/cpu_dma_latency                                                                                   u:object_r:latency_device:s0

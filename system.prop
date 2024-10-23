@@ -38,7 +38,7 @@ ro.telephony.sim.count=2
 ro.sf.blurs_are_expensive=1
 
 # HWUI
-ro.hwui.render_ahead=20
+ro.hwui.render_ahead=3
 ro.config.avoid_gfx_accel=true
 
 # Misc

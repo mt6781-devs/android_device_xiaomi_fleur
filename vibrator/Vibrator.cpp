@@ -372,11 +372,6 @@ int LedVibratorDevice::on(int32_t timeoutMs) {
     char value[32];
     int ret;
 
-    snprintf(file, sizeof(file), "%s/%s", LED_DEVICE, "state");
-    ret = write_value(file, "1");
-    if (ret < 0)
-       goto error;
-
     snprintf(file, sizeof(file), "%s/%s", LED_DEVICE, "duration");
     snprintf(value, sizeof(value), "%u\n", timeoutMs);
     ret = write_value(file, value);

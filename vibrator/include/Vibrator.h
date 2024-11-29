@@ -36,43 +36,23 @@ namespace android {
 namespace hardware {
 namespace vibrator {
 
-class InputFFDevice {
-public:
-    InputFFDevice();
-    int playEffect(int effectId, EffectStrength es, long *playLengthMs);
-    int on(int32_t timeoutMs);
-    int off();
-    int setAmplitude(uint8_t amplitude);
-    bool mSupportGain;
-    bool mSupportEffects;
-    bool mSupportExternalControl;
-    bool mInExternalControl;
-private:
-    int play(int effectId, uint32_t timeoutMs, long *playLengthMs);
-    int mVibraFd;
-    int16_t mCurrAppId;
-    int16_t mCurrMagnitude;
-};
-
 class LedVibratorDevice {
 public:
     LedVibratorDevice();
     int on(int32_t timeoutMs);
     int off();
-    bool mDetected;
 private:
     int write_value(const char *file, const char *value);
 };
 
 class Vibrator : public BnVibrator {
 public:
-    class InputFFDevice ff;
     class LedVibratorDevice ledVib;
     ndk::ScopedAStatus getCapabilities(int32_t* _aidl_return) override;
     ndk::ScopedAStatus off() override;
     ndk::ScopedAStatus on(int32_t timeoutMs,
             const std::shared_ptr<IVibratorCallback>& callback) override;
-    ndk::ScopedAStatus perform(Effect effect, EffectStrength strength,
+    ndk::ScopedAStatus perform(Effect effect, EffectStrength es,
             const std::shared_ptr<IVibratorCallback>& callback,
             int32_t* _aidl_return) override;
     ndk::ScopedAStatus getSupportedEffects(std::vector<Effect>* _aidl_return) override;

@@ -115,4 +115,5 @@
         <value>.2</value>
         <value>2</value>
     </array>
+    <item name="gps.voltage">1800</item>
 </device>

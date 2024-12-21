@@ -11,7 +11,7 @@ on property:sys.boot_completed=1
     setprop vendor.powerhal.init 1
 
     # Adjust watermark level
-    write /proc/sys/vm/watermark_scale_factor 200
+    write /proc/sys/vm/watermark_scale_factor 125
 
     # DVFS
     write /sys/kernel/ged/hal/dvfs_margin_value 130

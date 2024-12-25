@@ -270,6 +270,9 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayFleur \
     WifiOverlay
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 

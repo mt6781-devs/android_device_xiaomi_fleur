@@ -255,6 +255,9 @@ PRODUCT_PACKAGES += \
     LineageApertureOverlayFleur \
     LineageDialerFleur
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Power-off Alarm
 PRODUCT_PACKAGES += \
     PowerOffAlarm

@@ -60,6 +60,9 @@ persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_modules=fpc,goodix
 persist.vendor.fingerprint.sensor_location=1080|915|145|local:0
 
+# Gatekeeper
+ro.hardware.gatekeeper=beanpod
+
 # Picture Quality
 ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_color_mode=1

@@ -976,3 +976,14 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.12.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
+
+# Sensors
+vendor/etc/elliptic_sensor.xml
+vendor/lib64/hw/sensors.mt6781.so
+vendor/lib64/hw/sensors.elliptic.so:vendor/lib64/hw/sensors.elliptic@2.0.so
+vendor/lib64/libhwm.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
+vendor/lib64/libksensor.so
+vendor/lib64/libsensor_custom.so
+vendor/lib64/librgbwlightsensor.so
+vendor/lib64/sensors.touch.detect.so

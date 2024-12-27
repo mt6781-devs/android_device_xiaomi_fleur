@@ -18,6 +18,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6781.thermal.rc",
+    src: "init.mt6781.thermal.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.recovery.mt6781.rc",
     src: "init.recovery.mt6781.rc",
     sub_dir: "init",

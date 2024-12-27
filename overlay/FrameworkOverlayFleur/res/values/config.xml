@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Copyright (C) 2023 The LineageOS Project
+
+  SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate.
+
+     NOTE: The naming convention is "config_camelCaseValue". Some legacy
+     entries do not follow the convention, but all new entries should. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
+      The N entries of this array define N  1 zones as follows:
+         Zone 0:        0 <= LUX < array[0]
+         Zone 1:        array[0] <= LUX < array[1]
+         ...
+         Zone N:        array[N - 1] <= LUX < array[N]
+         Zone N + 1     array[N] <= LUX < infinity
+         Must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>15</item>
+        <item>20</item>
+        <item>33</item>
+        <item>55</item>
+        <item>90</item>
+        <item>148</item>
+        <item>245</item>
+        <item>403</item>
+        <item>665</item>
+        <item>1097</item>
+        <item>1808</item>
+        <item>3000</item>
+        <item>6000</item>
+        <item>9000</item>
+        <item>10000</item>
+        <item>14000</item>
+        <item>20000</item>
+    </integer-array>
+
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+      in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+      config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+      brightness of an all-white image.
+
+      If this is defined then:
+      - config_autoBrightnessLcdBacklightValues should not be defined
+      - config_screenBrightnessNits must be defined
+      - config_screenBrightnessBacklight must be defined
+
+      This array should have size one greater than the size of the config_autoBrightnessLevels
+      array. The brightness values must be non-negative and non-decreasing. This must be
+      overridden in platform specific overlays -->
+    <array name="config_autoBrightnessDisplayValuesNits">
+      <item>5.139055</item>       <!--  0 - 1 -->
+      <item>9.962018965</item>    <!--  1 - 2 -->
+      <item>18.34822964</item>    <!--  2 - 3 -->
+      <item>21.55068128</item>    <!--  3 - 4 -->
+      <item>24.0167788</item>     <!--  4 - 8 -->
+      <item>32.5</item>           <!--  8 - 12 -->
+      <item>46</item>             <!--  12 - 15 -->
+      <item>53.26923077</item>    <!--  15 - 20 -->
+      <item>54.61538462</item>    <!--  20 - 33 -->
+      <item>58.11538462</item>    <!--  33 - 55 -->
+      <item>62.1394</item>        <!--  55 - 90 -->
+      <item>67.13133333</item>    <!--  90 - 148 -->
+      <item>79.67614115</item>    <!--  148 - 245 -->
+      <item>98.04727274</item>    <!--  245 - 403 -->
+      <item>125.1221991</item>    <!--  403 - 665 -->
+      <item>161.6875093</item>    <!--  665 - 1097 -->
+      <item>208.4885553</item>    <!--  1097 - 1808 -->
+      <item>264.8221315</item>    <!--  1808 - 3000 -->
+      <item>328.5869521</item>    <!--  3000 - 6000 -->
+      <item>627.4315413</item>    <!--  6000 - 9000 -->
+      <item>826.8584866</item>    <!--  9000 - 10000 -->
+      <item>867.0494638</item>    <!--  10000 -14000 -->
+      <item>901.4496943</item>    <!--  14000 -20000 -->
+      <item>1000.0</item>         <!--  20000+ -->
+    </array>
+
+    <integer-array name="config_ambientThresholdLevels">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+    </integer-array>
+
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>5186</item>
+        <item>4333</item>
+        <item>3666</item>
+        <item>2999</item>
+        <item>2759</item>
+        <item>2519</item>
+        <item>2279</item>
+        <item>2039</item>
+        <item>1799</item>
+        <item>799</item>
+        <item>527</item>
+        <item>499</item>
+        <item>470</item>
+        <item>517</item>
+        <item>565</item>
+        <item>612</item>
+        <item>660</item>
+        <item>708</item>
+        <item>742</item>
+        <item>636</item>
+        <item>582</item>
+        <item>549</item>
+        <item>369</item>
+        <item>294</item>
+        <item>269</item>
+        <item>220</item>
+        <item>220</item>
+    </integer-array>
+
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>525</item>
+        <item>683</item>
+        <item>666</item>
+        <item>650</item>
+        <item>640</item>
+        <item>630</item>
+        <item>620</item>
+        <item>610</item>
+        <item>600</item>
+        <item>500</item>
+        <item>500</item>
+        <item>440</item>
+        <item>385</item>
+        <item>382</item>
+        <item>379</item>
+        <item>376</item>
+        <item>373</item>
+        <item>371</item>
+        <item>367</item>
+        <item>387</item>
+        <item>397</item>
+        <item>403</item>
+        <item>380</item>
+        <item>345</item>
+        <item>333</item>
+        <item>283</item>
+        <item>283</item>
+    </integer-array>
+
+    <!-- An array describing the screen's backlight values corresponding to the brightness
+         values in the config_screenBrightnessNits array.
+         This array should be equal in size to config_screenBrightnessBacklight. -->
+    <array name="config_screenBrightnessBacklight">
+        <item>1</item>
+        <item>255</item>
+    </array>
+
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+         should be measured with an all white image while the display is in the fully on state.
+         Note that this value should *not* reflect the maximum brightness value for any high
+         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+         This array should be equal in size to config_screenBrightnessBacklight -->
+    <array name="config_screenBrightnessNits">
+        <item>4.5</item>
+        <item>700</item>
+    </array>
+
+    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
+         for debouncing the light sensor.  Different constants are used to debounce the light sensor
+         when adapting to brighter or darker environments.  This parameter controls how quickly
+         brightness changes occur in response to an observed change in light level that exceeds the
+         hysteresis threshold. -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+
+    <!-- True if the display hardware only has brightness buckets rather than a full range of
+         backlight values -->
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+
+    <!-- Flag indicating whether we should enable the automatic brightness.
+         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
+    <bool name="config_automatic_brightness_available">true</bool>
+
+    <!-- Minimum screen brightness setting allowed by power manager.
+         -2 is invalid so setting will resort to int value specified above.
+         Set this to 0.0 to allow screen to go to minimal brightness.
+         The user is forbidden from setting the brightness below this level. -->
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.00195407914</item>
+
+    <!-- Maximum screen brightness allowed by the power manager.
+         -2 is invalid so setting will resort to int value specified above.
+         Set this to 1.0 for maximum brightness range.
+         The user is forbidden from setting the brightness above this level. -->
+    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
+
+    <!-- Default screen brightness setting set.
+         -2 is invalid so setting will resort to int value specified above.
+         Must be in the range specified by minimum and maximum. -->
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.10942843185</item>
+
+    <!-- Screen brightness used to dim the screen when the user activity
+         timeout expires.  May be less than the minimum allowed brightness setting
+         that can be set by the user. -->
+    <item name="config_screenBrightnessDimFloat" format="float" type="dimen">8.54597E-4</item>
+
+    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
+         May be less than the minimum allowed brightness setting
+         that can be set by the user. -->
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">8.54597E-4</item>
+</resources>

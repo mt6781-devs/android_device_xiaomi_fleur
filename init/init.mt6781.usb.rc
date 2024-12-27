@@ -51,25 +51,10 @@ on early-boot
     # midi function
     mkdir /config/usb_gadget/g1/functions/midi.gs5
 
-    # acm function
-    mkdir /config/usb_gadget/g1/functions/acm.gs6
-
-    # dm function
-    mkdir /config/usb_gadget/g1/functions/dm.gs7
-
-    # uts function
-    mkdir /config/usb_gadget/g1/functions/uts.gs8
-
     # ncm function
     mkdir /config/usb_gadget/g1/functions/ncm.gs9
     write /config/usb_gadget/g1/functions/ncm.gs9/os_desc/interface.ncm/compatible_id WINNCM
     write /config/usb_gadget/g1/functions/ncm.gs9/ifname ncm%d
-
-    # etr_miu function
-    mkdir /config/usb_gadget/g1/functions/etr_miu.gs11
-
-    # acm function for uwb
-    mkdir /config/usb_gadget/g1/functions/acm.uwb0
 
     # chown file/folder permission
     chown system system /config/usb_gadget/
@@ -88,12 +73,7 @@ on early-boot
     chown system system /config/usb_gadget/g1/configs/b.1/strings
     chown system system /config/usb_gadget/g1/functions
     chown system system /config/usb_gadget/g1/functions/accessory.gs2
-    chown system system /config/usb_gadget/g1/functions/acm.gs6
-    chown system system /config/usb_gadget/g1/functions/acm.gs6/port_num
-    chown system system /config/usb_gadget/g1/functions/acm.uwb0
-    chown system system /config/usb_gadget/g1/functions/acm.uwb0/port_num
     chown system system /config/usb_gadget/g1/functions/audio_source.gs3
-    chown system system /config/usb_gadget/g1/functions/dm.gs7
     chown system system /config/usb_gadget/g1/functions/ffs.adb
     chown system system /config/usb_gadget/g1/functions/ffs.mtp
     chown system system /config/usb_gadget/g1/functions/ffs.ptp
@@ -194,9 +174,6 @@ on property:sys.usb.config=charger && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
     write /sys/class/typec/port0/device/update_sdp_enum_timeout 0x1
     setprop sys.usb.state ${sys.usb.config}
-
-on property:ro.bootmode=usbuwb
-    setprop persist.vendor.usb.usbradio.config uwb_acm
 
 on property:vendor.usb.contaminantdisable=true
     exec /vendor/bin/hw/disable_contaminant_detection.sh

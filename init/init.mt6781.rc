@@ -2,6 +2,7 @@
 
 import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6781.usb.rc
+import /vendor/etc/init/hw/init.mt6781.power.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
 
@@ -27,9 +28,6 @@ on late-init
     write /sys/kernel/rcu_expedited 1
 
 on charger
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
-
     chmod 0660 /dev/spm
     chown system system /dev/spm
     start spm_script

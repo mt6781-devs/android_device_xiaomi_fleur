@@ -1,0 +1,16 @@
+on init
+    # Setup final cpuset
+    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/foreground/boost/cpus 0-7
+    write /dev/cpuset/background/cpus 0-3
+    write /dev/cpuset/system-background/cpus 0-5
+    write /dev/cpuset/top-app/cpus 0-7
+
+on property:sys.boot_completed=1
+    # PowerHAL Hint Processing
+    setprop vendor.powerhal.init 1
+
+    # DVFS
+    write /sys/kernel/ged/hal/dvfs_margin_value 130
+    write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
+    write /sys/kernel/ged/hal/loading_base_dvfs_step 4

@@ -141,6 +141,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6781.rc \
+    init.mt6781.power.rc \
     init.mt6781.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
@@ -152,6 +153,16 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.pixel-libperfmgr
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Radio
 PRODUCT_COPY_FILES += \
@@ -177,6 +188,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
     hardware/xiaomi \
     hardware/google/pixel \
     hardware/google/interfaces

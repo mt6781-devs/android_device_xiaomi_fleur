@@ -26,6 +26,9 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
+vendor.bluetooth.ldac.abr=true
+ro.vendor.bluetooth.wipower=false
+ro.vendor.mtk.bt_sap_enable=true
 
 # Camera
 camera.disable_zsl_mode=1

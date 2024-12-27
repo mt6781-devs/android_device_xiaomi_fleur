@@ -1307,3 +1307,21 @@ vendor/firmware/aw8622_mid_f0_cali_cfg.bin
 vendor/firmware/aw8622_mid_f0_need_setup_M_cfg.bin
 vendor/firmware/aw8622_mid_f0_need_setup_Q_cfg.bin
 vendor/firmware/aw8622_mid_f0_need_setup_Z_cfg.bin
+
+# Thermal
+vendor/bin/mi_thermald
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermald-devices.conf
+vendor/etc/thermal-hp-mgame.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-hp-normal.conf
+vendor/etc/thermal-videochat.conf
+vendor/etc/thermal-navigation.conf

@@ -1,6 +1,7 @@
 # MTK platform .rc configure
 
 import /vendor/etc/init/hw/init.connectivity.rc
+import /vendor/etc/init/hw/init.mt6781.thermal.rc
 import /vendor/etc/init/hw/init.mt6781.usb.rc
 import /vendor/etc/init/hw/init.mt6781.power.rc
 import /vendor/etc/init/hw/init.project.rc
@@ -599,9 +600,6 @@ on post-fs-data
     chown system system /proc/secmem0
 
     chmod 0666 /dev/exm0
-
-    # Thermals
-    chmod 0666 sys/class/thermal/thermal_message/flash_state
 
     # power manager
     write /sys/power/pm_async 0

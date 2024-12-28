@@ -138,6 +138,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+# IMS
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-framework \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common \
+    mediatek-ims-extension-plugin
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
+    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
+
 # Init
 PRODUCT_PACKAGES += \
     init.connectivity.rc \
@@ -169,6 +187,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworkOverlayFleur \
+    TelephonyOverlayFleur \
     SettingsOverlayFleur \
     SystemUIOverlayFleur
 

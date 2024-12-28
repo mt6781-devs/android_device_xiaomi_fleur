@@ -1230,6 +1230,34 @@ vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
+# Radio (MTK-IMS)
+system_ext/bin/vtservice
+system_ext/etc/init/init.vtservice.rc
+system_ext/priv-app/ImsService/ImsService.apk
+system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar
+system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar
+system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar
+system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar
+system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar
+system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar
+system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar
+system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libimsma.so;DISABLE_DEPS
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvt_avsync.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
 # Sensors
 vendor/etc/elliptic_sensor.xml
 vendor/lib64/hw/sensors.mt6781.so

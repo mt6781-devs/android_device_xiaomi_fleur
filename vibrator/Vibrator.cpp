@@ -172,7 +172,7 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect __unused, EffectStrength es _
 }
 
 ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* _aidl_return) {
-    *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::THUD,
+    *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::TEXTURE_TICK, Effect::THUD,
                      Effect::POP, Effect::HEAVY_CLICK};
 
     return ndk::ScopedAStatus::ok();

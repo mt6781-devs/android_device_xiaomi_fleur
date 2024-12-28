@@ -763,15 +763,7 @@ on boot
     chown system system /proc/fliperfs/perf
     chmod 0664 /proc/fliperfs/perf
 
-# perfmgr
-    chown system system /proc/perfmgr/smart/hps_is_heavy
-    chmod 0660 /proc/perfmgr/smart/hps_is_heavy
-    chown system system /proc/perfmgr/smart/hps_check_duration
-    chmod 0660 /proc/perfmgr/smart/hps_check_duration
-    chown system system /proc/perfmgr/smart/hps_check_last_duration
-    chmod 0660 /proc/perfmgr/smart/hps_check_last_duration
-    chown system system /proc/perfmgr/smart/hps_uevent_enable
-    chmod 0660 /proc/perfmgr/smart/hps_uevent_enable
+# dcm
     chown system system /sys/power/dcm_state
     chmod 0660 /sys/power/dcm_state
 

@@ -77,6 +77,16 @@
         <fqname>@1.3::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.tetheroffload.config</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOffloadConfig/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tetheroffload.control</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IOffloadControl/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>com.fingerprints.extension</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IFingerprintEngineering/default</fqname>

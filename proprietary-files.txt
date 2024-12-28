@@ -912,6 +912,12 @@ vendor/etc/camera/model/rt_model/preview_cache
 vendor/etc/camera/model/rt_model/preview_model
 vendor/etc/camera/model/rt_model/preview_policy
 
+# Connectivity
+vendor/bin/wmt_loader
+vendor/bin/wmt_launcher
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
+
 # ConsumerIR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6781.so;FIX_SONAME
 
@@ -1282,6 +1288,33 @@ vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/isee_model.json
 
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
+vendor/bin/netdagent
+vendor/etc/init/tetheroffloadservice.rc
+vendor/etc/init/netdagent.rc
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# Thermal
+vendor/bin/mi_thermald
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermald-devices.conf
+vendor/etc/thermal-hp-mgame.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-hp-normal.conf
+vendor/etc/thermal-videochat.conf
+vendor/etc/thermal-navigation.conf
+
 # Vibrator
 vendor/firmware/aw8622_high_f0_LONG_cfg.bin
 vendor/firmware/aw8622_high_f0_M_cfg.bin
@@ -1308,20 +1341,14 @@ vendor/firmware/aw8622_mid_f0_need_setup_M_cfg.bin
 vendor/firmware/aw8622_mid_f0_need_setup_Q_cfg.bin
 vendor/firmware/aw8622_mid_f0_need_setup_Z_cfg.bin
 
-# Thermal
-vendor/bin/mi_thermald
-vendor/etc/thermal-map.conf
-vendor/etc/thermal-mgame.conf
-vendor/etc/thermal-phone.conf
-vendor/etc/thermal-tgame.conf
-vendor/etc/thermal-video.conf
-vendor/etc/thermal-camera.conf
-vendor/etc/thermal-class0.conf
-vendor/etc/thermal-normal.conf
-vendor/etc/thermal-chg-only.conf
-vendor/etc/thermald-devices.conf
-vendor/etc/thermal-hp-mgame.conf
-vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-hp-normal.conf
-vendor/etc/thermal-videochat.conf
-vendor/etc/thermal-navigation.conf
+# WiFi
+vendor/bin/wlan_assistant
+vendor/etc/init/wlan_assistant.rc
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin
+vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
+vendor/firmware/WMT_SOC.cfg

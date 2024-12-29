@@ -1,6 +1,7 @@
 # MTK platform .rc configure
 
 import /vendor/etc/init/hw/init.connectivity.rc
+import /vendor/etc/init/hw/init.nfc.fleur.rc
 import /vendor/etc/init/hw/init.mt6781.thermal.rc
 import /vendor/etc/init/hw/init.mt6781.usb.rc
 import /vendor/etc/init/hw/init.mt6781.power.rc

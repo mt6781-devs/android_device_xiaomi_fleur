@@ -46,6 +46,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.nfc.fleur.rc",
+    src: "init.nfc.fleur.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.recovery.mt6781.rc",
     src: "init.recovery.mt6781.rc",
     sub_dir: "init",

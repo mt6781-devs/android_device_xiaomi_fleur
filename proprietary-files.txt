@@ -1066,6 +1066,9 @@ vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libmvpu_config_data.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 
+# NFC
+vendor/firmware/st21nfc_fw7.bin
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon
@@ -1290,6 +1293,9 @@ system_ext/lib64/libvcodec_capenc.so
 system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# Secure Element
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 
 # Sensors
 vendor/etc/elliptic_sensor.xml

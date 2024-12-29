@@ -1,0 +1,22 @@
+on post-fs && property:ro.boot.product.hardware.sku=fleur
+    setprop persist.vendor.nfc.config_file_name /vendor/etc/st21nfc_conf_fleur.conf
+    enable st_nfc_hal
+    start mtk_secure_element_hal_service
+    
+on post-fs && property:ro.boot.product.hardware.sku=fleurp
+    setprop persist.vendor.nfc.config_file_name /vendor/etc/st21nfc_conf_fleurp.conf
+    enable st_nfc_hal
+    start mtk_secure_element_hal_service
+
+service st_nfc_hal /vendor/bin/hw/android.hardware.nfc-service.st
+    class hal
+    user nfc
+    group nfc
+    disabled
+    override
+
+service mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+    class hal
+    user secure_element
+    group secure_element
+    disabled

@@ -2,6 +2,11 @@
 genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.0/name u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0/cable.1/name u:object_r:sysfs_extcon:s0
 
+# Graphics
+genfscon sysfs /devices/platform/13000000.mali/dvfs_period u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13000000.mali/js_ctx_scheduling_mode u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13000000.mali/js_scheduling_period u:object_r:sysfs_gpu:s0
+
 # Health
 genfscon sysfs /devices/platform/battery/power_supply/battery u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/battery/power_supply/bms u:object_r:sysfs_batteryinfo:s0

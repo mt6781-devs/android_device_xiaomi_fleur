@@ -993,6 +993,12 @@ vendor/lib64/libgf_hal.so
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.beanpod.so
 
+# ION from gale-user 15 AP3A.240905.015.A2 OS2.0.2.0.VGPMIXM release-keys
+vendor/lib/libion_mtk.so
+vendor/lib/libion_ulit.so
+vendor/lib64/libion_mtk.so
+vendor/lib64/libion_ulit.so
+
 # Media
 vendor/bin/vpud
 vendor/etc/init/vpud.rc

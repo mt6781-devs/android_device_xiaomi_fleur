@@ -63,6 +63,10 @@ function blob_fixup {
         vendor/lib64/libaalservice.so)
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
+        vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc)
+            [ "$2" = "" ] && return 0
+            sed -i 's/mediatek/mediatek-64b/' "$2"
+            ;;
         vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"

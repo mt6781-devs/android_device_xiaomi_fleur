@@ -1000,6 +1000,39 @@ vendor/lib64/libgf_hal.so
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.beanpod.so
 
+# Media
+vendor/bin/vpud
+vendor/etc/init/vpud.rc
+vendor/etc/mpe.conf
+vendor/lib64/AVCSecureVdecCA.so
+vendor/lib64/VP9SecureVdecCA.so
+vendor/lib64/HEVCSecureVdecCA.so
+vendor/lib64/libAVCSecureVencCA.so
+vendor/lib/mt6781/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
+vendor/lib/libvcodecdrv.so
+vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
+vendor/lib/libvcodec_utility.so
+vendor/lib/libvcodecdrv_header_stub.so
+vendor/lib/libvpu5.so
+vendor/lib/libvpud_vcodec.so
+vendor/lib/libmsbc_mtk.so
+
+# Media (Codec2)
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc
+vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
+vendor/etc/seccomp_policy/mediaextractor.policy
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaswcodec.policy
+vendor/lib64/libcodec2_mtk_vdec.so
+vendor/lib64/libcodec2_mtk_venc.so
+vendor/lib64/libcodec2_mtk_c2store.so
+vendor/lib64/libcodec2_vpp_qt_plugin.so
+vendor/lib64/libcodec2_vpp_rs_plugin.so
+vendor/lib64/libformatter.so
+
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc

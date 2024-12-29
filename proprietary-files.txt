@@ -984,7 +984,7 @@ vendor/lib64/libwvhidl.so
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libgf_ca.so

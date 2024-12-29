@@ -859,6 +859,8 @@ on property:sys.boot_completed=1
     write /sys/block/dm-41/queue/read_ahead_kb 512
     write /sys/block/dm-42/queue/read_ahead_kb 512
 
+    restart android-hardware-media-c2-hal-1-2
+
 # TouchPad settings
 on property:sys.tp.grip_enable=0
     write /proc/tp_grip_area 0

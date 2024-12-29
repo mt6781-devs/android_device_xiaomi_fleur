@@ -73,6 +73,9 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             sed -i 's/mediatek/mediatek-64b/' "$2"
             ;;
+	vendor/etc/camera/camerabooster.json)
+            sed -i 's/"sea"/"fleur"/' "$2"
+            ;;
         vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"

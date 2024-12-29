@@ -1,0 +1,1 @@
+binder_call(mtk_hal_power, hal_power_default)

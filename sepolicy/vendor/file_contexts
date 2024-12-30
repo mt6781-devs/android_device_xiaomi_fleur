@@ -20,6 +20,9 @@
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr u:object_r:hal_power_default_exec:s0
 
+# Sensors
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal u:object_r:hal_sensors_default_exec:s0
+
 # Ultrasound
 /dev/elliptic(.*)? u:object_r:sound_device:s0
 

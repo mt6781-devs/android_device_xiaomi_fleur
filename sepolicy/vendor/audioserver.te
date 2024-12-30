@@ -1,0 +1,1 @@
+allow audioserver hal_sensors_default:binder call;

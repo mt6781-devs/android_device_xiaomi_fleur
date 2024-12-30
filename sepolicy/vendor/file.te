@@ -1,3 +1,6 @@
 # Camera
 type vendor_camera_data_file, data_file_type, file_type;
 type camera_persist_file, file_type;
+
+# Ultrasound
+type sound_device, dev_type;

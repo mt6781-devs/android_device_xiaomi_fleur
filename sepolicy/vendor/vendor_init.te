@@ -1,1 +1,2 @@
 rw_dir_file(vendor_init, sysfs_leds)
+rw_dir_file(vendor_init, sysfs_ged)

@@ -10,6 +10,7 @@ vendor.sys.fp. u:object_r:vendor_fp_prop:s0
 
 # RIL
 ro.vendor.oem. u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.vt. u:object_r:vendor_mtk_radio_prop:s0
 
 # Thermal
 vendor.sys.thermal.     u:object_r:vendor_thermal_engine_prop:s0

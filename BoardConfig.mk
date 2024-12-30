@@ -113,6 +113,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Verified Boot
 AB_OTA_PARTITIONS += \

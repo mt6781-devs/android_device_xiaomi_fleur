@@ -967,6 +967,16 @@ vendor/lib/libladder.so
 vendor/lib64/libladder.so
 vendor/lib64/libudf.so
 
+# Display/Touch (Firmware)
+vendor/firmware/Conf_MultipleTest.ini
+vendor/firmware/focaltech_ts_fw_samsung.bin
+vendor/firmware/fs1815.fsm
+vendor/firmware/gt9896s_cfg_6781v01_1080x2280.bin
+vendor/firmware/gt9896s_cfg_6781v01_1080x2300.bin
+vendor/firmware/gt9896s_firmware_6781v01_1080x2280.bin
+vendor/firmware/gt9896s_firmware_6781v01_1080x2300.bin
+vendor/firmware/remoteproc_scp
+
 # Display (Configs) - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/etc/screen_light.xml
 vendor/etc/dsi_panel_k7s_38_0c_0a_video_mi.xml

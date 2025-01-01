@@ -6,6 +6,6 @@
 
 runtime_resource_overlay {
     name: "FrameworkOverlayFleur",
-    resource_dirs: ["res"],
+
     vendor: true,
 }

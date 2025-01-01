@@ -7,14 +7,14 @@
 cc_library_shared {
     name: "libshim_sensors",
     whole_static_libs: [
-        "android.hardware.sensors@1.0-convert"
+        "android.hardware.sensors@1.0-convert",
     ],
     shared_libs: [
         "libhardware",
         "libhidlbase",
-        "android.hardware.sensors@1.0"
+        "android.hardware.sensors@1.0",
     ],
-    vendor: true
+    vendor: true,
 }
 
 cc_library_shared {
@@ -22,5 +22,5 @@ cc_library_shared {
     srcs: [
         "libshim_power.c",
     ],
-    vendor: true
+    vendor: true,
 }

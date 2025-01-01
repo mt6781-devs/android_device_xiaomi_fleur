@@ -16,7 +16,7 @@ cc_library_shared {
         "libbinder_ndk",
         "android.hardware.vibrator-V1-ndk",
     ],
-    export_include_dirs: ["include"]
+    export_include_dirs: ["include"],
 }
 
 cc_binary {

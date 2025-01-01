@@ -8,5 +8,5 @@ runtime_resource_overlay {
     name: "WifiOverlay",
     theme: "WifiOverlay",
     certificate: "platform",
-    product_specific: true
+    product_specific: true,
 }

@@ -6,6 +6,6 @@
 
 runtime_resource_overlay {
     name: "TelephonyOverlayFleur",
-    resource_dirs: ["res"],
+
     product_specific: true,
 }

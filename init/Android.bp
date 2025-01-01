@@ -6,70 +6,70 @@
 prebuilt_etc {
     name: "init.connectivity.rc",
     src: "init.connectivity.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.modem.rc",
     src: "init.modem.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mt6781.rc",
     src: "init.mt6781.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mt6781.power.rc",
     src: "init.mt6781.power.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mt6781.thermal.rc",
     src: "init.mt6781.thermal.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.mt6781.usb.rc",
     src: "init.mt6781.usb.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.nfc.fleur.rc",
     src: "init.nfc.fleur.rc",
-    sub_dir: "init",
+    relative_install_path: "init",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.recovery.mt6781.rc",
     src: "init.recovery.mt6781.rc",
-    sub_dir: "init",
+    relative_install_path: "init",
     recovery: true,
 }
 
 prebuilt_etc {
     name: "init.project.rc",
     src: "init.project.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.sensor_1_0.rc",
     src: "init.sensor_1_0.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 

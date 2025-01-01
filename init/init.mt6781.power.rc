@@ -17,6 +17,51 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "performance"
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "performance"
 
+## Utilization Clamping
+    # Real-Time tasks
+    write /dev/cpuctl/rt/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/rt/cpu.uclamp.max max
+    write /dev/cpuctl/rt/cpu.uclamp.min 60
+    write /dev/cpuctl/rt/cpu.shares 20480
+
+    # Background tasks for best efficiency
+    write /dev/cpuctl/background/cpu.uclamp.latency_sensitive 0
+    write /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive 0
+    write /dev/cpuctl/background/cpu.shares 1024
+    write /dev/cpuctl/system-background/cpu.shares 1024
+    write /dev/cpuctl/background/cpu.uclamp.min 0
+    write /dev/cpuctl/background/cpu.uclamp.max 30
+    write /dev/cpuctl/system-background/cpu.uclamp.min 0
+    write /dev/cpuctl/system-background/cpu.uclamp.max 30
+
+    # Camera daemon tasks
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.max max
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.min 70
+    write /dev/cpuctl/camera-daemon/cpu.shares 20480
+
+    # dex2oat tasks
+    write /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive 0
+    write /dev/cpuctl/dex2oat/cpu.shares 512
+
+    # Foreground tasks
+    write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 0
+    write /dev/cpuctl/foreground/cpu.uclamp.min 10
+    write /dev/cpuctl/foreground/cpu.uclamp.max max
+    write /dev/cpuctl/foreground/cpu.shares 20480
+
+    # NeuralNetwork API HAL tasks
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.max max
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.min 90
+    write /dev/cpuctl/nnapi-hal/cpu.shares 20480
+
+    # Top app tasks
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 0
+    write /dev/cpuctl/top-app/cpu.uclamp.min 15
+    write /dev/cpuctl/top-app/cpu.uclamp.max max
+    write /dev/cpuctl/top-app/cpu.shares 20480
+
 on property:sys.boot_completed=1
     # PowerHAL Hint Processing
     setprop vendor.powerhal.init 1

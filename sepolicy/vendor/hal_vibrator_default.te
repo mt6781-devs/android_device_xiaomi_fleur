@@ -1,0 +1,3 @@
+type vendor_sysfs_aw8622, sysfs_type, fs_type;
+
+allow hal_vibrator_default vendor_sysfs_aw8622:file { read write open };

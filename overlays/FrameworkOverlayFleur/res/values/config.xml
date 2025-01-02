@@ -368,7 +368,7 @@
     <bool name="config_allow_ussd_over_ims">true</bool>
 
     <!-- Flag specifying whether WFC over IMS is available on device -->
-    <bool name="config_device_wfc_ims_available">true</bool>
+    <bool name="config_device_wfc_ims_available">false</bool>
 
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>

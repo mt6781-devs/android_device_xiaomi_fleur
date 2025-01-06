@@ -1,6 +1,7 @@
 on init
     # Setup final cpuset
     write /dev/cpuset/foreground/cpus 0-6
+    write /dev/cpuset/foreground_window/cpus 0-6
     write /dev/cpuset/background/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
@@ -55,6 +56,12 @@ on init
     write /dev/cpuctl/foreground/cpu.uclamp.min 0
     write /dev/cpuctl/foreground/cpu.uclamp.max 80
     write /dev/cpuctl/foreground/cpu.shares 10240
+
+    # Foreground window tasks
+    write /dev/cpuctl/foreground_window/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/foreground_window/cpu.uclamp.min 0
+    write /dev/cpuctl/foreground_window/cpu.uclamp.max 80
+    write /dev/cpuctl/foreground_window/cpu.shares 10240
 
     # NeuralNetwork API HAL tasks
     write /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive 1

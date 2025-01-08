@@ -1174,8 +1174,10 @@ vendor/bin/bp_kmsetkey_ca
 vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 
-# Radio
+# Radio - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
 vendor/bin/hw/mtkfusionrild
+
+# Radio
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/gsm0710muxd

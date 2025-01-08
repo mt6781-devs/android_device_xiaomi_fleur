@@ -7,7 +7,7 @@
 
 <resources>
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">6.5dip</dimen>
+    <dimen name="status_bar_padding_top">7.5dip</dimen>
 
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">11.5dip</dimen>

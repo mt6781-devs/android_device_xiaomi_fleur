@@ -662,7 +662,6 @@ vendor/lib64/libaiawb_moon_model.so
 vendor/lib64/libaiawb_p1ggm.so
 vendor/lib64/libaiawb_sun.so
 vendor/lib64/libaiawb_sun_model.so
-vendor/lib64/libakm.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_dc_plugin_xiaomi_v2.so
@@ -939,7 +938,6 @@ vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 vendor/lib64/libaalservice.so
-vendor/lib64/libacdk.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libdip_drv.so
 vendor/lib64/libdip_imem.so
@@ -985,8 +983,6 @@ vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
-vendor/lib64/libtlcWidevineModularDrm.so
-vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 
 # Fingerprint
@@ -1016,8 +1012,8 @@ vendor/lib64/libion_ulit.so
 # Media
 vendor/bin/vpud
 vendor/etc/init/vpud.rc
-vendor/etc/mpe.conf
 vendor/lib/mt6781/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
+vendor/lib64/libm4u.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility.so
@@ -1084,7 +1080,6 @@ vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
-vendor/lib64/libmvpu_config_data.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_platform.so
@@ -1156,6 +1151,7 @@ vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/libDR.so
 vendor/lib64/libmnl.so
+vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
 
 # GNSS (Configs)
@@ -1188,11 +1184,9 @@ vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/gsm0710muxd
 vendor/bin/ipsec_mon
-vendor/bin/wfca
 vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
-vendor/etc/init/init.wfca.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/mtkrild.rc
 vendor/lib/libcares_naptr.so
@@ -1203,7 +1197,6 @@ vendor/lib/libverno.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
-vendor/lib64/libm4u.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmnetlink_v104.so
 vendor/lib64/libmtk-fusion-ril-prop-vsim.so
@@ -1225,8 +1218,6 @@ vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/libratconfig.so
 vendor/lib64/librilfusion.so
-vendor/lib64/librpc.so
-vendor/lib64/libscltm.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
@@ -1260,12 +1251,9 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
-vendor/bin/rcs_volte_stack
-vendor/bin/volte_clientapi_ua
 vendor/bin/volte_imcb
 vendor/bin/volte_imsm_93
 vendor/bin/volte_md_status
-vendor/bin/volte_rcs_ua
 vendor/bin/volte_stack
 vendor/bin/volte_ua
 vendor/etc/init/init.volte_imcb.rc
@@ -1274,14 +1262,11 @@ vendor/etc/init/init.volte_md_status.rc
 vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_ua.rc
 vendor/etc/init/init.vtservice_hidl.rc
-vendor/etc/init/volte_clientapi_ua.rc
-vendor/etc/init/volte_rcs_ua.rc
 vendor/etc/ipsec/ssl/openssl.cnf
 vendor/etc/ipsec/ipsec.conf
 vendor/etc/ipsec/strongswan.conf
 vendor/etc/smsdbvisitor.xml
 vendor/lib/libipsec_ims_shr.so
-vendor/lib/librcs_volte_core.so
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
@@ -1347,7 +1332,7 @@ vendor/lib64/libimsg_log.so
 vendor/lib64/libteeclientjni.so
 vendor/lib64/libteeclientjni@1.1.so
 vendor/lib64/libteei_daemon_vfs.so
-vendor/lib64/libthha.so;;DISABLE_CHECKELF
+vendor/lib64/libthha.so;DISABLE_CHECKELF
 vendor/lib64/libthhclient.so
 vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
 vendor/lib64/wechat.beanpod.so

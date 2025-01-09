@@ -70,8 +70,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so': blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
-    ('vendor/lib64/vendor.mediatek.hardware.power@1.1.so', 'vendor/lib64/vendor.mediatek.hardware.power@2.0.so'): blob_fixup()
-        .add_needed('libshim_power.so'),
     'vendor/lib64/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
     (

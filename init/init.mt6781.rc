@@ -73,7 +73,6 @@ on fs
 on late-fs
     wait_for_prop hwservicemanager.ready "true"
 
-    write /sys/kernel/tracing/trace_marker "B|1|Mount late"
     mount_all --late
 
     chown system system /mnt/vendor/persist

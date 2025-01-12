@@ -825,6 +825,9 @@ on boot
     chown system system /sys/bus/platform/devices/aw8622/pwm_ctrl
     chown system system /sys/bus/platform/devices/aw8622/test_cnt
 
+    # Limit discard size to 128MB in order to avoid long IO latency
+    write /sys/block/sda/queue/discard_max_bytes 134217728
+
 on property:vold.decrypt=trigger_reset_main
     setprop sys.boot_completed 0
     setprop dev.bootcomplete 0

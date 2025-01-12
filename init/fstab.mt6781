@@ -4,15 +4,15 @@
 # <src>                           <mnt_point>          <type> <mnt_flags and options>         <fs_mgr_flags>
 
 # Super Partitions
-system                            /system              ext4    ro                             wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+system                            /system              ext4    ro                             wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,readahead_size_kb=128
 system_ext                        /system_ext          ext4    ro                             wait,slotselect,avb,logical,first_stage_mount
 product                           /product             ext4    ro                             wait,slotselect,avb,logical,first_stage_mount
 vendor                            /vendor              erofs   ro                             wait,slotselect,avb,logical,first_stage_mount
 odm                               /odm                 erofs   ro                             wait,slotselect,avb,logical,first_stage_mount
 
 # Data
-/dev/block/by-name/metadata       /metadata            ext4    noatime,nosuid,nodev,discard   wait,check,formattable,first_stage_mount
-/dev/block/by-name/userdata       /data                f2fs    noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt wait,check,formattable,quota,latemount,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
+/dev/block/by-name/metadata       /metadata            ext4    noatime,nosuid,nodev,discard   wait,check,formattable,first_stage_mount,readahead_size_kb=128
+/dev/block/by-name/userdata       /data                f2fs    noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt wait,check,formattable,quota,latemount,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity,readahead_size_kb=128
 /devices/platform/externdevice*   auto                 auto    defaults                       voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/platform/mt_usb*         auto                 vfat    defaults                       voldmanaged=usbotg:auto
 /dev/block/by-name/otp            /otp                 emmc    defaults                       defaults

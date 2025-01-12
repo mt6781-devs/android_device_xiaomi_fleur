@@ -758,6 +758,9 @@ on boot
     # Log levels
     write /proc/sys/kernel/printk "4 4 1 7"
 
+    # Limit discard size to 128MB in order to avoid long IO latency
+    write /sys/block/sda/queue/discard_max_bytes 134217728
+
 on property:vold.decrypt=trigger_reset_main
     setprop sys.boot_completed 0
     setprop dev.bootcomplete 0

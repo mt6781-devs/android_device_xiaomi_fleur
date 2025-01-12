@@ -4,14 +4,14 @@
 # <src>                           <mnt_point>          <type> <mnt_flags and options>         <fs_mgr_flags>
 
 # Super Partitions
-system                            /system              ext4    ro                             wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey
+system                            /system              ext4    ro                             wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey,readahead_size_kb=128
 system_ext                        /system_ext          ext4    ro                             wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey
 product                           /product             ext4    ro                             wait,slotselect,avb,logical,first_stage_mount
 vendor                            /vendor              erofs   ro                             wait,slotselect,avb,logical,first_stage_mount
 
 # Data
-/dev/block/by-name/metadata       /metadata            ext4    noatime,nosuid,nodev,discard   wait,check,formattable,first_stage_mount,metadata_csum
-/dev/block/by-name/userdata       /data                f2fs    noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt wait,check,formattable,latemount,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
+/dev/block/by-name/metadata       /metadata            ext4    noatime,nosuid,nodev,discard   wait,check,formattable,first_stage_mount,metadata_csum,readahead_size_kb=128
+/dev/block/by-name/userdata       /data                f2fs    noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt wait,check,formattable,latemount,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity,readahead_size_kb=128
 /devices/platform/externdevice*   auto                 auto    defaults                       voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/platform/mt_usb*         auto                 vfat    defaults                       voldmanaged=usbotg:auto
 /dev/block/by-name/otp            /otp                 emmc    defaults                       defaults

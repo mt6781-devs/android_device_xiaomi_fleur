@@ -17,6 +17,12 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "performance"
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "performance"
 
+    # GPU Permissions
+    chown system system /sys/kernel/gpu/gpu_max_clock
+    chown system system /sys/kernel/gpu/gpu_min_clock
+    chmod 0666 /sys/kernel/gpu/gpu_max_clock
+    chmod 0666 /sys/kernel/gpu/gpu_min_clock
+
 ## Utilization Clamping
     # Real-Time tasks
     write /dev/cpuctl/rt/cpu.uclamp.latency_sensitive 1

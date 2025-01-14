@@ -783,19 +783,3 @@ on property:sys.boot_completed=1
 
     # Restart C2 HAL
     restart android-hardware-media-c2-hal-1-2
-
-# TouchPad settings
-on property:sys.tp.grip_enable=0
-    write /proc/tp_grip_area 0
-
-on property:sys.tp.grip_enable=1
-    write /proc/tp_grip_area 1
-
-on property:sys.tp.grip_enable=90
-    write /proc/tp_grip_area 90
-
-on property:sys.tp.grip_enable=180
-    write /proc/tp_grip_area 180
-
-on property:sys.tp.grip_enable=270
-    write /proc/tp_grip_area 270

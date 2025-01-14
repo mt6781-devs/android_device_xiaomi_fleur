@@ -82,6 +82,9 @@ on property:sys.boot_completed=1
     # Adjust watermark level
     write /proc/sys/vm/watermark_scale_factor 125
 
+    # Enable cpufreq sched
+    write /proc/cpufreq/cpufreq_sched_disable 0
+
     # End boot time tuning
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "schedutil"

@@ -1,8 +1,10 @@
-# MTK platform .rc configure
+# MediaTek sensor init script for 1.0 arch
+
 on post-fs-data
-    # calibration
+    # Calibration
     mkdir /data/vendor/sensor 0774 system system
-    # Sensor
+
+    # Sensor permissions
     chmod 0660 /dev/hwmsensor
     chmod 0660 /dev/msensor
     chmod 0660 /dev/gsensor
@@ -26,7 +28,6 @@ on post-fs-data
     chmod 0660 /dev/m_bio_misc
     chmod 0660 /dev/biometric
     chmod 0660 /dev/sensorlist
-
     chown system system /dev/hwmsensor
     chown system system /dev/msensor
     chown radio system /dev/gsensor
@@ -50,7 +51,6 @@ on post-fs-data
     chown system system /dev/m_bio_misc
     chown system system /dev/biometric
     chown system system /dev/sensorlist
-
     chmod 0660 /sys/class/sensor/m_acc_misc/accenablenodata
     chmod 0660 /sys/class/sensor/m_acc_misc/accactive
     chmod 0660 /sys/class/sensor/m_acc_misc/accdelay
@@ -63,7 +63,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_acc_misc/accbatch
     chown system system /sys/class/sensor/m_acc_misc/accflush
     chown system system /sys/class/sensor/m_acc_misc/acccali
-
     chmod 0660 /sys/class/sensor/m_mag_misc/magactive
     chmod 0660 /sys/class/sensor/m_mag_misc/magdelay
     chmod 0660 /sys/class/sensor/m_mag_misc/magbatch
@@ -76,7 +75,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_mag_misc/magflush
     chown system system /sys/class/sensor/m_mag_misc/magcali
     chown system system /sys/class/sensor/m_mag_misc/maglibinfo
-
     chmod 0660 /sys/class/sensor/m_gyro_misc/gyroenablenodata
     chmod 0660 /sys/class/sensor/m_gyro_misc/gyroactive
     chmod 0660 /sys/class/sensor/m_gyro_misc/gyrodelay
@@ -89,7 +87,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_gyro_misc/gyrobatch
     chown system system /sys/class/sensor/m_gyro_misc/gyroflush
     chown system system /sys/class/sensor/m_gyro_misc/gyrocali
-
     chmod 0660 /sys/class/sensor/m_als_misc/alsactive
     chmod 0660 /sys/class/sensor/m_als_misc/alsdelay
     chmod 0660 /sys/class/sensor/m_als_misc/alsbatch
@@ -110,7 +107,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_ps_misc/psbatch
     chown system system /sys/class/sensor/m_ps_misc/psflush
     chown system system /sys/class/sensor/m_ps_misc/pscali
-
     chmod 0660 /sys/class/sensor/m_baro_misc/baroenablenodata
     chmod 0660 /sys/class/sensor/m_baro_misc/baroactive
     chmod 0660 /sys/class/sensor/m_baro_misc/barodelay
@@ -123,19 +119,16 @@ on post-fs-data
     chown system system /sys/class/sensor/m_baro_misc/barobatch
     chown system system /sys/class/sensor/m_baro_misc/baroflush
     chown system system /sys/class/sensor/m_baro_misc/barocali
-    
     chmod 0660 /sys/class/sensor/m_hmdy_misc/hmdyenablenodata
     chmod 0660 /sys/class/sensor/m_hmdy_misc/hmdyactive
     chmod 0660 /sys/class/sensor/m_hmdy_misc/hmdydelay
     chmod 0660 /sys/class/sensor/m_hmdy_misc/hmdybatch
     chmod 0660 /sys/class/sensor/m_hmdy_misc/hmdyflush
-
     chown system system /sys/class/sensor/m_hmdy_misc/hmdyenablenodata
     chown system system /sys/class/sensor/m_hmdy_misc/hmdyactive
     chown system system /sys/class/sensor/m_hmdy_misc/hmdydelay
     chown system system /sys/class/sensor/m_hmdy_misc/hmdybatch
     chown system system /sys/class/sensor/m_hmdy_misc/hmdyflush
-
     chmod 0660 /sys/class/sensor/m_pedo_misc/pedoactive
     chmod 0660 /sys/class/sensor/m_pedo_misc/pedodelay
     chmod 0660 /sys/class/sensor/m_pedo_misc/pedobatch
@@ -144,7 +137,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_pedo_misc/pedodelay
     chown system system /sys/class/sensor/m_pedo_misc/pedobatch
     chown system system /sys/class/sensor/m_pedo_misc/pedoflush
-
     chmod 0660 /sys/class/sensor/m_situ_misc/situactive
     chmod 0660 /sys/class/sensor/m_situ_misc/situdelay
     chmod 0660 /sys/class/sensor/m_situ_misc/situbatch
@@ -153,7 +145,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_situ_misc/situdelay
     chown system system /sys/class/sensor/m_situ_misc/situbatch
     chown system system /sys/class/sensor/m_situ_misc/situflush
-
     chmod 0660 /sys/class/sensor/m_act_misc/actactive
     chmod 0660 /sys/class/sensor/m_act_misc/actdelay
     chmod 0660 /sys/class/sensor/m_act_misc/actbatch
@@ -162,7 +153,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_act_misc/actdelay
     chown system system /sys/class/sensor/m_act_misc/actbatch
     chown system system /sys/class/sensor/m_act_misc/actflush
-
     chmod 0660 /sys/class/sensor/m_step_c_misc/step_cactive
     chmod 0660 /sys/class/sensor/m_step_c_misc/step_cdelay
     chmod 0660 /sys/class/sensor/m_step_c_misc/step_cbatch
@@ -171,7 +161,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_step_c_misc/step_cdelay
     chown system system /sys/class/sensor/m_step_c_misc/step_cbatch
     chown system system /sys/class/sensor/m_step_c_misc/step_cflush
-
     chmod 0660 /sys/class/sensor/m_fusion_misc/fusionactive
     chmod 0660 /sys/class/sensor/m_fusion_misc/fusiondelay
     chmod 0660 /sys/class/sensor/m_fusion_misc/fusionbatch
@@ -180,7 +169,6 @@ on post-fs-data
     chown system system /sys/class/sensor/m_fusion_misc/fusiondelay
     chown system system /sys/class/sensor/m_fusion_misc/fusionbatch
     chown system system /sys/class/sensor/m_fusion_misc/fusionflush
-
     chmod 0660 /sys/class/sensor/m_bio_misc/bioactive
     chmod 0660 /sys/class/sensor/m_bio_misc/biodelay
     chmod 0660 /sys/class/sensor/m_bio_misc/biobatch

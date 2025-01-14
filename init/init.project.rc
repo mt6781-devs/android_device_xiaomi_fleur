@@ -1,35 +1,28 @@
-# MTK project .rc configure
+# MediaTek project init script
 
 on init
+    # OTG
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root
 
 on post-fs-data
-
-#Camera
-    chmod 0660 /dev/MAINAF
-    chown system camera /dev/MAINAF
-
-    chmod 0660 /dev/MAINAF2
-    chown system camera /dev/MAINAF2
-
-    chmod 0660 /dev/SUBAF
-    chown system camera /dev/SUBAF
-
-    chmod 0660 /dev/GAF001AF
-    chown system camera /dev/GAF001AF
-
-    chmod 0660 /dev/DW9714AF
-    chown system camera /dev/DW9714AF
-
-    chmod 0660 /dev/LC898212AF
-    chown system camera /dev/LC898212AF
-
-    chmod 0660 /dev/BU64745GWZAF
-    chown system camera /dev/BU64745GWZAF
-
+    # Camera
     mkdir /mnt/vendor/persist/camera
     mkdir /data/vendor/camera
+    chmod 0660 /dev/MAINAF
+    chown system camera /dev/MAINAF
+    chmod 0660 /dev/MAINAF2
+    chown system camera /dev/MAINAF2
+    chmod 0660 /dev/SUBAF
+    chown system camera /dev/SUBAF
+    chmod 0660 /dev/GAF001AF
+    chown system camera /dev/GAF001AF
+    chmod 0660 /dev/DW9714AF
+    chown system camera /dev/DW9714AF
+    chmod 0660 /dev/LC898212AF
+    chown system camera /dev/LC898212AF
+    chmod 0660 /dev/BU64745GWZAF
+    chown system camera /dev/BU64745GWZAF
     chown system system /mnt/vendor/persist/camera
     chown system system /data/vendor/camera
     chmod 0777 /mnt/vendor/persist/camera
@@ -42,7 +35,7 @@ on post-fs-data
     chown system system /data/vendor/camera/com.xiaomi.dcal.wu.data
     restorecon_recursive /mnt/vendor/persist/camera
 
-# for intsense bokeh use
+    # Bokeh
     mkdir /data/vendor/camera/model 0777 system camera
     mkdir /data/vendor/camera/model/dof_model 0777 system camera
     mkdir /data/vendor/camera/model/rt_model 0777 system camera
@@ -60,12 +53,13 @@ on post-fs-data
     chmod 0666 /data/vendor/camera/model/rt_model/preview_model
     chmod 0666 /data/vendor/camera/model/rt_model/preview_policy
     chmod 0666 /data/vendor/camera/com.xiaomi.dcal.wu.data
-# for mibokeh use
     mkdir /data/vendor/camera/mibokeh 0776 system camera
-#SMB
+
+    # SMB
     chown system system /proc/smb/ScreenComm
     chmod 0660 /proc/smb/ScreenComm
 
+    # SPM
     chmod 0660 /dev/spm
     chown system system /dev/spm
 

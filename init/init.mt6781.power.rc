@@ -16,6 +16,7 @@ on init
     # Boot time tuning
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "performance"
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "performance"
+    write /sys/devices/platform/11270000.ufshci/clkgate_enable 0
 
     # GPU Permissions
     chown system system /sys/kernel/gpu/gpu_max_clock
@@ -84,6 +85,7 @@ on property:sys.boot_completed=1
     # End boot time tuning
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "schedutil"
+    write /sys/devices/platform/11270000.ufshci/clkgate_enable 1
 
     # DVFS
     write /sys/kernel/ged/hal/dvfs_margin_value 130

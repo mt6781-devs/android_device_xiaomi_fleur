@@ -28,7 +28,7 @@ on init
     # Real-Time tasks
     write /dev/cpuctl/rt/cpu.uclamp.latency_sensitive 1
     write /dev/cpuctl/rt/cpu.uclamp.max max
-    write /dev/cpuctl/rt/cpu.uclamp.min 60
+    write /dev/cpuctl/rt/cpu.uclamp.min 0
     write /dev/cpuctl/rt/cpu.shares 20480
 
     # Background tasks for best efficiency

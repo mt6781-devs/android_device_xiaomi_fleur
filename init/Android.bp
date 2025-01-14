@@ -74,10 +74,23 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.zram.rc",
+    src: "init.zram.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.mt6781",
     src: "fstab.mt6781",
     vendor: true,
     ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    vendor: true,
 }
 
 prebuilt_etc {

@@ -7,6 +7,7 @@ import /vendor/etc/init/hw/init.mt6781.usb.rc
 import /vendor/etc/init/hw/init.mt6781.power.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
+import /vendor/etc/init/hw/init.zram.rc
 import /vendor/etc/init/hw/init.modem.rc
 
 on init

@@ -20,9 +20,21 @@ on init
     chown root system /proc/lk_env
     chmod 0660 /proc/lk_env
 
-    # Increase sysctl_rmem_max and sysctl_wmem_max values to 2M
-    write /proc/sys/net/core/wmem_max 8388608
+    # Network parameters
+    write /proc/sys/net/core/rmem_default 1310720
     write /proc/sys/net/core/rmem_max 8388608
+    write /proc/sys/net/core/wmem_default 327680
+    write /proc/sys/net/core/wmem_max 8388608
+    write /proc/sys/net/core/optmem_max 20480
+    write /proc/sys/net/core/netdev_max_backlog 10000
+    write /proc/sys/net/ipv4/tcp_rmem "2097152 4194304 8388608"
+    write /proc/sys/net/ipv4/tcp_wmem "262144 524288 8388608"
+    write /proc/sys/net/ipv4/tcp_mem "44259 59012 88518"
+    write /proc/sys/net/ipv4/udp_mem "88518 118025 177036"
+
+    write /sys/class/net/ccmni0/queues/rx-0/rps_cpus fe
+    write /sys/class/net/ccmni1/queues/rx-0/rps_cpus fe
+    write /sys/class/net/ccmni2/queues/rx-0/rps_cpus fe
 
 on late-init
     # Enable rcu_expedited

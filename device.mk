@@ -216,7 +216,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+    android.hardware.light-service.lineage
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml

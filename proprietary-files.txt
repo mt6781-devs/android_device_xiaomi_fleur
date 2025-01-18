@@ -916,7 +916,6 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6781.so;FIX_S
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/lib/egl/egl.cfg
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so

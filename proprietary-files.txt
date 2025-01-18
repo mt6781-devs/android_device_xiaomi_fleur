@@ -1312,7 +1312,6 @@ vendor/lib64/libksensor.so
 vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 vendor/lib64/librgbwlightsensor.so
 vendor/lib64/libsensor_custom.so
-vendor/lib64/sensors.touch.detect.so
 
 # Soter
 vendor/app/SoterService/SoterService.apk

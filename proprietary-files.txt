@@ -916,23 +916,12 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6781.so;FIX_S
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/lib64/egl/libGLES_mali.so
-vendor/lib64/egl/libGLES_meow.so
-vendor/lib64/egl/libMEOW_data.so
-vendor/lib64/egl/libMEOW_gift.so
-vendor/lib64/egl/libMEOW_qt.so
-vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6781.so:vendor/lib64/hw/hwcomposer.mtk_common.so;FIX_SONAME
-vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/mt6781/libdpframework.so:vendor/lib64/libdpframework.so
 vendor/lib64/mt6781/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
 vendor/lib64/mt6781/libnir_neon_driver.so:vendor/lib64/libnir_neon_driver.so
-vendor/lib64/arm.graphics-V1-ndk_platform.so
-vendor/lib64/libDefaultFpsActor.so
-vendor/lib64/libFrameRecord.so
-vendor/lib64/libNoFpsActor.so
 vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
@@ -947,9 +936,6 @@ vendor/lib64/libged.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
 vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgralloc_extra.so
-vendor/lib64/libgralloc_metadata.so
-vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libminiui.so
 vendor/lib64/libmml.so
@@ -1004,6 +990,22 @@ vendor/lib/libfgauge_gm30.so
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.beanpod.so
+
+# Graphics - from A165FXXS2AXL5
+vendor/lib64/egl/mt6789/libGLES_mali.so:vendor/lib64/egl/libGLES_mali.so
+vendor/lib64/egl/libGLES_meow.so
+vendor/lib64/egl/libMEOW_data.so
+vendor/lib64/egl/libMEOW_gift.so
+vendor/lib64/egl/libMEOW_qt.so
+vendor/lib64/egl/libMEOW_trace.so
+vendor/lib64/hw/mt6789/vulkan.mali.so:vendor/lib64/hw/vulkan.mali.so
+vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so:vendor/lib64/arm.graphics-V1-ndk_platform.so
+vendor/lib64/libDefaultFpsActor.so
+vendor/lib64/libFrameRecord.so
+vendor/lib64/libNoFpsActor.so
+vendor/lib64/libgralloc_extra.so
+vendor/lib64/libgralloc_metadata.so
+vendor/lib64/libgralloctypes_mtk.so
 
 # ION from gale-user 15 AP3A.240905.015.A2 OS2.0.2.0.VGPMIXM release-keys
 vendor/lib/libion_mtk.so

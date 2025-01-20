@@ -17,7 +17,7 @@
 <MediaCodecs>
     <Settings>
         <!-- disable TV and telephony domains by default. These must be opted in by OEMs -->
-        <Domain name="telephony" enabled="false" />
+        <Domain name="telephony" enabled="true" />
         <Domain name="tv" enabled="false" />
     </Settings>
     <Decoders>

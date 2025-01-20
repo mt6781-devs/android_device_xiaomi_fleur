@@ -18,8 +18,9 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "performance"
     write /sys/devices/platform/11270000.ufshci/clkgate_enable 0
 
-    # Sched Migration Cost
+    # Sched tuning
     write /proc/sys/kernel/sched_migration_cost_ns 250000
+    write /proc/sys/kernel/sched_pelt_multiplier 2
 
     # GPU Permissions
     chown system system /sys/kernel/gpu/gpu_max_clock

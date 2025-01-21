@@ -1017,7 +1017,6 @@ vendor/lib64/libion_ulit.so
 vendor/bin/vpud
 vendor/etc/init/vpud.rc
 vendor/lib/mt6781/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
-vendor/lib64/libm4u.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility.so
@@ -1029,6 +1028,7 @@ vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/HEVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
+vendor/lib64/libm4u.so
 
 # Media (Codec2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
@@ -1167,6 +1167,7 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/MNL_Config.xml
+vendor/etc/mpe.conf
 vendor/etc/slp_conf
 
 # Keymaster
@@ -1319,8 +1320,8 @@ vendor/lib64/libsensor_custom.so
 vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
 vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
-vendor/lib64/wechat.beanpod.so
 vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
+vendor/lib64/wechat.beanpod.so
 
 # Trusted Execution Environment (TEE)
 vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service

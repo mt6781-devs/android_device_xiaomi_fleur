@@ -9,7 +9,7 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
     chown system system /sys/class/thermal/thermal_message/sconfig
-    chmod 0666 sys/class/thermal/thermal_message/flash_state
+    chmod 0666 /sys/class/thermal/thermal_message/flash_state
 
 on boot
     start mi_thermald
@@ -18,7 +18,7 @@ on charger
     start mi_thermald
 
 service mi_thermald /vendor/bin/mi_thermald
-	class main
-	user root
-	group system
+    class main
+    user root
+    group system
 

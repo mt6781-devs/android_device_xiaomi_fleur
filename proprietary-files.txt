@@ -1369,13 +1369,16 @@ vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/isee_model.json
 
-# Tether Offload
+# Tether Offload - from gale-user 15 AP3A.240905.015.A2 OS2.0.2.0.VGPMIXM release-keys
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/netdagent
+vendor/etc/init/android.hardware.tetheroffload-V1-service.rc
 vendor/etc/init/netdagent.rc
-vendor/etc/init/tetheroffloadservice.rc
+vendor/etc/vintf/manifest/CommandService.xml
+vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal

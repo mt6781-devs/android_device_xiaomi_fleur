@@ -58,6 +58,7 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
 ro.mtk_cam_stereo_camera_support=1
 
 # Display
+persist.log.tag.gralloc4=S
 ro.vendor.mtk_aal_support=1
 ro.vendor.composer_version=2.3
 ro.vendor.display.type=oled

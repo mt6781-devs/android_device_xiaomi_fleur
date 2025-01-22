@@ -30,7 +30,6 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
 vendor.bluetooth.ldac.abr=true
 ro.vendor.bluetooth.wipower=false
-ro.vendor.mtk.bt_sap_enable=true
 
 # Camera
 camera.disable_zsl_mode=1
@@ -55,7 +54,6 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
-ro.mtk_cam_stereo_camera_support=1
 
 # Display
 persist.log.tag.gralloc4=S

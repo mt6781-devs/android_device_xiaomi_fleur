@@ -19,7 +19,7 @@ on init
 
 ## Utilization Clamping
     # Tuning
-    write /proc/sys/kernel/sched_util_clamp_min_rt_default 96
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
     write /proc/sys/kernel/sched_util_clamp_min 128
 
 on property:sys.boot_completed=1

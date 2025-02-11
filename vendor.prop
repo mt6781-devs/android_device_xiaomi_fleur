@@ -85,7 +85,8 @@ persist.sys.fuse.passthrough.enable=true
 ro.hardware.gatekeeper=beanpod
 
 # HWUI
-debug.hwui.skia_atrace_enabled=false
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.skia_use_perfetto_track_events=false
 
 # IMS
 persist.vendor.mtk_dynamic_ims_switch=1

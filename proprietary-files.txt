@@ -1236,7 +1236,7 @@ system/lib64/libimsma_socketwrapper.so
 system/lib64/libmtk_vt_service.so
 system/lib64/libmtk_vt_wrapper.so
 system/lib64/libsignal.so
-system/lib64/libsink.so
+system/lib64/libsink.so:system/lib64/libsink-mtk.so;FIX_SONAME
 system/lib64/libsource.so
 system/lib64/libvcodec_cap.so
 system/lib64/libvcodec_capenc.so

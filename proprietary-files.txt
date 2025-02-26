@@ -915,7 +915,6 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6781.so;FIX_S
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6781.so:vendor/lib64/hw/hwcomposer.mtk_common.so;FIX_SONAME

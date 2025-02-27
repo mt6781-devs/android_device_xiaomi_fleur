@@ -202,6 +202,9 @@ PRODUCT_PACKAGES += \
     fstab.mt6781.ramdisk \
     fstab.zram
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml

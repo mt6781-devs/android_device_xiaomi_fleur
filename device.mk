@@ -15,6 +15,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     $(DEVICE_PATH)/configs/linker.config.json

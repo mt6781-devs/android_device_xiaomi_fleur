@@ -920,7 +920,6 @@ vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6781.so:vendor/lib64/hw/hwcomposer.mtk_common.so;FIX_SONAME
 vendor/lib64/mt6781/libdpframework.so:vendor/lib64/libdpframework.so
 vendor/lib64/mt6781/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
-vendor/lib64/mt6781/libnir_neon_driver.so:vendor/lib64/libnir_neon_driver.so
 vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
@@ -1045,11 +1044,10 @@ vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
 # MMAgent
-vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
-vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
-vendor/lib64/libmmagent.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
+vendor/bin/hw/vendor.mediatek.hardware.mmagent-service
+vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc
+vendor/lib64/mt6781/libmmagent.so:vendor/lib64/libmmagent.so
+vendor/lib64/vendor.mediatek.hardware.mmagent-V1-ndk.so
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
@@ -1064,24 +1062,23 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
 # Neural Networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml
+vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk-legacy
+vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
+vendor/etc/vintf/manifest/manifest_apuware_utils_aidl.xml
 vendor/etc/armnn_app.config
-vendor/lib64/APUWareUtilsServer.so
+vendor/lib64/mt6781/libneuron_adapter_mgvi.so:vendor/lib64/libneuron_adapter_mgvi.so
+vendor/lib64/mt6781/libnir_neon_driver.so:vendor/lib64/libnir_neon_driver.so
+vendor/lib64/APUWareUtilsAidlServer.so
 vendor/lib64/libapu_mdw.so
-vendor/lib64/libapusys.so
-vendor/lib64/libapusys_edma.so
 vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
+vendor/lib64/libneuralnetworks_sl_driver_mtk_legacy_prebuilt.so
 vendor/lib64/libneuroeara.so
-vendor/lib64/libneuron_adapter.so
-vendor/lib64/libneuron_platform.so
-vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
-vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
+vendor/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
 
 # NFC
 vendor/firmware/st21nfc_fw7.bin
@@ -1113,6 +1110,8 @@ vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libpqparamparser.so
 vendor/lib64/libpqpconfig.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.10.so

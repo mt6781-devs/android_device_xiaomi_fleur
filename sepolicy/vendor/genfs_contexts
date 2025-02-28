@@ -32,6 +32,7 @@ genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify u:object
 genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify/type u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0066/power_supply/bq2597x-standalone u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/rt-pd-manager/typec/port0 u:object_r:sysfs_usb_nonplat:s0
+genfscon sysfs /devices/platform/pd_adapter u:object_r:sysfs_batteryinfo:s0
 
 # Touchpanel
 genfscon sysfs /touchpanel/ u:object_r:sysfs_touchpanel:s0

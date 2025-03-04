@@ -1,6 +1,7 @@
 # Camera
 persist.vendor.camera. u:object_r:vendor_camera_persist_prop:s0
 vendor.camera. u:object_r:vendor_camera_prop:s0
+vendor.debug. u:object_r:vendor_camera_prop:s0
 
 # Dynamic sensor
 vendor.dynamic_sensor. u:object_r:vendor_dynamic_sensor_prop:s0

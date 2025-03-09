@@ -803,3 +803,15 @@ on property:sys.boot_completed=1
 
     # Restart C2 HAL
     restart android-hardware-media-c2-hal-1-2
+
+on zygote-start
+    stop statsd
+
+service statsd /apex/com.android.os.statsd/bin/statsd
+    class main
+    socket statsdw dgram+passcred 0222 statsd statsd
+    user statsd
+    group statsd log
+    task_profiles ProcessCapacityHigh HighEnergySaving
+    override
+    disabled

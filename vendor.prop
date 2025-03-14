@@ -173,6 +173,11 @@ ro.vendor.mediatek.platform=MT6781
 ro.soc.model=MT6781
 ro.soc.manufacturer=Mediatek
 
+# Power
+vendor.powerhal.interaction.offset=0
+vendor.powerhal.interaction.min=50
+vendor.powerhal.interaction.max=150
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.md_c2k_cap_dep_check=0

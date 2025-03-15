@@ -22,6 +22,7 @@ on init
     write /sys/devices/platform/11270000.ufshci/clkgate_enable 0
 
     # Sched tuning
+    write /proc/sys/kernel/sched_child_runs_first 1
     write /proc/sys/kernel/sched_migration_cost_ns 250000
     write /proc/sys/kernel/sched_pelt_multiplier 2
     write /proc/sys/kernel/sched_latency_ns 5000000

@@ -10,9 +10,11 @@ on init
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
     setprop dalvik.vm.dex2oat-threads 6
 
-    # Back to default VM settings
-    write /proc/sys/vm/dirty_expire_centisecs 3000
-    write /proc/sys/vm/dirty_background_ratio 10
+    # VM Tweaks
+    write /proc/sys/vm/dirty_writeback_centisecs 300
+    write /proc/sys/vm/dirty_background_ratio 7
+    write /proc/sys/vm/dirty_ratio 15
+    write /proc/sys/vm/dirty_expire_centisecs 2000
 
     # Boot time tuning
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "performance"

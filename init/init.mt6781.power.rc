@@ -29,6 +29,9 @@ on init
     chmod 0666 /sys/kernel/gpu/gpu_max_clock
     chmod 0666 /sys/kernel/gpu/gpu_min_clock
 
+    # fs tuning
+    write /sys/block/sda/queue/scheduler mq-deadline
+
 ## Utilization Clamping
     # Tuning
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0

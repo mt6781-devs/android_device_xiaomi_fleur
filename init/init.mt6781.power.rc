@@ -31,6 +31,10 @@ on init
 
     # fs tuning
     write /sys/block/sda/queue/scheduler mq-deadline
+    write /sys/block/sda/queue/iostats 0
+    write /sys/block/sda/queue/read_ahead_kb 512
+    write /sys/block/sda/queue/nr_requests 64
+    write /sys/block/sda/queue/iosched/slice_idle 0
 
 ## Utilization Clamping
     # Tuning
@@ -108,6 +112,11 @@ on property:sys.boot_completed=1
     write /sys/kernel/ged/hal/dvfs_margin_value 130
     write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
     write /sys/kernel/ged/hal/loading_base_dvfs_step 4
+
+    # fs tuning
+    write /sys/block/sda/queue/iostats 1
+    write /sys/block/sda/queue/read_ahead_kb 128
+    write /sys/block/sda/queue/nr_requests 128
 
 service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@2.3-service
     class hal animation

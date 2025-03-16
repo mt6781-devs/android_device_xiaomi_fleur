@@ -1,4 +1,4 @@
-# All blobs that aren't noted or pinned are from sea V816.0.10.0.UHZMIXM
+# All blobs that aren't noted or pinned are from sea V816.0.16.0.UHZMIXM
 
 # Audio
 vendor/firmware/aw87xxx_acf.bin
@@ -159,7 +159,7 @@ vendor/firmware/BT_FW.cfg
 vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
 vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin
 
-# Camera - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
+# Camera - from fleur-user 13 SP1A.210812.016 V816.0.9.0.TKEMIXM release-keys
 vendor/bin/hw/camerahalserver
 vendor/bin/lib3a.ccu.ddr
 vendor/bin/lib3a.ccu.dm
@@ -875,7 +875,7 @@ vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
-# Camera (Configs) - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
+# Camera (Configs) - from fleur-user 13 SP1A.210812.016 V816.0.9.0.TKEMIXM release-keys
 vendor/etc/camera/model/cap_ldc_model/ldc_cap_cache
 vendor/etc/camera/model/cap_ldc_model/ldc_cap_model
 vendor/etc/camera/model/cap_ldc_model/ldc_cap_policy
@@ -955,7 +955,7 @@ vendor/firmware/gt9896s_firmware_6781v01_1080x2280.bin
 vendor/firmware/gt9896s_firmware_6781v01_1080x2300.bin
 vendor/firmware/remoteproc_scp
 
-# Display (Configs) - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
+# Display (Configs) - from fleur-user 13 SP1A.210812.016 V816.0.9.0.TKEMIXM release-keys
 vendor/etc/dsi_panel_k7s_38_0c_0a_video_mi.xml
 vendor/etc/dsi_panel_k7s_38_0c_0b_video_mi.xml
 vendor/etc/screen_light.xml
@@ -1174,7 +1174,7 @@ vendor/bin/bp_kmsetkey_ca
 vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 
-# Radio - from fleur-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys
+# Radio - from fleur-user 13 SP1A.210812.016 V816.0.9.0.TKEMIXM release-keys
 vendor/bin/hw/mtkfusionrild
 
 # Radio

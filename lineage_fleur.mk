@@ -23,5 +23,5 @@ PRODUCT_MODEL := 2201117SY
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="fleur_global-user 13 SP1A.210812.016 V816.0.4.0.TKEMIXM release-keys" \
-    BuildFingerprint=Redmi/fleur_global/fleur:13/SP1A.210812.016/V816.0.4.0.TKEMIXM:user/release-keys
+    BuildDesc="fleur_global-user 13 SP1A.210812.016 V816.0.9.0.TKEMIXM release-keys" \
+    BuildFingerprint=Redmi/fleur_global/fleur:13/SP1A.210812.016/V816.0.9.0.TKEMIXM:user/release-keys

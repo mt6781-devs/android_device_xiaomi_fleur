@@ -22,9 +22,15 @@
     </Settings>
     <Decoders>
         <MediaCodec name="c2.mtk.mpeg4.decoder" type="video/mp4v-es" >
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="2048x1088" />
+             <!-- max 2048x1088@60 -->
+            <Limit name="block-count" range="1-8704" />
+            <Limit name="blocks-per-second" range="1-522240" />
+            <Limit name="bitrate" range="1-60000000" />
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1920x1088" value="30" />
+            <Limit name="performance-point-1920x1088" value="60" />
             <Feature name="adaptive-playback"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.h263.decoder" type="video/3gpp" >
@@ -34,26 +40,43 @@
             <Feature name="adaptive-playback"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder" type="video/avc" >
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="64x64" max="2560x1440" />
+            <!-- max 2560x1440@30 -->
+            <Limit name="block-count" range="16-14400" />
+            <Limit name="blocks-per-second" range="16-432000" />
+            <Limit name="bitrate" range="1-100000000" />
             <Quirk name="wants-NAL-fragments" />
-            <!-- longcheer luzaiyang  publish following codecs' concurrent instances limit -->
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-2560x1440" value="30" />
             <Limit name="performance-point-1920x1088" value="60" />
             <Limit name="performance-point-1280x720" value="120" />
             <Feature name="adaptive-playback"/>
+            <Feature name="can-swap-width-height" value="1"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder.secure" type="video/avc" >
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="64x64" max="2048x1088" />
+             <!-- max 2048x1088@30 -->
+            <Limit name="block-count" range="16-8704" />
+            <Limit name="blocks-per-second" range="16-261120" />
+            <Limit name="bitrate" range="1-60000000" />
             <Quirk name="wants-NAL-fragments" />
-            <!-- longcheer luzaiyang  publish following codecs' concurrent instances limit -->
             <Limit name="concurrent-instances" max="1" />
             <Limit name="performance-point-1920x1088" value="30" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" >
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="2560x1440" />
+            <!-- max 2560x1440@30 -->
+            <Limit name="block-count" range="1-14400" />
+            <Limit name="blocks-per-second" range="1-432000" />
+            <Limit name="bitrate" range="1-100000000" />
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-2560x1440" value="30" />
             <Limit name="performance-point-1920x1088" value="60" />
@@ -61,9 +84,14 @@
             <Feature name="adaptive-playback"/>
         </MediaCodec>
 	<MediaCodec name="c2.mtk.hevc.decoder.secure" type="video/hevc" >
+            <Limit name="alignment" value="1x1" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="1920x1088" />
+            <!-- max 1920x1088@30 -->
+            <Limit name="block-count" range="1-8160" />
+            <Limit name="blocks-per-second" range="1-244800" />
+            <Limit name="bitrate" range="1-100000000" />
             <Quirk name="wants-NAL-fragments" />
-            <!-- longcheer luzaiyang  publish following codecs' concurrent instances limit -->
             <Limit name="concurrent-instances" max="1" />
             <Limit name="performance-point-1920x1088" value="30" />
             <Feature name="secure-playback" required="true" />
@@ -76,13 +104,25 @@
             <Feature name="adaptive-playback"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.vpx.decoder" type="video/x-vnd.on2.vp8" >
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="2048x1088" />
+            <!-- max 2048x1088@60 -->
+            <Limit name="block-count" range="16-8704" />
+            <Limit name="blocks-per-second" range="16-522240" />
+            <Limit name="bitrate" range="1-40000000" />
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1920x1088" value="60" />
+            <Limit name="performance-point-1920x1088" value="30" />
             <Feature name="adaptive-playback"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder" type="video/x-vnd.on2.vp9" >
+            <Limit name="alignment" value="1x1" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="2560x1440" />
+            <!-- max 2560x1440@30 -->
+            <Limit name="block-count" range="1-14400" />
+            <Limit name="blocks-per-second" range="1-432000" />
+            <Limit name="bitrate" range="1-60000000" />
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-2560x1440" value="30" />
             <Limit name="performance-point-1920x1088" value="60" />
@@ -90,66 +130,75 @@
             <Feature name="adaptive-playback"/>
         </MediaCodec>
 	<MediaCodec name="c2.mtk.vp9.decoder.secure" type="video/x-vnd.on2.vp9" >
+            <Limit name="alignment" value="1x1" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="1920x1088" />
+            <!-- max 1920x1088@30 -->
+            <Limit name="block-count" range="1-8160" />
+            <Limit name="blocks-per-second" range="1-244800" />
+            <Limit name="bitrate" range="1-100000000" />
             <Quirk name="wants-NAL-fragments" />
-            <!-- longcheer luzaiyang  publish following codecs' concurrent instances limit -->
             <Limit name="concurrent-instances" max="1" />
             <Limit name="performance-point-1920x1088" value="30" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
         </MediaCodec>
         <MediaCodec name="c2.mtk.mpeg2.decoder" type="video/mpeg2" >
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
             <Limit name="size" min="16x16" max="2048x1088" />
+             <!-- max 2048x1088@60 -->
+            <Limit name="block-count" range="1-8704" />
+            <Limit name="blocks-per-second" range="1-522240" />
+            <Limit name="bitrate" range="1-60000000" />
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1920x1088" value="30" />
+            <Limit name="performance-point-1920x1088" value="60" />
             <Feature name="adaptive-playback"/>
         </MediaCodec>
     </Decoders>
     <Encoders>
-        <MediaCodec name="c2.mtk.h263.encoder" type="video/3gpp" >
-            <Limit name="size" min="176x144" max="176x144" />
-            <Limit name="alignment" value="16x16" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="concurrent-instances" max="10" />
-            <Limit name="performance-point-640x480" value="30" />
-        </MediaCodec>
-        <MediaCodec name="c2.mtk.mpeg4.encoder" type="video/mp4v-es" >
-            <Limit name="size" min="176x144" max="176x144" />
-            <Limit name="alignment" value="16x16" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="concurrent-instances" max="10" />
-            <Limit name="performance-point-640x480" value="30" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.avc.encoder" type="video/avc" >
             <Limit name="size" min="160x160" max="2560x1440" />
-            <Limit name="alignment" value="16x16" />
+            <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
+            <!-- max 2560x1440@30 -->
+            <Limit name="block-count" range="100-14400" />
+            <Limit name="blocks-per-second" range="100-432000" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="concurrent-instances" max="10" />
+            <Limit name="performance-point-2560x1440" value="30" />
+            <Limit name="performance-point-1920x1080" value="60" />
+            <Limit name="performance-point-1280x720" value="120" />
+        </MediaCodec>
+        <MediaCodec name="c2.mtk.avc.encoder.secure" type="video/avc" >
+            <Limit name="size" min="160x128" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+             <!-- max 1920x1088@30 -->
+            <Limit name="block-count" range="80-8160" />
+            <Limit name="blocks-per-second" range="80-244800" />
+            <Limit name="bitrate" range="1-10000000" />
+            <Limit name="concurrent-instances" max="10" />
+            <Limit name="performance-point-1920x1088" value="30" />
+            <Feature name="special-codec" required="true" />
+        </MediaCodec>
+        <MediaCodec name="c2.mtk.hevc.encoder" type="video/hevc" >
+            <Limit name="size" min="160x128" max="2560x1440" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <!-- max 2560x1440@30 -->
+            <Limit name="block-count" range="80-14400" />
+            <Limit name="blocks-per-second" range="80-432000" />
+            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="quality" range="0-100" default="50" />
             <Limit name="concurrent-instances" max="10" />
             <Limit name="performance-point-2560x1440" value="30" />
             <Limit name="performance-point-1920x1080" value="60" />
             <Limit name="performance-point-1280x720" value="120" />
             <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.avc.encoder.secure" type="video/avc" >
-            <Limit name="size" min="160x128" max="1920x1088" />
-            <Limit name="alignment" value="16x16" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="concurrent-instances" max="10" />
-            <Limit name="performance-point-1920x1088" value="30" />
-            <Feature name ="special-codec" required="true" />
-            <Feature name="bitrate-modes" value="VBR,CBR,CQ" /> 
-        </MediaCodec>
-        <MediaCodec name="c2.mtk.hevc.encoder" type="video/hevc" >
-            <Limit name="size" min="160x128" max="2560x1440" />
-            <Limit name="alignment" value="16x16" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="quality" range="0-100" default="50" />
-            <Limit name="concurrent-instances" max="10" />
-            <Limit name="performance-point-1920x1080" value="30" />
-            <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.heif.encoder" type="image/vnd.android.heic" >
-            <Limit name="size" min="16x16" max="16383x16383" />
+            <Limit name="size" min="16x16" max="8192x8192" />
             <Limit name="alignment" value="16x16" />
             <Limit name="block-size" value="16x16" />
             <Limit name="quality" range="0-100" default="50" />
@@ -159,3 +208,4 @@
         </MediaCodec>
     </Encoders>
 </MediaCodecs>
+

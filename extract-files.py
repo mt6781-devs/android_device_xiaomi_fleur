@@ -75,6 +75,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so': blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
 
+    'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
+
     'vendor/lib64/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
     (

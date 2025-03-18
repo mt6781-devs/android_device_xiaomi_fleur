@@ -122,7 +122,7 @@
             <!-- max 2560x1440@30 -->
             <Limit name="block-count" range="1-14400" />
             <Limit name="blocks-per-second" range="1-432000" />
-            <Limit name="bitrate" range="1-60000000" />
+            <Limit name="bitrate" range="1-50000000" />
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-2560x1440" value="30" />
             <Limit name="performance-point-1920x1088" value="60" />

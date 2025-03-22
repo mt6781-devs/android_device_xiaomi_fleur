@@ -1,5 +1,6 @@
 bluetooth.device.default_name=Redmi Note 11S
 vendor.usb.product_string=Redmi Note 11S
+ro.product.marketname=Redmi Note 11S
 ro.product.odm.brand=Redmi
 ro.product.odm.device=fleur
 ro.product.odm.model=fleur

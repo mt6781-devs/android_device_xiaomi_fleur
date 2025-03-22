@@ -1,5 +1,6 @@
 bluetooth.device.default_name=POCO M4 Pro
 vendor.usb.product_string=POCO M4 Pro
+ro.product.marketname=POCO M4 Pro
 ro.product.odm.brand=POCO
 ro.product.odm.device=miel
 ro.product.odm.model=miel

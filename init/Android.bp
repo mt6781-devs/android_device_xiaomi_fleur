@@ -76,7 +76,7 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.zram.rc",
     src: "init.zram.rc",
-    sub_dir: "init/hw",
+    relative_install_path: "init/hw",
     vendor: true,
 }
 

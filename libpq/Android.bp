@@ -1,0 +1,5 @@
+cc_library_shared {
+    name: "libpqparamparser",
+    vendor: true,
+    srcs: ["pqparamparser.cpp"],
+}

@@ -59,12 +59,12 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
 
 # Display
 persist.log.tag.gralloc4=S
-ro.vendor.mtk_aal_support=1
+ro.vendor.mtk_aal_support=0
 ro.vendor.composer_version=2.3
 ro.vendor.display.type=oled
 ro.vendor.colorpick_adjust=true
 ro.vendor.mtk_ovl_bringup=0
-ro.vendor.mtk_aod_support=1
+ro.vendor.mtk_aod_support=0
 ro.vendor.mml.mtk_mml_support=0
 ro.vendor.smvr.p2batch.vga=16
 ro.vendor.smvr.p2batch.hd=8

@@ -1,1 +1,2 @@
 allow rild metadata_file:dir { search open read };
+allow rild gsi_metadata_file:dir { search open read };

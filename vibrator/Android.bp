@@ -20,6 +20,6 @@ cc_binary {
         "libbase",
         "libbinder_ndk",
         "liblog",
-        "android.hardware.vibrator-V1-ndk",
+        "android.hardware.vibrator-V3-ndk",
     ],
 }

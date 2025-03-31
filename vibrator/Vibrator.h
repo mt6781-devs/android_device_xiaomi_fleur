@@ -68,6 +68,26 @@ public:
     ndk::ScopedAStatus getSupportedAlwaysOnEffects(std::vector<Effect>* _aidl_return) override;
     ndk::ScopedAStatus alwaysOnEnable(int32_t id, Effect effect, EffectStrength strength) override;
     ndk::ScopedAStatus alwaysOnDisable(int32_t id) override;
+    ndk::ScopedAStatus getResonantFrequency(float* _aidl_return) override;
+    ndk::ScopedAStatus getQFactor(float* _aidl_return) override;
+    ndk::ScopedAStatus getFrequencyResolution(float* _aidl_return) override;
+    ndk::ScopedAStatus getFrequencyMinimum(float* _aidl_return) override;
+    ndk::ScopedAStatus getBandwidthAmplitudeMap(std::vector<float>* _aidl_return) override;
+    ndk::ScopedAStatus getPwlePrimitiveDurationMax(int32_t* _aidl_return) override;
+    ndk::ScopedAStatus getPwleCompositionSizeMax(int32_t* _aidl_return) override;
+    ndk::ScopedAStatus getSupportedBraking(std::vector<::aidl::android::hardware::vibrator::Braking>* _aidl_return) override;
+    ndk::ScopedAStatus composePwle(const std::vector<::aidl::android::hardware::vibrator::PrimitivePwle>& in_composite,
+                                   const std::shared_ptr<IVibratorCallback>& callback) override;
+    ndk::ScopedAStatus performVendorEffect(const ::aidl::android::hardware::vibrator::VendorEffect& effect,
+                                           const std::shared_ptr<::aidl::android::hardware::vibrator::IVibratorCallback>& callback) override;
+
+    ndk::ScopedAStatus getFrequencyToOutputAccelerationMap(std::vector<::aidl::android::hardware::vibrator::FrequencyAccelerationMapEntry>* _aidl_return) override;
+    ndk::ScopedAStatus getPwleV2PrimitiveDurationMaxMillis(int32_t* _aidl_return) override;
+    ndk::ScopedAStatus getPwleV2CompositionSizeMax(int32_t* _aidl_return) override;
+    ndk::ScopedAStatus getPwleV2PrimitiveDurationMinMillis(int32_t* _aidl_return) override;
+    ndk::ScopedAStatus composePwleV2(const ::aidl::android::hardware::vibrator::CompositePwleV2& in_composite,
+                                     const std::shared_ptr<IVibratorCallback>& callback) override;
+
 };
 
 }  // namespace vibrator

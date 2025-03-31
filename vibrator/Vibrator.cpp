@@ -38,7 +38,7 @@
 #include <sys/ioctl.h>
 #include <thread>
 
-#include "include/Vibrator.h"
+#include "Vibrator.h"
 
 namespace aidl {
 namespace android {

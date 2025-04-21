@@ -21,7 +21,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/xiaomi
 
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)

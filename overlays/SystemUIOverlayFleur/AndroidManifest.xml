@@ -9,7 +9,7 @@
 
     <application android:hasCode="false" />
     <overlay
-      android:targetPackage="android"
+      android:targetPackage="com.android.systemui"
       android:isStatic="true"
       android:priority="1"/>
 </manifest>

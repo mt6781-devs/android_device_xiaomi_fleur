@@ -1059,6 +1059,11 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
+# NetD Agent
+vendor/bin/netdagent
+vendor/etc/init/netdagent.rc
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk-legacy
 vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
@@ -1362,15 +1367,10 @@ vendor/thh/ta/isee_model.json
 
 # Tether Offload - from gale-user 15 AP3A.240905.015.A2 OS2.0.2.0.VGPMIXM release-keys
 vendor/bin/hw/tetheroffloadservice
-vendor/bin/netdagent
 vendor/etc/init/android.hardware.tetheroffload-V1-service.rc
-vendor/etc/init/netdagent.rc
-vendor/etc/vintf/manifest/CommandService.xml
 vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal
 vendor/bin/mi_thermald

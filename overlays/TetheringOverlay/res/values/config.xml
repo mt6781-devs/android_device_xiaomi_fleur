@@ -16,11 +16,4 @@
         <item>ap\\d</item>
         <item>ap_br_ap\\d</item>
     </string-array>
-
-    <!-- This setting is deprecated, please use
-         com.android.networkstack.tethering.R.array.config_tether_usb_regexs instead. -->
-    <string-array translatable="false" name="config_tether_usb_regexs">
-        <item>usb\\d</item>
-        <item>rndis\\d</item>
-    </string-array>
 </resources>

@@ -60,7 +60,7 @@ on early-boot
     write /config/usb_gadget/g1/functions/ncm.gs9/os_desc/interface.ncm/compatible_id "WINNCM"
 
     # mass_storage
-    mkdir /config/usb_gadget/g1/functions/mass_storage.usb0
+    mkdir /config/usb_gadget/g1/functions/mass_storage.0
 
     # chown file/folder permission
     chown system system /config/usb_gadget/

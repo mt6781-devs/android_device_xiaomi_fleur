@@ -49,6 +49,9 @@ on early-boot
     # midi function
     mkdir /config/usb_gadget/g1/functions/midi.gs5
 
+    # ncm function
+    mkdir /config/usb_gadget/g1/functions/ncm.gs9
+
     # chown file/folder permission
     chown system system /config/usb_gadget/
     chown system system /config/usb_gadget/g1
@@ -82,6 +85,15 @@ on early-boot
     chown system system /config/usb_gadget/g1/functions/mtp.gs0/os_desc/interface.MTP
     chown system system /config/usb_gadget/g1/functions/mtp.gs0/os_desc/interface.MTP/compatible_id
     chown system system /config/usb_gadget/g1/functions/mtp.gs0/os_desc/interface.MTP/sub_compatible_id
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9/dev_addr
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9/host_addr
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9/ifname
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9/os_desc
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9/os_desc/interface.ncm
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9/os_desc/interface.ncm/compatible_id
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9/os_desc/interface.ncm/sub_compatible_id
+    chown system system /config/usb_gadget/g1/functions/ncm.gs9/qmult
     chown system system /config/usb_gadget/g1/functions/ptp.gs1
     chown system system /config/usb_gadget/g1/functions/ptp.gs1/os_desc
     chown system system /config/usb_gadget/g1/functions/ptp.gs1/os_desc/interface.MTP

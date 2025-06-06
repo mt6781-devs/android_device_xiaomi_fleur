@@ -80,7 +80,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default:32 \
     audio.usb.default:32 \
-    audio_policy.stub:32
+    audio_policy.stub:32 \
+    audio.primary.default:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \

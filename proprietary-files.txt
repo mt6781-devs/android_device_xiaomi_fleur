@@ -1039,7 +1039,7 @@ vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
-# MMAgent
+# MMAgent from sea-user AP3A.240905.015.A2 OS2.0.1.0.VHZMIXM release-keys
 vendor/bin/hw/vendor.mediatek.hardware.mmagent-service
 vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc
 vendor/lib64/mt6781/libmmagent.so:vendor/lib64/libmmagent.so
@@ -1062,24 +1062,26 @@ vendor/bin/netdagent
 vendor/etc/init/netdagent.rc
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
-# Neural Networks
+# Neural Networks from sea-user AP3A.240905.015.A2 OS2.0.1.0.VHZMIXM release-keys
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk-legacy
 vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 vendor/etc/vintf/manifest/manifest_apuware_utils_aidl.xml
-vendor/etc/armnn_app.config
 vendor/lib64/mt6781/libneuron_adapter_mgvi.so:vendor/lib64/libneuron_adapter_mgvi.so
 vendor/lib64/mt6781/libnir_neon_driver.so:vendor/lib64/libnir_neon_driver.so
 vendor/lib64/APUWareUtilsAidlServer.so
+vendor/lib64/libneuralnetworks_sl_driver_mtk_legacy_prebuilt.so
+vendor/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
+
+# Neural Networks
+vendor/etc/armnn_app.config
 vendor/lib64/libapu_mdw.so
 vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
-vendor/lib64/libneuralnetworks_sl_driver_mtk_legacy_prebuilt.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
-vendor/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
 
 # NFC
 vendor/firmware/st21nfc_fw7.bin

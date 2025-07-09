@@ -198,6 +198,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# MM
+PRODUCT_PACKAGES += \
+    init.zram.rc
+
+PRODUCT_COPY_FILES += \
+    hardware/google/pixel/mm/fstab.zram.40p:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

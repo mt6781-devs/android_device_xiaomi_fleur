@@ -184,6 +184,7 @@ telephony.lteOnCdmaDevice=1
 debug.sf.enable_hwc_vds=0
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.hwc.min.duration=11111112
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.use_color_management=true

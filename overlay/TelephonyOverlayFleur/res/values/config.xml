@@ -9,4 +9,7 @@
 
     <!-- String indicating the package name of the device ImsService implementation for RCS. -->
     <string name="config_ims_rcs_package">com.mediatek.ims</string>
+
+    <!-- String indicating the package name of the device GbaService implementation. -->
+    <string name="config_gba_package" translatable="false">com.mediatek.gbaservice</string>
 </resources>

@@ -13,6 +13,9 @@ ro.config.media_vol_steps=25
 ro.config.vc_call_vol_default=4
 ro.config.vc_call_vol_steps=12
 
+# Bluetooth
+bluetooth.device_id.vendor_id=0x0046
+
 # Camera
 camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=1

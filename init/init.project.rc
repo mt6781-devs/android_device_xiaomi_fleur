@@ -1,10 +1,5 @@
 # MediaTek project init script
 
-on init
-    # OTG
-    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
-    mkdir /storage/usbotg 0700 root root
-
 on post-fs-data
     # Camera
     mkdir /mnt/vendor/persist/camera

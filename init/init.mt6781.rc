@@ -832,22 +832,6 @@ on boot
     # Limit discard size to 128MB in order to avoid long IO latency
     write /sys/block/sda/queue/discard_max_bytes 134217728
 
-on property:vold.decrypt=trigger_reset_main
-    setprop sys.boot_completed 0
-    setprop dev.bootcomplete 0
-
-on property:vold.decrypt=trigger_restart_min_framework
-    start nvram_daemon
-    start msensord
-
-on property:vold.decrypt=trigger_restart_framework
-    start nvram_daemon
-    start msensord
-
-on property:vold.decrypt=trigger_shutdown_framework
-    setprop sys.boot_completed 0
-    setprop dev.bootcomplete 0
-
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -B -z \
         -o /data/user_de/0/com.android.shell/files/bugreports/bugreport

@@ -154,6 +154,16 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampFGMin",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "15"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUMinFreq",
       "Path": "/sys/kernel/gpu/gpu_min_clock",
       "Values": [
@@ -403,6 +413,12 @@
       "Node": "CCIFreqMode",
       "Duration": 58,
       "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampFGMin",
+      "Duration": 58,
+      "Value": "15"
     },
     {
       "PowerHint": "LAUNCH",

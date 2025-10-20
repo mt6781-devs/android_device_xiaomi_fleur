@@ -108,6 +108,16 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampTAMin",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "40"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUSchedMode",
       "Path": "/sys/devices/platform/13000000.mali/js_ctx_scheduling_mode",
       "Values": [
@@ -210,6 +220,12 @@
       "Node": "UclampFGMin",
       "Duration": 58,
       "Value": "15"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampTAMin",
+      "Duration": 58,
+      "Value": "40"
     },
     {
       "PowerHint": "LAUNCH",

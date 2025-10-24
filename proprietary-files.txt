@@ -959,10 +959,10 @@ vendor/etc/dsi_panel_k7s_38_0c_0b_video_mi.xml
 vendor/etc/screen_light.xml
 
 # DRM (Widevine) - from zircon-user 13 TP1A.220624.014 OS2.0.2.0.VNOMIXM release-keys
-vendor/bin/hw/android.hardware.drm-service.widevine
-vendor/etc/init/android.hardware.drm-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
-vendor/lib64/libwvaidl.so
+vendor/bin/hw/android.hardware.drm-service.clearkey
+vendor/etc/init/android.hardware.drm-service.clearkey.rc
+vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml
+vendor/lib64/libwvhidl.so
 
 # DRM (Widevine)
 vendor/lib64/liboemcrypto.so
@@ -1041,7 +1041,7 @@ vendor/lib64/libformatter.so
 
 # MMAgent from sea-user AP3A.240905.015.A2 OS2.0.1.0.VHZMIXM release-keys
 vendor/bin/hw/vendor.mediatek.hardware.mmagent-service
-vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc
+vendor//bin/hw/vendor.mediatek.hardware.mmagent-service.rc
 vendor/lib64/mt6781/libmmagent.so:vendor/lib64/libmmagent.so
 vendor/lib64/vendor.mediatek.hardware.mmagent-V1-ndk.so
 

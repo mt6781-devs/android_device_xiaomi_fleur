@@ -1,9 +1,11 @@
 on init
     # Setup final cpuset
-    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-6
     write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-5
+    write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/restricted/cpus 0-3
+    write /dev/cpuset/camera-daemon/cpus 0-7
 
     # Boot time tuning
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "performance"

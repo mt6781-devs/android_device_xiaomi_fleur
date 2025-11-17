@@ -1,0 +1,2 @@
+on init
+    write /proc/sys/kernel/hung_task_timeout_secs 0

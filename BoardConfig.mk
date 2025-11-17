@@ -105,6 +105,9 @@ TARGET_BOARD_PLATFORM := mt6781
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6781
+
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 

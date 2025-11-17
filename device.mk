@@ -120,6 +120,17 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Init
+PRODUCT_PACKAGES += \
+    init.connectivity.rc \
+    init.mt6781.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    init.recovery.mt6781.rc \
+    ueventd.mt6781.rc \
+    fstab.mt6781 \
+    fstab.mt6781.ramdisk
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.km41.xml

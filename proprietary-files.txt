@@ -951,7 +951,6 @@ vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libminiui.so
-vendor/lib64/libmmagent.so
 vendor/lib64/libmml.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
@@ -1056,6 +1055,13 @@ vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
+
+# MMAgent
+vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
+vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
+vendor/lib64/libmmagent.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service

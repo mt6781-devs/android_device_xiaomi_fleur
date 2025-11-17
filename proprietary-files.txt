@@ -148,3 +148,12 @@ vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
 vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
+
+# Bluetooth (Driver)
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbt-vendor.so
+
+# Bluetooth (Firmware)
+vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin
+vendor/firmware/BT_FW.cfg

@@ -950,6 +950,10 @@ vendor/lib64/libmml.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
+vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
+
 # Picture Quality (PQ)
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc

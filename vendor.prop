@@ -108,3 +108,9 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=100
 ro.surface_flinger.set_touch_timer_ms=150
+
+# Trusted Execution Environment (TEE)
+ro.hardware.wechat=beanpod
+ro.vendor.mtk_microtrust_tee_support=1
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_svp_on_mtee_support=1

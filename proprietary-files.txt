@@ -904,6 +904,12 @@ vendor/etc/camera/model/rt_model/preview_cache
 vendor/etc/camera/model/rt_model/preview_model
 vendor/etc/camera/model/rt_model/preview_policy
 
+# Connectivity
+vendor/bin/wmt_loader
+vendor/bin/wmt_launcher
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
@@ -1083,6 +1089,15 @@ vendor/lib64/libsensor_custom.so
 vendor/lib64/librgbwlightsensor.so
 vendor/lib64/sensors.touch.detect.so
 
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
+vendor/bin/netdagent
+vendor/etc/init/tetheroffloadservice.rc
+vendor/etc/init/netdagent.rc
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
 # Trusted Execution Environment (TEE)
 vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/init_thh
@@ -1129,3 +1144,15 @@ vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/isee_model.json
+
+# WiFi
+vendor/bin/wlan_assistant
+vendor/etc/init/wlan_assistant.rc
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin
+vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
+vendor/firmware/WMT_SOC.cfg

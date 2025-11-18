@@ -961,6 +961,9 @@ vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 # DRM (Widevine) - from malachite OS2.0.206.0.VOOMIXM
 vendor/apex/com.google.android.widevine.nonupdatable.apex|522c687fc5fdcff4ff89ca36b57a5c03420448dc
 
+# DRM (Widevine) - stock
+vendor/lib64/liboemcrypto.so
+
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so

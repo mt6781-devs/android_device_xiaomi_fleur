@@ -1,5 +1,7 @@
 {
   "provideLibs": [
-    "liboemcrypto.so"
+    "liboemcrypto.so",
+    "libtlcWidevineModularDrm.so",
+    "liburee_meta_drmkeyinstall.so"
   ]
 }

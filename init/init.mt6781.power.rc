@@ -5,6 +5,9 @@ on init
     write /dev/cpuset/system-background/cpus 0-5
     write /dev/cpuset/top-app/cpus 0-7
 
+    # sched
+    write /proc/sys/kernel/sched_migration_cost_ns 250000
+
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
 

@@ -1102,6 +1102,9 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
+# NFC
+vendor/firmware/st21nfc_fw7.bin
+
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc

@@ -957,6 +957,12 @@ vendor/lib64/libmml.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
+# Display (Thread Unwinding)
+vendor/lib/libladder.so
+vendor/lib/libudf.so
+vendor/lib64/libladder.so
+vendor/lib64/libudf.so
+
 # DRM (Widevine) - from malachite OS2.0.208.0.VOOMIXM
 vendor/apex/com.google.android.widevine.nonupdatable.apex|522c687fc5fdcff4ff89ca36b57a5c03420448dc
 

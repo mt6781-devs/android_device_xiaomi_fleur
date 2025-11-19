@@ -29,29 +29,15 @@ odm                               /odm                 erofs   ro               
 /dev/block/by-name/proinfo        /proinfo              emmc   defaults                                                 defaults
 /dev/block/by-name/seccfg         /seccfg               emmc   defaults                                                 defaults
 
-# Firmware
-/dev/block/by-name/boot           /boot                 emmc  defaults                                                  first_stage_mount,nofail,slotselect
-/dev/block/by-name/boot_para      /boot_para            emmc  defaults                                                  defaults
-/dev/block/by-name/dtbo           /dtbo                 emmc  defaults                                                  defaults
-/dev/block/by-name/lk             /bootloader           emmc  defaults                                                  defaults
-/dev/block/by-name/lk2            /bootloader2          emmc  defaults                                                  defaults
-/dev/block/by-name/para           /para                 emmc  defaults                                                  defaults
-/dev/block/by-name/misc           /misc                 emmc  defaults                                                  defaults
+# Verified Boot
 /dev/block/by-name/vbmeta         /vbmeta               emmc  defaults                                                  defaults
 /dev/block/by-name/vbmeta_vendor  /vbmeta_vendor        emmc  defaults                                                  first_stage_mount,nofail,slotselect
 /dev/block/by-name/vbmeta_system  /vbmeta_system        emmc  defaults                                                  first_stage_mount,nofail,slotselect,avb=vbmeta
-/dev/block/by-name/logo           /logo                 emmc  defaults                                                  defaults
+
+# Other
+/dev/block/by-name/boot_para      /boot_para            emmc  defaults                                                  defaults
+/dev/block/by-name/para           /para                 emmc  defaults                                                  defaults
+/dev/block/by-name/misc           /misc                 emmc  defaults                                                  defaults
 /dev/block/by-name/expdb          /expdb                emmc  defaults                                                  defaults
-/dev/block/by-name/tee1           /tee1                 emmc  defaults                                                  defaults
-/dev/block/by-name/tee2           /tee2                 emmc  defaults                                                  defaults
-/dev/block/by-name/scp1           /scp1                 emmc  defaults                                                  defaults
-/dev/block/by-name/scp2           /scp2                 emmc  defaults                                                  defaults
-/dev/block/by-name/sspm_1         /sspm_1               emmc  defaults                                                  defaults
-/dev/block/by-name/sspm_2         /sspm_2               emmc  defaults                                                  defaults
 /dev/block/by-name/md1img         /md1img               emmc  defaults                                                  defaults
-/dev/block/by-name/md1dsp         /md1dsp               emmc  defaults                                                  defaults
-/dev/block/by-name/gz1            /gz1                  emmc  defaults                                                  defaults
-/dev/block/by-name/gz2            /gz2                  emmc  defaults                                                  defaults
-/dev/block/by-name/spmfw          /spmfw                emmc  defaults                                                  defaults
 /dev/block/by-name/audio_dsp      /audio_dsp            emmc  defaults                                                  defaults
-/dev/block/by-name/pi_img         /pi_img               emmc  defaults                                                  defaults

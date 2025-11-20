@@ -46,6 +46,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/google/interfaces \
     hardware/mediatek \
+    hardware/mediatek/libaedv \
     hardware/mediatek/libmtkperf_client \
     hardware/xiaomi
 

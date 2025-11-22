@@ -14,6 +14,9 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+import extract_utils.tools
+extract_utils.tools.DEFAULT_PATCHELF_VERSION = '0_17_2'
+
 namespace_imports = [
     'device/xiaomi/fleur',
     'hardware/mediatek',

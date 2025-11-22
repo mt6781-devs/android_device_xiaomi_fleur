@@ -1298,6 +1298,9 @@ vendor/etc/thermal-videochat.conf
 vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
 
+# Touch (firmware)
+vendor/firmware/focaltech_ts_fw_samsung.bin
+
 # Trusted Execution Environment (TEE)
 vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/init_thh

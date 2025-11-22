@@ -957,6 +957,10 @@ vendor/lib64/libmml.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
+# Touch Firmware
+vendor/firmware/Conf_MultipleTest.ini
+vendor/firmware/focaltech_ts_fw_samsung.bin
+
 # Display (Thread Unwinding) - from sea OS2
 vendor/lib/libladder.so|43049add38ea62924282587a018745abe49d04d2
 vendor/lib/libudf.so|28f17e2e2f0971338e6cedfa8bc51ab69a060fd3

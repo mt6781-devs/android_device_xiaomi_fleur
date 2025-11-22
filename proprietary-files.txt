@@ -933,10 +933,6 @@ vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
-vendor/lib64/libaal_key.so
-vendor/lib64/libaal_mtk.so
-vendor/lib64/libaal_cust.so
-vendor/lib64/libaalservice.so
 vendor/lib64/libacdk.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libdre.so

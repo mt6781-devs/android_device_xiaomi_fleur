@@ -6,7 +6,7 @@ on post-fs && property:ro.boot.product.hardware.sku=fleurp
     setprop persist.vendor.nfc.config_file_name /vendor/etc/st21nfc_conf_fleurp.conf
     enable st_nfc_hal
 
-service st_nfc_hal /vendor/bin/hw/android.hardware.nfc-service.st
+service st_nfc_hal /apex/com.google.android.hardware.nfc.st/bin/hw/android.hardware.nfc-service.st
     class hal
     user nfc
     group nfc

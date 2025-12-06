@@ -84,6 +84,13 @@ persist.sys.fuse.passthrough.enable=true
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
+# IMS
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.viwifi_support=1
+ro.vendor.mtk_data_config=1
+
 # LMK
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=50

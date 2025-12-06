@@ -926,9 +926,7 @@ vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
-vendor/lib64/libacdk.so
 vendor/lib64/libcomposer_ext.so
-vendor/lib64/libdre.so
 vendor/lib64/libdip_drv.so
 vendor/lib64/libdip_imem.so
 vendor/lib64/libdip_postproc.so
@@ -936,14 +934,11 @@ vendor/lib64/libgamehdr.so
 vendor/lib64/libged.so
 vendor/lib64/libgpud.so
 vendor/lib64/libgpu_aux.so
-vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libhdrvideo.so
-vendor/lib64/libminiui.so
 vendor/lib64/libmml.so
-vendor/lib64/libpixelflinger.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.1.so

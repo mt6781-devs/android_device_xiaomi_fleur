@@ -148,6 +148,7 @@ vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
 vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
+vendor/etc/smartpa_param/fsmsdg_params.bin
 
 # Bluetooth (Driver)
 vendor/lib64/libbluetooth_mtk.so
@@ -1192,9 +1193,6 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
-vendor/etc/gbe.cfg
-vendor/etc/xgf.cfg
-vendor/etc/smartpa_param/fsmsdg_params.bin
 vendor/etc/apdb/APDB_MT6785_S01__W2248
 vendor/etc/apdb/APDB_MT6785_S01__W2248_ENUM
 

@@ -1062,8 +1062,6 @@ vendor/lib/mt6781/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
 vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility.so
-vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 
 # Media (Codec2)

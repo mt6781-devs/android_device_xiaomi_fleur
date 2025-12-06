@@ -884,7 +884,6 @@ vendor/etc/camera/mibokeh_mt6853_parameter.bin
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/sr_params.xml
 vendor/etc/camera/vidhance_calibration
-vendor/odm/etc/camera/camerabooster.json:vendor/etc/camera/camerabooster.json
 vendor/etc/camera/model/cap_ldc_model/ldc_cap_cache
 vendor/etc/camera/model/cap_ldc_model/ldc_cap_model
 vendor/etc/camera/model/cap_ldc_model/ldc_cap_policy

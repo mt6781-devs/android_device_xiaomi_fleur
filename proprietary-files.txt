@@ -10,7 +10,6 @@ vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libalsautils.so:vendor/lib64/libalsautils-stock.so;FIX_SONAME
 vendor/lib/libaudio_param_parser-vnd.so
-vendor/lib/libaudiocomponentenginec.so
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocomponentengine_vendor.so
 vendor/lib/libaudiocompensationfilter_vendor.so

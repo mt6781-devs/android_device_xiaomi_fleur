@@ -15,6 +15,11 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "performance"
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "performance"
 
+    # DVFS
+    write /sys/kernel/ged/hal/dvfs_margin_value 130
+    write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
+    write /sys/kernel/ged/hal/loading_base_dvfs_step 4
+
     # sched
     write /proc/sys/kernel/sched_migration_cost_ns 250000
     write /proc/sys/kernel/sched_latency_ns 4000000
@@ -84,11 +89,6 @@ on init
 on property:sys.boot_completed=1
     # PowerHAL Hint Processing
     setprop vendor.powerhal.init 1
-
-    # DVFS
-    write /sys/kernel/ged/hal/dvfs_margin_value 130
-    write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
-    write /sys/kernel/ged/hal/loading_base_dvfs_step 4
 
     # End boot time tuning
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"

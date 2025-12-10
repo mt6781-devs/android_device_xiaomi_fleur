@@ -254,7 +254,8 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal \
-    android.hardware.sensors@2.0-subhal-impl-1.0:64
+    android.hardware.sensors@2.0-subhal-impl-1.0:64 \
+    sensors.dynamic_sensor_hal:64
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_ODM)/etc/sensors/hals.conf \

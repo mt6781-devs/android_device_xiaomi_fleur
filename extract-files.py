@@ -59,7 +59,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
-    ('vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so', 'vendor/lib64/libmtkcam_stdutils.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
+    ('vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so', 'vendor/lib64/libmtkcam_stdutils.so'): blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v32.so'),
+    ('vendor/lib/librt_extamp_intf.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
@@ -67,6 +70,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
      'vendor/lib/hw/audio.primary.mt6781.so': blob_fixup()
         .replace_needed('libalsautils.so', 'libalsautils-stock.so')
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
         .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00'),
     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()

@@ -100,8 +100,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default:32 \
-    audio.usbv2.default:32 \
-    audio_policy.stub:32
+    audio.usbv2.default:32
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml

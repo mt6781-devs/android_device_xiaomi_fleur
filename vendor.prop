@@ -84,7 +84,6 @@ ro.opengles.version=196610
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_modules=fpc,goodix
 persist.vendor.fingerprint.sensor_location=1080|915|145|local:4627039422300187648
 
 # FUSE

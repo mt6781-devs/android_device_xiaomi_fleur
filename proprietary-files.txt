@@ -157,10 +157,10 @@ vendor/bin/batterysecret
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbt-vendor.so
 
-# Bluetooth (Firmware)
-vendor/firmware/BT_FW.cfg
-vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
-vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin
+# Bluetooth (Firmware) - from sea OS2.0.3.0.VHZMIXM
+vendor/firmware/BT_FW.cfg|76af0b140eeba580216774bef26e8cc737f04530
+vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin|0e46e58e89c00156cc6d78004fc9378b1a0febc2
+vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin|31362c4cb21c65ff4dec847933267dd472994e3d
 
 # Camera
 vendor/bin/hw/camerahalserver
@@ -903,8 +903,10 @@ vendor/etc/camera/vidhance_calibration
 # Connectivity
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
-vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
-vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
+
+# Connectivity (firmware) - from sea OS2.0.3.0.VHZMIXM
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin|62d469ff8ce898266b27752ae20c9b2d51860e1c
+vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin|c84bb12e559dd1492461af5df7010bcdc3712e8e
 
 # ConsumerIR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6781.so;FIX_SONAME
@@ -1345,11 +1347,11 @@ vendor/firmware/aw8622_mid_f0_need_setup_Z_cfg.bin
 # WiFi
 vendor/bin/wlan_assistant
 vendor/etc/init/wlan_assistant.rc
-vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin
-vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin
-vendor/firmware/WMT_SOC.cfg
-vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
-vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
-vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin
-vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
+
+# WiFi (firmware) - from sea OS2.0.4.0.VHZMIXM
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin|2f5a5fb0b14d95ff8116d2a285a569b0001af963
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin|264394a9c720c5bb10b48ccc2443310006b2c2e4
+vendor/firmware/WMT_SOC.cfg|149755935ac3ab45e05288a227e7f42fdc941644
+vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin|c2aec4a0c8d4a19072a5920acb6d9316a04ac9fc
+vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin|860dfe087f5d09bddfa6695829f853f042067975

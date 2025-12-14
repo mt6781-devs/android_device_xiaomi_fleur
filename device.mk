@@ -250,6 +250,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworkOverlayFleur \
+    Launcher3DeviceOverlay \
     TetheringOverlayFleur \
     SettingsOverlayFleur \
     SystemUIOverlayFleur \

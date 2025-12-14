@@ -33,4 +33,7 @@
     <!-- Location on the screen of the center of the physical volume up/down buttons -->
     <dimen name="physical_volume_up_button_center_screen_location_y">950px</dimen>
     <dimen name="physical_volume_down_button_center_screen_location_y">1150px</dimen>
+
+    <!-- Blur radius behind Notification Shade -->
+    <dimen name="max_shade_window_blur_radius">17dp</dimen>
 </resources>

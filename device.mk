@@ -261,7 +261,8 @@ PRODUCT_PACKAGES += \
     WifiOverlayFleur
 
 PRODUCT_PACKAGES += \
-    LineageApertureOverlayFleur
+    LineageApertureOverlayFleur \
+    LineageSettingsProviderOverlayFleur
 
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay

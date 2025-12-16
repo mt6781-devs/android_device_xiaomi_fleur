@@ -1,0 +1,12 @@
+on post-fs && property:ro.boot.product.hardware.sku=fleur
+    enable st_nfc_hal
+    
+on post-fs && property:ro.boot.product.hardware.sku=fleurp
+    enable st_nfc_hal
+
+service st_nfc_hal /vendor/bin/hw/android.hardware.nfc-service.st
+    class hal
+    user nfc
+    group nfc
+    disabled
+    override

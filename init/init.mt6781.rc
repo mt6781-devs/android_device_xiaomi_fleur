@@ -72,6 +72,14 @@ on charger
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "schedutil"
 
+    # batterysecret
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/usbpd_verifed
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/request_vdm_cmd
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/verify_process
+    chmod 0664 /sys/class/power_supply/usb/pd_authentication
+    chmod 0664 /sys/class/power_supply/bms/authentic
+    start batterysecret
+
 on fs
     # mount fstab
     mount_all --early
@@ -865,3 +873,18 @@ on property:sys.boot_completed=1
     write /sys/block/dm-40/queue/read_ahead_kb 512
     write /sys/block/dm-41/queue/read_ahead_kb 512
     write /sys/block/dm-42/queue/read_ahead_kb 512
+
+    # batterysecret
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/usbpd_verifed
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/request_vdm_cmd
+    chmod 0664 /sys/class/Charging_Adapter/pd_adapter/verify_process
+    chmod 0664 /sys/class/power_supply/usb/pd_authentication
+    chmod 0664 /sys/class/power_supply/bms/authentic
+
+    start batterysecret
+
+service batterysecret /vendor/bin/batterysecret
+    class last_start
+    user root
+    group system system wakelock
+    disabled

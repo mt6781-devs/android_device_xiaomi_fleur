@@ -215,7 +215,7 @@
                 </devicePort>
                 <devicePort tagName="FM Tuner In" type="AUDIO_DEVICE_IN_FM_TUNER" role="source">
                      <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="8000 16000 32000 44100 48000"
+                             samplingRates="48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO"/>
                 </devicePort>
                 <devicePort tagName="Echo Ref In" type="AUDIO_DEVICE_IN_ECHO_REFERENCE" role="source">

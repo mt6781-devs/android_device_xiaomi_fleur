@@ -971,6 +971,11 @@ vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
+# FM Radio - from sea OS2.0.4.0.VHZMIXM
+vendor/firmware/fm_cust.cfg|875f3f03a0c2edd05b059c9ab3b9779ff38de6ef
+vendor/firmware/mt6631_fm_v1_coeff.bin|6d8504d6932329c7216c8c016fa7351d084a4d33
+vendor/firmware/mt6631_fm_v1_patch.bin|89c569e38fa50ca09edc13e02ace3efbd1eaa178
+
 # Fuelgauge
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram

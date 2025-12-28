@@ -1142,7 +1142,6 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/bin/hw/mtkfusionrild
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
-vendor/bin/gsm0710muxd
 vendor/bin/ipsec_mon
 vendor/bin/wfca
 vendor/etc/init/gsm0710muxd.rc
@@ -1191,6 +1190,9 @@ vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+
+# Radio - from bogota_g-user 16 W1VO36M.85 16a77 release-keys
+vendor/bin/gsm0710muxd|ca9871cfde2fc3220a0494d6a7494107a79cd4a1
 
 # Radio Configs
 vendor/etc/apdb/APDB_MT6785_S01__W2248

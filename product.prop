@@ -3,7 +3,7 @@ bluetooth.device_id.vendor_id=0x0046
 bluetooth.device.class_of_device=90,2,12
 
 # BPF
-ro.bpf.kver_override=5.4.186
+ro.bpf.kver_override=5.10.239
 
 # FM Radio
 ro.fm.chip=0x6631

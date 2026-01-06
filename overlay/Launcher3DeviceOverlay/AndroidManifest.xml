@@ -5,7 +5,6 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.android.launcher3.overlay">
-    <application android:hasCode="false" />
     <overlay android:targetPackage="com.android.launcher3"
              android:isStatic="true"
              android:priority="150" />

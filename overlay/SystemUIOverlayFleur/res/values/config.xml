@@ -1,16 +1,12 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-  SPDX-FileCopyrightText: The LineageOS Project
-  SPDX-License-Identifier: Apache-2.0
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
-
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
-          vibrator is capable of subtle vibrations -->
-     <bool name="config_vibrateOnIconAnimation">true</bool>
-
-    <!-- Whether usage of the proximity sensor during doze is supported -->
-    <bool name="doze_proximity_sensor_supported">false</bool>
+<resources>
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">60</integer>

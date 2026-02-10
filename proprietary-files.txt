@@ -1243,7 +1243,7 @@ system_ext/lib64/libvcodec_capenc.so|013f0131a424f8c2fc3815b02e466bc03a197324
 system_ext/lib64/libvt_avsync.so|548242bff6b4472f212bf18cdec7753088885a10
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|8b13966bdf703d2eae99d4f65a2e77fbd939064c
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|01b68c7597d585ec39441628f66b02b3b091db99
-system_ext/priv-app/ImsService/ImsService.apk|555b3b876753825aedf0bb2fb4c013162a11ec0b
+system_ext/priv-app/ImsService/ImsService.apk|555b3b876753825aedf0bb2fb4c013162a11ec0b|105f5a775c827d388b3fdb512aedb41f02d10df8
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl

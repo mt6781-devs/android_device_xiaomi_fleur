@@ -42,6 +42,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
+        .apktool_patch('blob-patches/ImsService/'),
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
     'system_ext/lib64/libsink-mtk.so': blob_fixup()

@@ -44,9 +44,9 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'system/priv-app/ImsService/ImsService.apk': blob_fixup()
         .apktool_patch('blob-patches/ImsService/'),
-    'system/lib64/libimsma.so': blob_fixup()
+    'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
-    'system/lib64/libsink-mtk.so': blob_fixup()
+    'system_ext/lib64/libsink-mtk.so': blob_fixup()
         .add_needed('libaudioclient_shim.so'),
     'vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc': blob_fixup()
         .regex_replace('start', 'enable'),

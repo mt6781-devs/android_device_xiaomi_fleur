@@ -4,7 +4,6 @@
       "Name": "CPULittleClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
       "Values": [
-        "9999999",
         "2000000",
         "1933000",
         "1866000",
@@ -28,7 +27,6 @@
       "Name": "CPULittleClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
       "Values": [
-        "9999999",
         "2000000",
         "1933000",
         "1866000",
@@ -51,7 +49,6 @@
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq",
       "Values": [
-        "9999999",
         "2050000",
         "1986000",
         "1923000",
@@ -76,7 +73,6 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq",
       "Values": [
-        "9999999",
         "2050000",
         "1986000",
         "1923000",
@@ -204,6 +200,12 @@
       "Value": "2000000"
     },
     {
+      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "1500000"
+    }
+    {
       "PowerHint": "DISPLAY_CHANGE",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1250,
@@ -219,7 +221,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 58,
-      "Value": "1275000"
+      "Value": "1500000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -243,13 +245,19 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 2500,
-      "Value": "9999999"
+      "Value": "2050000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 2500,
-      "Value": "9999999"
+      "Value": "2000000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "UclampTAMin",
+      "Duration": 0,
+      "Value": "40"
     },
     {
       "PowerHint": "LAUNCH",
@@ -266,13 +274,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "2050000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "2000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -296,13 +304,13 @@
       "PowerHint": "GAME_LOADING",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "2000000"
     },
     {
       "PowerHint": "GAME_LOADING",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "2050000"
     },
     {
       "PowerHint": "DOUBLE_TAP_TO_WAKE",

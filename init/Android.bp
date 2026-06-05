@@ -25,13 +25,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mt6781.usb.rc",
-    src: "init.mt6781.usb.rc",
-    relative_install_path: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.mt6781.power.rc",
     src: "init.mt6781.power.rc",
     relative_install_path: "init/hw",
